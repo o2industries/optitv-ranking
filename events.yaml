@@ -1,0 +1,241 @@
+# =============================================================================
+# OPTI TV ranking — event pool config
+# =============================================================================
+# This is the ONLY file you edit to manage the ranking's event pool.
+# No code changes needed to add, remove, or adjust an event.
+#
+# How to fill in a Clubspot (USODA) event:
+#   1. Open the event's results page in Firefox.
+#   2. F12 -> Network tab -> reload -> filter XHR.
+#   3. Find the call to results.theclubspot.com/clubspot-results-v4/{REGATTA_ID}?boatClassIDs={CLASS_ID}
+#   4. Copy REGATTA_ID and CLASS_ID into the block below.
+#      (CLASS_ID must be the Championship / Gold fleet — NOT Green or RWB.)
+#
+# How to fill in a Regatta Network event:
+#   1. The results URL contains event/{EVENT_ID}  -> that's regatta_id.
+#   2. platform: regatta_network ; no class_id needed (RN serves the fleet directly,
+#      but set fleet_filter to the fleet name shown in the standings if multiple fleets exist).
+#
+# multiplier: 1.0 default. Trials 1.25, Nationals 1.15 (already set).
+# usoda: true  -> no 150-boat floor applied.
+# usoda: false -> scraper enforces the 150 Championship-Fleet floor; auto-drops if under.
+# active: false -> event is ignored this run (use to stage events before results post).
+#
+# window anchor: the previous Team Trials date. Events dated >= anchor and <= today
+# are scored. Set the anchor in run_config below.
+# =============================================================================
+
+run_config:
+  window_anchor: "2025-06-01"   # previous Team Trials date; edit each season
+  # today is computed automatically at run time
+
+events:
+
+  # ---------------- USODA events (no size floor) ----------------
+
+  - id: sunshine_state
+    name: "USODA Sunshine State Championship"
+    platform: clubspot
+    regatta_id: "anqiZ8G2n7"
+    class_id: "qWhwytMjzH"
+    date: "2026-02-14"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: nationals
+    name: "USODA National Championship"
+    platform: clubspot
+    regatta_id: "BS95PL9HBf"       
+    class_id: "WN7uWOYw7A"         
+    date: "2025-07-31"
+    multiplier: 1.15
+    usoda: true
+    active: true
+
+  - id: team_trials
+    name: "USODA Team Trials"
+    platform: clubspot
+    regatta_id: "MJPltRlXPA"       
+    class_id: "XvDEJVjRgD"          
+    date: "2026-04-23"
+    multiplier: 1.25
+    usoda: true
+    active: true
+
+  - id: midwinters
+    name: "USODA Midwinter Championship"
+    platform: clubspot
+    regatta_id: "0hfYJK17wk"
+    class_id: "Av4nDnjYFj"
+    date: "2025-11-28"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: atlantic_coast_gold
+    name: "USODA Atlantic Coast Championship Gold Fleet"
+    platform: clubspot
+    regatta_id: "QIbpENNi3M"
+    class_id: "OLCOFjicY4"
+    date: "2025-09-06"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: atlantic_coast_silver
+    name: "USODA Atlantic Coast Championship Silver Fleet"
+    platform: clubspot
+    regatta_id: "QIbpENNi3M"
+    class_id: "23Bek8QbNV"
+    date: "2025-09-06"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: great_lakes
+    name: "USODA Great Lakes Championship"
+    platform: clubspot
+    regatta_id: "1kBu5jAm6Y"
+    class_id: "Ze2513ux1B"
+    date: "2025-06-28"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: gulf_coast
+    name: "USODA Gulf Coast Championship"
+    platform: clubspot
+    regatta_id: "W2Urf2zGuq"
+    class_id: "qtagPKFOh8"
+    date: "2026-03-21"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: mid_america
+    name: "USODA Mid-America Championship"
+    platform: clubspot
+    regatta_id: "Wz6ugGAASD"
+    class_id: "QeUkMLlLWQ"
+    date: "2025-11-08"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: midwest
+    name: "USODA Midwest Championship"
+    platform: clubspot
+    regatta_id: "6A4wtp0URb"
+    class_id: "c6s4ylg3g8"
+    date: "2025-10-11"
+    multiplier: 1.25
+    usoda: true
+    active: true
+
+  - id: new_england
+    name: "USODA New England Championship"
+    platform: clubspot
+    regatta_id: "b1ep9ZFOPV"
+    class_id: "EYZrpRJLaY"
+    date: "2025-06-30"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: new_jersey_gold
+    name: "USODA New Jersey State Championship Gold Fleet"
+    platform: clubspot
+    regatta_id: "9X5aU1DNTq"
+    class_id: "WVq66GPoDs"
+    date: "2025-08-18"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: new_jersey_silver
+    name: "USODA New Jersey State Championship Silver Fleet"
+    platform: clubspot
+    regatta_id: "9X5aU1DNTq"
+    class_id: "mY5bywF16D"
+    date: "2025-08-18"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: northwest
+    name: "USODA Northwest Championship"
+    platform: clubspot
+    regatta_id: "lZU38T7YsN"
+    class_id: "JgyTx212Fh"
+    date: "2025-07-19"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: pacific_coast
+    name: "USODA Pacific Coast Championship"
+    platform: clubspot
+    regatta_id: "tQmblHWH4b"
+    class_id: "6lAqW7upkk"
+    date: "2025-09-27"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: Southeast
+    name: "USODA Southeast Championship"
+    platform: clubspot
+    regatta_id: "7RTvUFkNHg"
+    class_id: "0a0mZ3fRla"
+    date: "2025-11-01"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: west_coast
+    name: "USODA West Coast Championship"
+    platform: clubspot
+    regatta_id: "fqhTlF2Cr5"
+    class_id: "JTho1UkmUU"
+    date: "2025-08-29"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: texas_youth
+    name: "USODA Texas Youth Race Week"
+    platform: clubspot
+    regatta_id: "bHLy71uNDe"
+    class_id: "Co36ZrevqB"
+    date: "2025-07-10"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  - id: Chesapeake
+    name: "USODA Chesapeake Bay Championship"
+    platform: clubspot
+    regatta_id: "O4t58OxETv"
+    class_id: "AoCBDt4Vc6"
+    date: "2025-07-10"
+    multiplier: 1.0
+    usoda: true
+    active: true
+
+  # add the remaining USODA regionals the same way:
+  # atlantic_coast, great_lakes, gulf_coast, mid_america, midwest,
+  # new_england, new_jersey_state, northwest, pacific_coast, southeast,
+  # west_coast, texas_youth_race_week
+  # (Team Race Midwinters intentionally excluded — not fleet racing.)
+
+  # ---------------- non-USODA events (150 floor enforced) ----------------
+
+  - id: orange_bowl
+    name: "Orange Bowl Int'l Youth Regatta — Optimist"
+    platform: manual
+    results_file: "manual_results/orange_bowl.csv"
+    date: "2025-12-27"
+    multiplier: 1.1
+    usoda: false
+    active: true
