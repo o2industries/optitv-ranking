@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How the OPTI TV Ranking Works</title>
+<style>
+  :root{
+    --ink:#1a2733;
+    --muted:#5a6b7a;
+    --line:#dfe5ea;
+    --accent:#0b6fb8;     /* sail-water blue */
+    --bg:#ffffff;
+    --panel:#f5f8fa;
+    --warn:#8a5a00;
+    --warnbg:#fdf6e8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    font-size:17px;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:48px 24px 80px;}
+  header{border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:36px;}
+  .eyebrow{
+    text-transform:uppercase;letter-spacing:.12em;font-size:12px;
+    font-weight:700;color:var(--accent);margin:0 0 8px;
+  }
+  h1{font-size:30px;line-height:1.2;margin:0 0 10px;letter-spacing:-.01em;}
+  .lede{color:var(--muted);font-size:18px;margin:0;}
+  h2{
+    font-size:21px;margin:40px 0 12px;padding-top:8px;letter-spacing:-.01em;
+  }
+  h2 .num{color:var(--accent);font-variant-numeric:tabular-nums;margin-right:10px;}
+  p{margin:0 0 16px;}
+  .formula{
+    background:var(--panel);border:1px solid var(--line);border-radius:8px;
+    padding:18px 20px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:15px;line-height:1.5;color:var(--ink);overflow-x:auto;margin:0 0 18px;
+  }
+  ul{margin:0 0 16px;padding-left:22px;}
+  li{margin:0 0 8px;}
+  strong{color:var(--ink);}
+  .callout{
+    background:var(--warnbg);border-left:4px solid var(--warn);
+    border-radius:0 6px 6px 0;padding:16px 18px;margin:24px 0;color:#4a3a14;
+    font-size:16px;
+  }
+  .callout strong{color:var(--warn);}
+  .summary{
+    background:var(--panel);border:1px solid var(--line);border-radius:8px;
+    padding:20px 22px;margin:36px 0 0;font-size:16px;
+  }
+  .summary p{margin:0;font-style:italic;color:var(--ink);}
+  footer{
+    margin-top:48px;padding-top:20px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:14px;
+  }
+  a{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">OPTI TV National Ranking</p>
+    <h1>How the ranking works</h1>
+    <p class="lede">A plain-English guide to how every sailor's score is calculated, what the ranking does well, and where it has limits.</p>
+  </header>
+
+  <p>This is an independent ranking produced by OPTI TV for the US Championship Fleet Optimist circuit. It is <strong>not</strong> an official USODA ranking and is not used for any team selection. It exists to track and celebrate the sailors competing across the season.</p>
+
+  <h2><span class="num">1</span>Your finish, as a share of the fleet</h2>
+  <p>A finishing position only means something relative to how many boats were racing. Tenth out of twelve is the back of the fleet; tenth out of two hundred is elite. So every result starts as the fraction of the fleet a sailor finished ahead of. Finish 10th in a 200-boat fleet and you placed ahead of 190 of 200 — that share is the foundation of the score.</p>
+
+  <h2><span class="num">2</span>Extra credit for the front of the fleet</h2>
+  <p>Using the raw share alone, the difference between 1st and 5th in a big fleet is almost invisible. To separate the genuine front-runners, that share is run through a curve that rewards finishing near the top more steeply than finishing mid-fleet. Winning clearly beats placing 5th, and a top-ten result clearly beats mid-pack — but it is a smooth curve, not a cutoff. There is no arbitrary line where, say, 10th place earns a bonus and 11th earns nothing.</p>
+
+  <h2><span class="num">3</span>Bigger fleets count for more</h2>
+  <p>Winning a 200-boat championship is a greater achievement than winning a 40-boat regional, so each result is weighted by fleet size. The weighting is deliberately gentle: a fleet four times larger is worth roughly twice as much, not four times as much. Without that restraint, fleet size would overwhelm everything and the ranking would simply reward whoever attended the biggest events.</p>
+
+  <h2><span class="num">4</span>A modest bump for the cornerstone events</h2>
+  <p>The Team Trials and the National Championship carry a small additional weight (Team Trials count slightly more than Nationals; every other event counts at face value). This reflects their standing as the anchors of the Optimist calendar. The bump is intentionally modest — large enough that the cornerstone events matter, small enough that they do not overwhelm a sailor's overall season.</p>
+
+  <h2><span class="num">5</span>Your best five events, averaged</h2>
+  <p>A sailor's ranking is the average of their five best results. Two deliberate choices sit behind that. <strong>Best five</strong> means one rough-weather weekend does not sink an otherwise strong season. And the scores are <strong>averaged, not added</strong> — adding them would reward whoever travels to the most regattas, turning the ranking into an attendance contest. Averaging the best five rewards sailing well, not sailing often.</p>
+
+  <h2><span class="num">6</span>Who appears, and who doesn't</h2>
+  <ul>
+    <li><strong>Qualifying:</strong> a sailor must have completed at least two ranked events to appear. Each sailor's event count is shown next to their score, so a result built on a small sample is transparent.</li>
+    <li><strong>US sailors only:</strong> the ranking lists US sailors. International competitors at these events are not ranked, but they <em>are</em> counted in fleet sizes and finishing positions — so a US sailor keeps the true result they earned against the full field.</li>
+    <li><strong>Which events count:</strong> all USODA Championship Fleet events and the Team Trials, plus a small number of major non-USODA regattas. A non-USODA event is only included if its Championship-level fleet had at least 150 boats in its most recent running. This threshold is applied without exception.</li>
+    <li><strong>Split-fleet events:</strong> where a regatta scores its Gold and Silver divisions separately, each is treated as its own event. This means the winner of a Silver division is scored as an event winner, even though they finished in the middle of the combined fleet. This is a known tradeoff of counting those divisions at all.</li>
+  </ul>
+
+  <div class="callout">
+    <strong>One honest limit.</strong> Fleet size measures how many sailors were in a fleet, not how strong they were. The ranking assumes a larger fleet was harder to win — usually true, but it cannot tell a stacked 200-boat fleet from an average one. A future version of this ranking is planned to address competitive strength directly by tracking results head-to-head over the season.
+  </div>
+
+  <div class="summary">
+    <p>In short: your finishing position as a share of the fleet, sharpened toward the front, weighted by fleet size, nudged for the cornerstone events, and averaged over your best five — so the ranking rewards sailing well rather than sailing often.</p>
+  </div>
+
+  <footer>
+    OPTI TV National Optimist Ranking · methodology last updated automatically with each ranking refresh. Questions or a correction? Reach out through the OPTI TV site.
+  </footer>
+
+</div>
+</body>
+</html>
