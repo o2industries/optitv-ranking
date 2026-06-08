@@ -1,0 +1,2748 @@
+{
+  "generated_at": "2026-06-08T23:49:39.786092+00:00",
+  "window_anchor": "2025-06-01",
+  "window_end": "2026-06-08",
+  "method": {
+    "formula": "((fleet_size - finish_position)/fleet_size)^P * 100 * sqrt(fleet_size/REF) * multiplier",
+    "placing_power": 1.5,
+    "reference_fleet": 100,
+    "best_n": 5,
+    "qualify_min_events": 2
+  },
+  "events_scored": [
+    "sunshine_state",
+    "nationals",
+    "team_trials",
+    "midwinters",
+    "atlantic_coast_gold",
+    "atlantic_coast_silver",
+    "great_lakes",
+    "gulf_coast",
+    "mid_america",
+    "midwest",
+    "new_england",
+    "new_jersey_gold",
+    "new_jersey_silver",
+    "northwest",
+    "pacific_coast",
+    "Southeast",
+    "west_coast",
+    "texas_youth",
+    "Chesapeake",
+    "orange_bowl"
+  ],
+  "rankings": [
+    {
+      "rank": 1,
+      "name": "Briggs Kossmann",
+      "ranking_score": 165.35,
+      "events_counted": 3
+    },
+    {
+      "rank": 2,
+      "name": "Constantino Conrad",
+      "ranking_score": 158.06,
+      "events_counted": 3
+    },
+    {
+      "rank": 3,
+      "name": "Walton Macpherson",
+      "ranking_score": 154.94,
+      "events_counted": 5
+    },
+    {
+      "rank": 4,
+      "name": "Morgan Rosenthal",
+      "ranking_score": 150.86,
+      "events_counted": 6
+    },
+    {
+      "rank": 5,
+      "name": "Caitlyn Flynn",
+      "ranking_score": 149.8,
+      "events_counted": 7
+    },
+    {
+      "rank": 6,
+      "name": "Maxime McCulloch",
+      "ranking_score": 149.75,
+      "events_counted": 7
+    },
+    {
+      "rank": 7,
+      "name": "Zia Ahmed",
+      "ranking_score": 147.32,
+      "events_counted": 5
+    },
+    {
+      "rank": 8,
+      "name": "Ryan Lee",
+      "ranking_score": 146.93,
+      "events_counted": 6
+    },
+    {
+      "rank": 9,
+      "name": "Samuel Gerin",
+      "ranking_score": 146.7,
+      "events_counted": 6
+    },
+    {
+      "rank": 10,
+      "name": "Jaiden Strickon",
+      "ranking_score": 144.59,
+      "events_counted": 4
+    },
+    {
+      "rank": 11,
+      "name": "Brooks Pardi",
+      "ranking_score": 142.44,
+      "events_counted": 6
+    },
+    {
+      "rank": 12,
+      "name": "Joshua Wenokur",
+      "ranking_score": 140.95,
+      "events_counted": 4
+    },
+    {
+      "rank": 13,
+      "name": "Tucker Johnson",
+      "ranking_score": 139.88,
+      "events_counted": 6
+    },
+    {
+      "rank": 14,
+      "name": "Kellan Martin",
+      "ranking_score": 139.07,
+      "events_counted": 6
+    },
+    {
+      "rank": 15,
+      "name": "Oliver Berg",
+      "ranking_score": 138.74,
+      "events_counted": 3
+    },
+    {
+      "rank": 16,
+      "name": "Levi Hibbs",
+      "ranking_score": 137.34,
+      "events_counted": 6
+    },
+    {
+      "rank": 17,
+      "name": "Audrey Roachell",
+      "ranking_score": 136.84,
+      "events_counted": 5
+    },
+    {
+      "rank": 18,
+      "name": "Christian Petersen",
+      "ranking_score": 135.27,
+      "events_counted": 3
+    },
+    {
+      "rank": 19,
+      "name": "Ivan Riano Jr",
+      "ranking_score": 133.79,
+      "events_counted": 7
+    },
+    {
+      "rank": 20,
+      "name": "Alexander Freyre",
+      "ranking_score": 133.73,
+      "events_counted": 5
+    },
+    {
+      "rank": 21,
+      "name": "Cole Parnell",
+      "ranking_score": 133.22,
+      "events_counted": 2
+    },
+    {
+      "rank": 22,
+      "name": "Rafi Ahmed",
+      "ranking_score": 131.93,
+      "events_counted": 5
+    },
+    {
+      "rank": 23,
+      "name": "Connor Cylke",
+      "ranking_score": 131.05,
+      "events_counted": 4
+    },
+    {
+      "rank": 24,
+      "name": "Thomas Weidner",
+      "ranking_score": 130.65,
+      "events_counted": 5
+    },
+    {
+      "rank": 25,
+      "name": "Daniel Skutch Tyson",
+      "ranking_score": 130.21,
+      "events_counted": 6
+    },
+    {
+      "rank": 26,
+      "name": "Jonah Watson",
+      "ranking_score": 128.02,
+      "events_counted": 7
+    },
+    {
+      "rank": 27,
+      "name": "Liam  Kandt",
+      "ranking_score": 125.12,
+      "events_counted": 2
+    },
+    {
+      "rank": 28,
+      "name": "Trey Waters",
+      "ranking_score": 125.02,
+      "events_counted": 5
+    },
+    {
+      "rank": 29,
+      "name": "Tucker Gowens",
+      "ranking_score": 124.92,
+      "events_counted": 6
+    },
+    {
+      "rank": 30,
+      "name": "Aislyn Flynn",
+      "ranking_score": 124.22,
+      "events_counted": 7
+    },
+    {
+      "rank": 31,
+      "name": "Adam Butz",
+      "ranking_score": 123.36,
+      "events_counted": 5
+    },
+    {
+      "rank": 32,
+      "name": "Charles Wesley Hoffman",
+      "ranking_score": 123.27,
+      "events_counted": 2
+    },
+    {
+      "rank": 33,
+      "name": "Dalton Cellamare",
+      "ranking_score": 122.25,
+      "events_counted": 5
+    },
+    {
+      "rank": 34,
+      "name": "Camden Kiely",
+      "ranking_score": 121.89,
+      "events_counted": 2
+    },
+    {
+      "rank": 35,
+      "name": "Storm Husky Kim",
+      "ranking_score": 121.62,
+      "events_counted": 6
+    },
+    {
+      "rank": 36,
+      "name": "Marshall Rodriguez",
+      "ranking_score": 121.19,
+      "events_counted": 3
+    },
+    {
+      "rank": 37,
+      "name": "Wesley Johnson",
+      "ranking_score": 120.9,
+      "events_counted": 6
+    },
+    {
+      "rank": 38,
+      "name": "Jane Sykes",
+      "ranking_score": 119.51,
+      "events_counted": 5
+    },
+    {
+      "rank": 39,
+      "name": "Tyler Richards",
+      "ranking_score": 119.17,
+      "events_counted": 2
+    },
+    {
+      "rank": 40,
+      "name": "Charles Wesley Hoffman",
+      "ranking_score": 118.5,
+      "events_counted": 3
+    },
+    {
+      "rank": 41,
+      "name": "Henry Bolz",
+      "ranking_score": 118.03,
+      "events_counted": 3
+    },
+    {
+      "rank": 42,
+      "name": "Theodore  Hutler IV",
+      "ranking_score": 117.66,
+      "events_counted": 2
+    },
+    {
+      "rank": 43,
+      "name": "Francisco Don",
+      "ranking_score": 117.58,
+      "events_counted": 5
+    },
+    {
+      "rank": 44,
+      "name": "Felicia Bland",
+      "ranking_score": 117.5,
+      "events_counted": 2
+    },
+    {
+      "rank": 45,
+      "name": "Olivia Weber",
+      "ranking_score": 116.51,
+      "events_counted": 7
+    },
+    {
+      "rank": 46,
+      "name": "Casey Moure",
+      "ranking_score": 115.84,
+      "events_counted": 6
+    },
+    {
+      "rank": 47,
+      "name": "Hayden Spamer",
+      "ranking_score": 113.19,
+      "events_counted": 2
+    },
+    {
+      "rank": 48,
+      "name": "Alec Voss Del Vecchio",
+      "ranking_score": 112.89,
+      "events_counted": 5
+    },
+    {
+      "rank": 49,
+      "name": "Sterling Sawyer",
+      "ranking_score": 112.86,
+      "events_counted": 7
+    },
+    {
+      "rank": 50,
+      "name": "Olympia McCulloch",
+      "ranking_score": 112.67,
+      "events_counted": 7
+    },
+    {
+      "rank": 51,
+      "name": "Marshall Rodriguez",
+      "ranking_score": 112.2,
+      "events_counted": 2
+    },
+    {
+      "rank": 52,
+      "name": "Daniel Moure",
+      "ranking_score": 111.72,
+      "events_counted": 6
+    },
+    {
+      "rank": 53,
+      "name": "Hayden Pardi",
+      "ranking_score": 109.91,
+      "events_counted": 6
+    },
+    {
+      "rank": 54,
+      "name": "David Porzecanski",
+      "ranking_score": 109.49,
+      "events_counted": 3
+    },
+    {
+      "rank": 55,
+      "name": "Samantha Feinstone",
+      "ranking_score": 108.89,
+      "events_counted": 6
+    },
+    {
+      "rank": 56,
+      "name": "Quillin Moran",
+      "ranking_score": 108.17,
+      "events_counted": 7
+    },
+    {
+      "rank": 57,
+      "name": "Christian Freyre",
+      "ranking_score": 107.44,
+      "events_counted": 2
+    },
+    {
+      "rank": 58,
+      "name": "Raymond  Vasile",
+      "ranking_score": 107.05,
+      "events_counted": 3
+    },
+    {
+      "rank": 59,
+      "name": "Thomas Alexopoulos",
+      "ranking_score": 106.88,
+      "events_counted": 6
+    },
+    {
+      "rank": 60,
+      "name": "Byron  Smith",
+      "ranking_score": 106.61,
+      "events_counted": 3
+    },
+    {
+      "rank": 61,
+      "name": "Bradley Welch",
+      "ranking_score": 105.27,
+      "events_counted": 4
+    },
+    {
+      "rank": 62,
+      "name": "Willis Cantey",
+      "ranking_score": 104.43,
+      "events_counted": 3
+    },
+    {
+      "rank": 63,
+      "name": "Ethan Cox",
+      "ranking_score": 103.65,
+      "events_counted": 3
+    },
+    {
+      "rank": 64,
+      "name": "Landon Chin",
+      "ranking_score": 102.69,
+      "events_counted": 6
+    },
+    {
+      "rank": 65,
+      "name": "Benjamin Qualshie",
+      "ranking_score": 102.39,
+      "events_counted": 2
+    },
+    {
+      "rank": 66,
+      "name": "Brooks Crawford",
+      "ranking_score": 101.06,
+      "events_counted": 7
+    },
+    {
+      "rank": 67,
+      "name": "Jackson Jagusztyn",
+      "ranking_score": 100.54,
+      "events_counted": 5
+    },
+    {
+      "rank": 68,
+      "name": "Griffin Glennon",
+      "ranking_score": 100.41,
+      "events_counted": 3
+    },
+    {
+      "rank": 69,
+      "name": "Xander  Hartfield",
+      "ranking_score": 100.33,
+      "events_counted": 3
+    },
+    {
+      "rank": 70,
+      "name": "Mason Lim",
+      "ranking_score": 100.23,
+      "events_counted": 6
+    },
+    {
+      "rank": 71,
+      "name": "Vincent Mulcahy",
+      "ranking_score": 100.1,
+      "events_counted": 5
+    },
+    {
+      "rank": 72,
+      "name": "Sebastien  Silvin",
+      "ranking_score": 99.88,
+      "events_counted": 4
+    },
+    {
+      "rank": 73,
+      "name": "Parker Sandman",
+      "ranking_score": 99.6,
+      "events_counted": 5
+    },
+    {
+      "rank": 74,
+      "name": "Amelia  Palmisciano",
+      "ranking_score": 99.25,
+      "events_counted": 2
+    },
+    {
+      "rank": 75,
+      "name": "Arman Guler",
+      "ranking_score": 98.07,
+      "events_counted": 3
+    },
+    {
+      "rank": 76,
+      "name": "Steve Nguyen",
+      "ranking_score": 97.88,
+      "events_counted": 8
+    },
+    {
+      "rank": 77,
+      "name": "Cameron Bellina",
+      "ranking_score": 97.79,
+      "events_counted": 6
+    },
+    {
+      "rank": 78,
+      "name": "Alanea Urbom",
+      "ranking_score": 97.44,
+      "events_counted": 5
+    },
+    {
+      "rank": 79,
+      "name": "Clara Reali",
+      "ranking_score": 96.92,
+      "events_counted": 7
+    },
+    {
+      "rank": 80,
+      "name": "Felipe Abrunhosa",
+      "ranking_score": 96.75,
+      "events_counted": 6
+    },
+    {
+      "rank": 81,
+      "name": "George Wyatt Tyson",
+      "ranking_score": 96.66,
+      "events_counted": 4
+    },
+    {
+      "rank": 82,
+      "name": "Scofield Mclean",
+      "ranking_score": 96.51,
+      "events_counted": 3
+    },
+    {
+      "rank": 83,
+      "name": "Lap Yan Nathaniel Cheung",
+      "ranking_score": 96.49,
+      "events_counted": 5
+    },
+    {
+      "rank": 84,
+      "name": "Ryan Breck",
+      "ranking_score": 96.46,
+      "events_counted": 5
+    },
+    {
+      "rank": 85,
+      "name": "Robert Haneberg",
+      "ranking_score": 96.34,
+      "events_counted": 6
+    },
+    {
+      "rank": 86,
+      "name": "Chloe Dodd",
+      "ranking_score": 95.82,
+      "events_counted": 5
+    },
+    {
+      "rank": 87,
+      "name": "Marius Garbayo Ante",
+      "ranking_score": 95.54,
+      "events_counted": 7
+    },
+    {
+      "rank": 88,
+      "name": "Hayden Zieger",
+      "ranking_score": 95.31,
+      "events_counted": 5
+    },
+    {
+      "rank": 89,
+      "name": "Sam Von Schwarz",
+      "ranking_score": 93.92,
+      "events_counted": 5
+    },
+    {
+      "rank": 90,
+      "name": "Lin Zhou",
+      "ranking_score": 92.97,
+      "events_counted": 2
+    },
+    {
+      "rank": 91,
+      "name": "Alejandro Galavis",
+      "ranking_score": 92.69,
+      "events_counted": 4
+    },
+    {
+      "rank": 92,
+      "name": "Catherine Dilkes",
+      "ranking_score": 92.68,
+      "events_counted": 8
+    },
+    {
+      "rank": 93,
+      "name": "Giorgio Piovesana",
+      "ranking_score": 92.4,
+      "events_counted": 3
+    },
+    {
+      "rank": 94,
+      "name": "Christian Freyre",
+      "ranking_score": 92.31,
+      "events_counted": 3
+    },
+    {
+      "rank": 95,
+      "name": "Rowan Michel",
+      "ranking_score": 91.83,
+      "events_counted": 6
+    },
+    {
+      "rank": 96,
+      "name": "Myer Macpherson",
+      "ranking_score": 91.79,
+      "events_counted": 5
+    },
+    {
+      "rank": 97,
+      "name": "Ethan Welch",
+      "ranking_score": 91.51,
+      "events_counted": 4
+    },
+    {
+      "rank": 98,
+      "name": "Will Feld",
+      "ranking_score": 91.22,
+      "events_counted": 6
+    },
+    {
+      "rank": 99,
+      "name": "Nathan Pulido",
+      "ranking_score": 91.06,
+      "events_counted": 6
+    },
+    {
+      "rank": 100,
+      "name": "Hadassah Pendrak",
+      "ranking_score": 91.05,
+      "events_counted": 5
+    },
+    {
+      "rank": 101,
+      "name": "George Wyatt Tyson",
+      "ranking_score": 90.94,
+      "events_counted": 2
+    },
+    {
+      "rank": 102,
+      "name": "Heidi Sanchez",
+      "ranking_score": 90.67,
+      "events_counted": 5
+    },
+    {
+      "rank": 103,
+      "name": "Benjamin Richards",
+      "ranking_score": 89.99,
+      "events_counted": 3
+    },
+    {
+      "rank": 104,
+      "name": "Vivienne Barrios",
+      "ranking_score": 89.68,
+      "events_counted": 5
+    },
+    {
+      "rank": 105,
+      "name": "Summer Mykols",
+      "ranking_score": 89.39,
+      "events_counted": 4
+    },
+    {
+      "rank": 106,
+      "name": "Adrian Gerber",
+      "ranking_score": 89.19,
+      "events_counted": 2
+    },
+    {
+      "rank": 107,
+      "name": "Vicky Van Berkel",
+      "ranking_score": 88.69,
+      "events_counted": 3
+    },
+    {
+      "rank": 108,
+      "name": "Jack  Van Orden",
+      "ranking_score": 87.99,
+      "events_counted": 8
+    },
+    {
+      "rank": 109,
+      "name": "Conner Blouin",
+      "ranking_score": 86.08,
+      "events_counted": 4
+    },
+    {
+      "rank": 110,
+      "name": "Will Kaiser",
+      "ranking_score": 85.41,
+      "events_counted": 2
+    },
+    {
+      "rank": 111,
+      "name": "Matteo Sarmento Biagi Melo",
+      "ranking_score": 85.11,
+      "events_counted": 3
+    },
+    {
+      "rank": 112,
+      "name": "Harrison Doyle",
+      "ranking_score": 85.0,
+      "events_counted": 3
+    },
+    {
+      "rank": 113,
+      "name": "Clara Wetzel",
+      "ranking_score": 84.43,
+      "events_counted": 3
+    },
+    {
+      "rank": 114,
+      "name": "Eliot Fox",
+      "ranking_score": 83.56,
+      "events_counted": 7
+    },
+    {
+      "rank": 115,
+      "name": "Walker Neumann",
+      "ranking_score": 82.93,
+      "events_counted": 2
+    },
+    {
+      "rank": 116,
+      "name": "Georgia  Haspel",
+      "ranking_score": 81.17,
+      "events_counted": 2
+    },
+    {
+      "rank": 117,
+      "name": "David  Fantarella",
+      "ranking_score": 81.12,
+      "events_counted": 5
+    },
+    {
+      "rank": 118,
+      "name": "George Geye",
+      "ranking_score": 80.47,
+      "events_counted": 2
+    },
+    {
+      "rank": 119,
+      "name": "Everett Blouin",
+      "ranking_score": 80.39,
+      "events_counted": 4
+    },
+    {
+      "rank": 120,
+      "name": "Cc Alamgir",
+      "ranking_score": 79.76,
+      "events_counted": 6
+    },
+    {
+      "rank": 121,
+      "name": "Theodore Hild",
+      "ranking_score": 79.38,
+      "events_counted": 5
+    },
+    {
+      "rank": 122,
+      "name": "Eloise Chadwick",
+      "ranking_score": 79.36,
+      "events_counted": 7
+    },
+    {
+      "rank": 123,
+      "name": "Michael Mendelblatt",
+      "ranking_score": 77.38,
+      "events_counted": 5
+    },
+    {
+      "rank": 124,
+      "name": "Henry Latell",
+      "ranking_score": 76.72,
+      "events_counted": 2
+    },
+    {
+      "rank": 125,
+      "name": "Morgan Bacon",
+      "ranking_score": 76.27,
+      "events_counted": 3
+    },
+    {
+      "rank": 126,
+      "name": "Max Yates",
+      "ranking_score": 75.85,
+      "events_counted": 3
+    },
+    {
+      "rank": 127,
+      "name": "Finn Kroeker",
+      "ranking_score": 75.49,
+      "events_counted": 2
+    },
+    {
+      "rank": 128,
+      "name": "William Weidner",
+      "ranking_score": 75.03,
+      "events_counted": 5
+    },
+    {
+      "rank": 129,
+      "name": "Lizzie  Lovell",
+      "ranking_score": 74.29,
+      "events_counted": 6
+    },
+    {
+      "rank": 130,
+      "name": "Jacqueline Smith",
+      "ranking_score": 73.9,
+      "events_counted": 3
+    },
+    {
+      "rank": 131,
+      "name": "Frances Smith",
+      "ranking_score": 73.43,
+      "events_counted": 6
+    },
+    {
+      "rank": 132,
+      "name": "Savannah Fraind",
+      "ranking_score": 73.25,
+      "events_counted": 4
+    },
+    {
+      "rank": 133,
+      "name": "Bryce  Anderson",
+      "ranking_score": 72.84,
+      "events_counted": 2
+    },
+    {
+      "rank": 134,
+      "name": "Eli Paulsen",
+      "ranking_score": 72.82,
+      "events_counted": 5
+    },
+    {
+      "rank": 135,
+      "name": "Finn Munro",
+      "ranking_score": 72.79,
+      "events_counted": 7
+    },
+    {
+      "rank": 136,
+      "name": "Bryce  Anderson",
+      "ranking_score": 72.12,
+      "events_counted": 2
+    },
+    {
+      "rank": 137,
+      "name": "Peter Shingledecker",
+      "ranking_score": 72.07,
+      "events_counted": 6
+    },
+    {
+      "rank": 138,
+      "name": "Mathew Castro",
+      "ranking_score": 71.75,
+      "events_counted": 6
+    },
+    {
+      "rank": 139,
+      "name": "Frank Krivan",
+      "ranking_score": 71.74,
+      "events_counted": 6
+    },
+    {
+      "rank": 140,
+      "name": "Liam Donaldson",
+      "ranking_score": 71.7,
+      "events_counted": 4
+    },
+    {
+      "rank": 141,
+      "name": "Rogan Meade",
+      "ranking_score": 71.27,
+      "events_counted": 4
+    },
+    {
+      "rank": 142,
+      "name": "Jesse Hanenburg",
+      "ranking_score": 70.74,
+      "events_counted": 5
+    },
+    {
+      "rank": 143,
+      "name": "Christopher Fulton",
+      "ranking_score": 70.18,
+      "events_counted": 7
+    },
+    {
+      "rank": 144,
+      "name": "Wilfred Bodiley",
+      "ranking_score": 69.16,
+      "events_counted": 3
+    },
+    {
+      "rank": 145,
+      "name": "Wylin Everitt",
+      "ranking_score": 69.14,
+      "events_counted": 6
+    },
+    {
+      "rank": 146,
+      "name": "Oliver Butz",
+      "ranking_score": 69.01,
+      "events_counted": 5
+    },
+    {
+      "rank": 147,
+      "name": "Robinson Fox",
+      "ranking_score": 68.96,
+      "events_counted": 7
+    },
+    {
+      "rank": 148,
+      "name": "Allison Meade",
+      "ranking_score": 68.14,
+      "events_counted": 4
+    },
+    {
+      "rank": 149,
+      "name": "Micah Wahba",
+      "ranking_score": 68.03,
+      "events_counted": 3
+    },
+    {
+      "rank": 150,
+      "name": "Molly Kern",
+      "ranking_score": 67.7,
+      "events_counted": 4
+    },
+    {
+      "rank": 151,
+      "name": "Jack Thaon D'Arnoldi",
+      "ranking_score": 67.51,
+      "events_counted": 7
+    },
+    {
+      "rank": 152,
+      "name": "David  Fantarella",
+      "ranking_score": 67.32,
+      "events_counted": 2
+    },
+    {
+      "rank": 153,
+      "name": "Xavier Assis",
+      "ranking_score": 66.78,
+      "events_counted": 4
+    },
+    {
+      "rank": 154,
+      "name": "Max Hess",
+      "ranking_score": 66.71,
+      "events_counted": 5
+    },
+    {
+      "rank": 155,
+      "name": "Ignacio Mu\u00f1oz Montes",
+      "ranking_score": 65.97,
+      "events_counted": 6
+    },
+    {
+      "rank": 156,
+      "name": "Colton \"C\" Hillel",
+      "ranking_score": 65.9,
+      "events_counted": 3
+    },
+    {
+      "rank": 157,
+      "name": "Gabriel Ryan",
+      "ranking_score": 65.78,
+      "events_counted": 3
+    },
+    {
+      "rank": 158,
+      "name": "Dashiell Stephens",
+      "ranking_score": 65.23,
+      "events_counted": 2
+    },
+    {
+      "rank": 159,
+      "name": "Archie Dove",
+      "ranking_score": 64.52,
+      "events_counted": 6
+    },
+    {
+      "rank": 160,
+      "name": "Eva Palmisciano",
+      "ranking_score": 64.25,
+      "events_counted": 3
+    },
+    {
+      "rank": 161,
+      "name": "Patrick Palumbo",
+      "ranking_score": 63.96,
+      "events_counted": 2
+    },
+    {
+      "rank": 162,
+      "name": "Sofia  Fantarella",
+      "ranking_score": 63.83,
+      "events_counted": 2
+    },
+    {
+      "rank": 163,
+      "name": "Everett Pierce",
+      "ranking_score": 63.58,
+      "events_counted": 6
+    },
+    {
+      "rank": 164,
+      "name": "Dylan McLean",
+      "ranking_score": 63.49,
+      "events_counted": 3
+    },
+    {
+      "rank": 165,
+      "name": "Molly Kern",
+      "ranking_score": 63.47,
+      "events_counted": 2
+    },
+    {
+      "rank": 166,
+      "name": "Finn Powers",
+      "ranking_score": 63.1,
+      "events_counted": 6
+    },
+    {
+      "rank": 167,
+      "name": "Aubrey Marino",
+      "ranking_score": 62.58,
+      "events_counted": 5
+    },
+    {
+      "rank": 168,
+      "name": "Aleksandr Wisniewski",
+      "ranking_score": 61.61,
+      "events_counted": 4
+    },
+    {
+      "rank": 169,
+      "name": "Marshall Rodriguez",
+      "ranking_score": 61.61,
+      "events_counted": 2
+    },
+    {
+      "rank": 170,
+      "name": "Teddy Sahadi",
+      "ranking_score": 61.07,
+      "events_counted": 6
+    },
+    {
+      "rank": 171,
+      "name": "Arthur Yepes",
+      "ranking_score": 60.82,
+      "events_counted": 5
+    },
+    {
+      "rank": 172,
+      "name": "James  Bell",
+      "ranking_score": 60.76,
+      "events_counted": 5
+    },
+    {
+      "rank": 173,
+      "name": "William \"Liam\" Moore",
+      "ranking_score": 60.75,
+      "events_counted": 4
+    },
+    {
+      "rank": 174,
+      "name": "Hayden Spamer",
+      "ranking_score": 60.32,
+      "events_counted": 5
+    },
+    {
+      "rank": 175,
+      "name": "Alex  Maier",
+      "ranking_score": 60.2,
+      "events_counted": 2
+    },
+    {
+      "rank": 176,
+      "name": "Weston  Bowie",
+      "ranking_score": 60.0,
+      "events_counted": 5
+    },
+    {
+      "rank": 177,
+      "name": "Briggs Siewert",
+      "ranking_score": 59.78,
+      "events_counted": 4
+    },
+    {
+      "rank": 178,
+      "name": "Madeleine McMahan",
+      "ranking_score": 59.25,
+      "events_counted": 6
+    },
+    {
+      "rank": 179,
+      "name": "Eddie Danish",
+      "ranking_score": 59.2,
+      "events_counted": 7
+    },
+    {
+      "rank": 180,
+      "name": "Edmund Rutledge",
+      "ranking_score": 59.16,
+      "events_counted": 3
+    },
+    {
+      "rank": 181,
+      "name": "Sebastian Crofton",
+      "ranking_score": 58.04,
+      "events_counted": 6
+    },
+    {
+      "rank": 182,
+      "name": "Justin Callahan",
+      "ranking_score": 57.11,
+      "events_counted": 2
+    },
+    {
+      "rank": 183,
+      "name": "Hadley Slusarz",
+      "ranking_score": 56.94,
+      "events_counted": 3
+    },
+    {
+      "rank": 184,
+      "name": "Soleil  Sonner",
+      "ranking_score": 56.94,
+      "events_counted": 5
+    },
+    {
+      "rank": 185,
+      "name": "Benjamin Hooker-Poletti",
+      "ranking_score": 56.38,
+      "events_counted": 3
+    },
+    {
+      "rank": 186,
+      "name": "Gene Williams",
+      "ranking_score": 56.13,
+      "events_counted": 3
+    },
+    {
+      "rank": 187,
+      "name": "Mathias  Urban",
+      "ranking_score": 55.84,
+      "events_counted": 3
+    },
+    {
+      "rank": 188,
+      "name": "Annabelle Robicheaux",
+      "ranking_score": 55.73,
+      "events_counted": 5
+    },
+    {
+      "rank": 189,
+      "name": "Isla Chin",
+      "ranking_score": 55.62,
+      "events_counted": 7
+    },
+    {
+      "rank": 190,
+      "name": "Derek Curington",
+      "ranking_score": 55.12,
+      "events_counted": 3
+    },
+    {
+      "rank": 191,
+      "name": "Hayden Senne",
+      "ranking_score": 54.86,
+      "events_counted": 6
+    },
+    {
+      "rank": 192,
+      "name": "Margot McGeagh",
+      "ranking_score": 54.85,
+      "events_counted": 2
+    },
+    {
+      "rank": 193,
+      "name": "Vasil Kurtev",
+      "ranking_score": 54.65,
+      "events_counted": 4
+    },
+    {
+      "rank": 194,
+      "name": "Colton Rapalje",
+      "ranking_score": 53.86,
+      "events_counted": 2
+    },
+    {
+      "rank": 195,
+      "name": "Arthur Haneberg",
+      "ranking_score": 53.22,
+      "events_counted": 5
+    },
+    {
+      "rank": 196,
+      "name": "Carson Ning",
+      "ranking_score": 53.17,
+      "events_counted": 5
+    },
+    {
+      "rank": 197,
+      "name": "Oliver Kehoe",
+      "ranking_score": 52.95,
+      "events_counted": 6
+    },
+    {
+      "rank": 198,
+      "name": "Ty Nichols",
+      "ranking_score": 52.84,
+      "events_counted": 3
+    },
+    {
+      "rank": 199,
+      "name": "Jacob Norton",
+      "ranking_score": 52.65,
+      "events_counted": 4
+    },
+    {
+      "rank": 200,
+      "name": "Maxwell Jones",
+      "ranking_score": 52.5,
+      "events_counted": 2
+    },
+    {
+      "rank": 201,
+      "name": "Sterling Brown",
+      "ranking_score": 52.17,
+      "events_counted": 2
+    },
+    {
+      "rank": 202,
+      "name": "Hudson Cavell",
+      "ranking_score": 51.55,
+      "events_counted": 5
+    },
+    {
+      "rank": 203,
+      "name": "Trent Richards",
+      "ranking_score": 50.85,
+      "events_counted": 3
+    },
+    {
+      "rank": 204,
+      "name": "Heather Macnair",
+      "ranking_score": 50.78,
+      "events_counted": 2
+    },
+    {
+      "rank": 205,
+      "name": "Pax Conway",
+      "ranking_score": 50.64,
+      "events_counted": 2
+    },
+    {
+      "rank": 206,
+      "name": "Maxwell Jones",
+      "ranking_score": 50.61,
+      "events_counted": 2
+    },
+    {
+      "rank": 207,
+      "name": "Justin Callahan",
+      "ranking_score": 50.16,
+      "events_counted": 2
+    },
+    {
+      "rank": 208,
+      "name": "Charlie Long",
+      "ranking_score": 49.39,
+      "events_counted": 5
+    },
+    {
+      "rank": 209,
+      "name": "James Hillyer",
+      "ranking_score": 49.38,
+      "events_counted": 3
+    },
+    {
+      "rank": 210,
+      "name": "William Lowndes",
+      "ranking_score": 48.88,
+      "events_counted": 5
+    },
+    {
+      "rank": 211,
+      "name": "Jayden Walker",
+      "ranking_score": 48.72,
+      "events_counted": 2
+    },
+    {
+      "rank": 212,
+      "name": "Alexandra Simonds",
+      "ranking_score": 48.62,
+      "events_counted": 5
+    },
+    {
+      "rank": 213,
+      "name": "Drayke Glass",
+      "ranking_score": 48.27,
+      "events_counted": 4
+    },
+    {
+      "rank": 214,
+      "name": "Adrien Dearmon",
+      "ranking_score": 48.06,
+      "events_counted": 3
+    },
+    {
+      "rank": 215,
+      "name": "Surina Kelchner",
+      "ranking_score": 48.05,
+      "events_counted": 4
+    },
+    {
+      "rank": 216,
+      "name": "Gunnar Goethert",
+      "ranking_score": 47.74,
+      "events_counted": 3
+    },
+    {
+      "rank": 217,
+      "name": "Tristan Gerber",
+      "ranking_score": 47.67,
+      "events_counted": 5
+    },
+    {
+      "rank": 218,
+      "name": "Victoria Don",
+      "ranking_score": 47.64,
+      "events_counted": 2
+    },
+    {
+      "rank": 219,
+      "name": "Cyrus Garrett",
+      "ranking_score": 47.48,
+      "events_counted": 2
+    },
+    {
+      "rank": 220,
+      "name": "Roscoe Searcy",
+      "ranking_score": 47.34,
+      "events_counted": 3
+    },
+    {
+      "rank": 221,
+      "name": "Patrick Rodriguez",
+      "ranking_score": 47.33,
+      "events_counted": 4
+    },
+    {
+      "rank": 222,
+      "name": "Maxton Damiano",
+      "ranking_score": 47.23,
+      "events_counted": 2
+    },
+    {
+      "rank": 223,
+      "name": "Tyler Hartswell",
+      "ranking_score": 47.11,
+      "events_counted": 2
+    },
+    {
+      "rank": 224,
+      "name": "Bryce Hryniewicz",
+      "ranking_score": 47.09,
+      "events_counted": 2
+    },
+    {
+      "rank": 225,
+      "name": "Aria Mendoza",
+      "ranking_score": 46.46,
+      "events_counted": 2
+    },
+    {
+      "rank": 226,
+      "name": "Klaikangwon  Pibulpanijkarn",
+      "ranking_score": 46.45,
+      "events_counted": 2
+    },
+    {
+      "rank": 227,
+      "name": "Will Kaiser",
+      "ranking_score": 46.38,
+      "events_counted": 6
+    },
+    {
+      "rank": 228,
+      "name": "Kai Bucklen",
+      "ranking_score": 46.12,
+      "events_counted": 2
+    },
+    {
+      "rank": 229,
+      "name": "Dylan Strickon",
+      "ranking_score": 45.9,
+      "events_counted": 5
+    },
+    {
+      "rank": 230,
+      "name": "Hayden Spamer",
+      "ranking_score": 45.71,
+      "events_counted": 3
+    },
+    {
+      "rank": 231,
+      "name": "Miles Aguiar",
+      "ranking_score": 45.54,
+      "events_counted": 3
+    },
+    {
+      "rank": 232,
+      "name": "Raul Julian Ramos",
+      "ranking_score": 45.41,
+      "events_counted": 6
+    },
+    {
+      "rank": 233,
+      "name": "Victoria  Rodriguez",
+      "ranking_score": 45.37,
+      "events_counted": 2
+    },
+    {
+      "rank": 234,
+      "name": "Sasha Shortov",
+      "ranking_score": 45.24,
+      "events_counted": 3
+    },
+    {
+      "rank": 235,
+      "name": "Evelyn Hyland",
+      "ranking_score": 44.16,
+      "events_counted": 4
+    },
+    {
+      "rank": 236,
+      "name": "Finley Lambert",
+      "ranking_score": 44.1,
+      "events_counted": 3
+    },
+    {
+      "rank": 237,
+      "name": "Morgan Clarke",
+      "ranking_score": 44.03,
+      "events_counted": 5
+    },
+    {
+      "rank": 238,
+      "name": "Virginia Moore",
+      "ranking_score": 43.77,
+      "events_counted": 3
+    },
+    {
+      "rank": 239,
+      "name": "Marco Ancona",
+      "ranking_score": 43.39,
+      "events_counted": 2
+    },
+    {
+      "rank": 240,
+      "name": "Chase Stephens",
+      "ranking_score": 43.21,
+      "events_counted": 2
+    },
+    {
+      "rank": 241,
+      "name": "Amy Mackenroth",
+      "ranking_score": 43.05,
+      "events_counted": 2
+    },
+    {
+      "rank": 242,
+      "name": "Natalie Buchner",
+      "ranking_score": 41.56,
+      "events_counted": 3
+    },
+    {
+      "rank": 243,
+      "name": "Mia Diab",
+      "ranking_score": 41.34,
+      "events_counted": 2
+    },
+    {
+      "rank": 244,
+      "name": "Sage Dovbniak",
+      "ranking_score": 40.71,
+      "events_counted": 6
+    },
+    {
+      "rank": 245,
+      "name": "Patrick Rodriguez",
+      "ranking_score": 40.56,
+      "events_counted": 2
+    },
+    {
+      "rank": 246,
+      "name": "Hadden Brinegar",
+      "ranking_score": 40.26,
+      "events_counted": 3
+    },
+    {
+      "rank": 247,
+      "name": "Rosemary Canada",
+      "ranking_score": 39.93,
+      "events_counted": 2
+    },
+    {
+      "rank": 248,
+      "name": "Alexander Silva",
+      "ranking_score": 39.87,
+      "events_counted": 4
+    },
+    {
+      "rank": 249,
+      "name": "Ava Crotty",
+      "ranking_score": 39.79,
+      "events_counted": 4
+    },
+    {
+      "rank": 250,
+      "name": "Pierre Worms",
+      "ranking_score": 39.67,
+      "events_counted": 5
+    },
+    {
+      "rank": 251,
+      "name": "Mia Diab",
+      "ranking_score": 39.44,
+      "events_counted": 4
+    },
+    {
+      "rank": 252,
+      "name": "Benjamin Qualshie",
+      "ranking_score": 39.22,
+      "events_counted": 2
+    },
+    {
+      "rank": 253,
+      "name": "Patrick Rodriguez",
+      "ranking_score": 38.75,
+      "events_counted": 2
+    },
+    {
+      "rank": 254,
+      "name": "Abigail Breen",
+      "ranking_score": 38.53,
+      "events_counted": 4
+    },
+    {
+      "rank": 255,
+      "name": "Anja \u00c1lvarez Gomez",
+      "ranking_score": 38.52,
+      "events_counted": 2
+    },
+    {
+      "rank": 256,
+      "name": "Gabriella Ferraro Oltramari",
+      "ranking_score": 38.44,
+      "events_counted": 2
+    },
+    {
+      "rank": 257,
+      "name": "Bennett Hirsch",
+      "ranking_score": 38.18,
+      "events_counted": 4
+    },
+    {
+      "rank": 258,
+      "name": "Piper Roberts",
+      "ranking_score": 37.81,
+      "events_counted": 4
+    },
+    {
+      "rank": 259,
+      "name": "Colton Hillel",
+      "ranking_score": 37.79,
+      "events_counted": 2
+    },
+    {
+      "rank": 260,
+      "name": "Anna Kennedy",
+      "ranking_score": 37.08,
+      "events_counted": 3
+    },
+    {
+      "rank": 261,
+      "name": "Rider Ehrlich",
+      "ranking_score": 36.65,
+      "events_counted": 2
+    },
+    {
+      "rank": 262,
+      "name": "Benjamin Lima",
+      "ranking_score": 36.27,
+      "events_counted": 2
+    },
+    {
+      "rank": 263,
+      "name": "Tyler Mazzeo",
+      "ranking_score": 35.92,
+      "events_counted": 6
+    },
+    {
+      "rank": 264,
+      "name": "Ty Nichols",
+      "ranking_score": 35.91,
+      "events_counted": 2
+    },
+    {
+      "rank": 265,
+      "name": "Joseph Callahan",
+      "ranking_score": 35.61,
+      "events_counted": 4
+    },
+    {
+      "rank": 266,
+      "name": "Leah Goldman",
+      "ranking_score": 35.59,
+      "events_counted": 6
+    },
+    {
+      "rank": 267,
+      "name": "Rosalyn Maher",
+      "ranking_score": 35.51,
+      "events_counted": 6
+    },
+    {
+      "rank": 268,
+      "name": "Regan Irion",
+      "ranking_score": 35.43,
+      "events_counted": 4
+    },
+    {
+      "rank": 269,
+      "name": "Annie Moore",
+      "ranking_score": 35.42,
+      "events_counted": 7
+    },
+    {
+      "rank": 270,
+      "name": "Max Bachmann",
+      "ranking_score": 35.31,
+      "events_counted": 4
+    },
+    {
+      "rank": 271,
+      "name": "William Bowman",
+      "ranking_score": 34.79,
+      "events_counted": 3
+    },
+    {
+      "rank": 272,
+      "name": "Van  Bekelja",
+      "ranking_score": 34.78,
+      "events_counted": 2
+    },
+    {
+      "rank": 273,
+      "name": "Bryce Hryniewicz",
+      "ranking_score": 34.63,
+      "events_counted": 2
+    },
+    {
+      "rank": 274,
+      "name": "Wesley McKenney",
+      "ranking_score": 34.41,
+      "events_counted": 2
+    },
+    {
+      "rank": 275,
+      "name": "Zachary Whitton",
+      "ranking_score": 34.21,
+      "events_counted": 5
+    },
+    {
+      "rank": 276,
+      "name": "Nicholas Wurster",
+      "ranking_score": 34.09,
+      "events_counted": 2
+    },
+    {
+      "rank": 277,
+      "name": "Dov Mashav",
+      "ranking_score": 33.96,
+      "events_counted": 2
+    },
+    {
+      "rank": 278,
+      "name": "Pierce Turner",
+      "ranking_score": 33.94,
+      "events_counted": 2
+    },
+    {
+      "rank": 279,
+      "name": "Grant  Munder",
+      "ranking_score": 33.94,
+      "events_counted": 2
+    },
+    {
+      "rank": 280,
+      "name": "Ellen  Wetzel",
+      "ranking_score": 33.93,
+      "events_counted": 3
+    },
+    {
+      "rank": 281,
+      "name": "Noah Bellos",
+      "ranking_score": 33.87,
+      "events_counted": 3
+    },
+    {
+      "rank": 282,
+      "name": "Shirley Ning",
+      "ranking_score": 33.67,
+      "events_counted": 3
+    },
+    {
+      "rank": 283,
+      "name": "Mia Yazici",
+      "ranking_score": 33.18,
+      "events_counted": 3
+    },
+    {
+      "rank": 284,
+      "name": "Clara Bianchi",
+      "ranking_score": 32.92,
+      "events_counted": 4
+    },
+    {
+      "rank": 285,
+      "name": "Harper Swezea",
+      "ranking_score": 32.78,
+      "events_counted": 2
+    },
+    {
+      "rank": 286,
+      "name": "Felicia Karlsson Orn",
+      "ranking_score": 32.69,
+      "events_counted": 3
+    },
+    {
+      "rank": 287,
+      "name": "Roselyn Chang",
+      "ranking_score": 32.01,
+      "events_counted": 3
+    },
+    {
+      "rank": 288,
+      "name": "Ezekiel Beauchamp",
+      "ranking_score": 31.86,
+      "events_counted": 3
+    },
+    {
+      "rank": 289,
+      "name": "Gabriel Jiang",
+      "ranking_score": 31.86,
+      "events_counted": 2
+    },
+    {
+      "rank": 290,
+      "name": "Todd  Van Tol",
+      "ranking_score": 31.43,
+      "events_counted": 3
+    },
+    {
+      "rank": 291,
+      "name": "Sullivan Reznik",
+      "ranking_score": 31.42,
+      "events_counted": 4
+    },
+    {
+      "rank": 292,
+      "name": "Benjamin Taylor",
+      "ranking_score": 31.34,
+      "events_counted": 2
+    },
+    {
+      "rank": 293,
+      "name": "Anneka Mertes",
+      "ranking_score": 31.3,
+      "events_counted": 2
+    },
+    {
+      "rank": 294,
+      "name": "Henry Vandamme",
+      "ranking_score": 31.24,
+      "events_counted": 3
+    },
+    {
+      "rank": 295,
+      "name": "Colton Rapalje",
+      "ranking_score": 31.11,
+      "events_counted": 3
+    },
+    {
+      "rank": 296,
+      "name": "Ray Wu",
+      "ranking_score": 30.96,
+      "events_counted": 2
+    },
+    {
+      "rank": 297,
+      "name": "Asher Bartning",
+      "ranking_score": 30.54,
+      "events_counted": 4
+    },
+    {
+      "rank": 298,
+      "name": "Aaryana Borooah",
+      "ranking_score": 30.2,
+      "events_counted": 3
+    },
+    {
+      "rank": 299,
+      "name": "William Hamilton",
+      "ranking_score": 30.16,
+      "events_counted": 5
+    },
+    {
+      "rank": 300,
+      "name": "Morgan Font",
+      "ranking_score": 29.95,
+      "events_counted": 2
+    },
+    {
+      "rank": 301,
+      "name": "John Kelly",
+      "ranking_score": 29.81,
+      "events_counted": 6
+    },
+    {
+      "rank": 302,
+      "name": "Amelia Graham",
+      "ranking_score": 29.74,
+      "events_counted": 4
+    },
+    {
+      "rank": 303,
+      "name": "Hayden Tzhone",
+      "ranking_score": 29.7,
+      "events_counted": 2
+    },
+    {
+      "rank": 304,
+      "name": "Yancey Hill",
+      "ranking_score": 29.25,
+      "events_counted": 2
+    },
+    {
+      "rank": 305,
+      "name": "Eliza Roman",
+      "ranking_score": 28.82,
+      "events_counted": 2
+    },
+    {
+      "rank": 306,
+      "name": "George Geye",
+      "ranking_score": 28.52,
+      "events_counted": 2
+    },
+    {
+      "rank": 307,
+      "name": "Harmony Tzhone",
+      "ranking_score": 28.46,
+      "events_counted": 2
+    },
+    {
+      "rank": 308,
+      "name": "Oliver Moure",
+      "ranking_score": 28.33,
+      "events_counted": 5
+    },
+    {
+      "rank": 309,
+      "name": "Brooke Swezea",
+      "ranking_score": 28.21,
+      "events_counted": 2
+    },
+    {
+      "rank": 310,
+      "name": "Spencer Han",
+      "ranking_score": 28.05,
+      "events_counted": 4
+    },
+    {
+      "rank": 311,
+      "name": "Natalie Buchner",
+      "ranking_score": 28.01,
+      "events_counted": 2
+    },
+    {
+      "rank": 312,
+      "name": "Sailor Irion",
+      "ranking_score": 26.99,
+      "events_counted": 3
+    },
+    {
+      "rank": 313,
+      "name": "Hani Lyu",
+      "ranking_score": 26.82,
+      "events_counted": 5
+    },
+    {
+      "rank": 314,
+      "name": "Eleanor  Ashcroft",
+      "ranking_score": 26.66,
+      "events_counted": 3
+    },
+    {
+      "rank": 315,
+      "name": "Maria Valentina Lima",
+      "ranking_score": 26.2,
+      "events_counted": 3
+    },
+    {
+      "rank": 316,
+      "name": "Briggs Otzen",
+      "ranking_score": 26.12,
+      "events_counted": 4
+    },
+    {
+      "rank": 317,
+      "name": "Jack  McWilliams",
+      "ranking_score": 26.11,
+      "events_counted": 2
+    },
+    {
+      "rank": 318,
+      "name": "Melody Williams",
+      "ranking_score": 25.88,
+      "events_counted": 4
+    },
+    {
+      "rank": 319,
+      "name": "Theo Ryan",
+      "ranking_score": 25.82,
+      "events_counted": 2
+    },
+    {
+      "rank": 320,
+      "name": "Caleb Goldman",
+      "ranking_score": 25.79,
+      "events_counted": 5
+    },
+    {
+      "rank": 321,
+      "name": "Violet Aguilar",
+      "ranking_score": 25.54,
+      "events_counted": 3
+    },
+    {
+      "rank": 322,
+      "name": "Caroline Hull",
+      "ranking_score": 25.3,
+      "events_counted": 5
+    },
+    {
+      "rank": 323,
+      "name": "Heneage Baugh",
+      "ranking_score": 25.21,
+      "events_counted": 6
+    },
+    {
+      "rank": 324,
+      "name": "Liberty Kolsch",
+      "ranking_score": 24.91,
+      "events_counted": 4
+    },
+    {
+      "rank": 325,
+      "name": "Maximiliano Fernandez",
+      "ranking_score": 24.11,
+      "events_counted": 5
+    },
+    {
+      "rank": 326,
+      "name": "Liam Bruchmann",
+      "ranking_score": 24.0,
+      "events_counted": 3
+    },
+    {
+      "rank": 327,
+      "name": "Nolan Matney",
+      "ranking_score": 23.91,
+      "events_counted": 2
+    },
+    {
+      "rank": 328,
+      "name": "Jane Contreras",
+      "ranking_score": 23.78,
+      "events_counted": 4
+    },
+    {
+      "rank": 329,
+      "name": "Heather Macnair",
+      "ranking_score": 23.52,
+      "events_counted": 5
+    },
+    {
+      "rank": 330,
+      "name": "Brendan Reardon",
+      "ranking_score": 23.13,
+      "events_counted": 6
+    },
+    {
+      "rank": 331,
+      "name": "Elliot Lundgren",
+      "ranking_score": 23.04,
+      "events_counted": 3
+    },
+    {
+      "rank": 332,
+      "name": "Madeleine Clarke",
+      "ranking_score": 22.38,
+      "events_counted": 5
+    },
+    {
+      "rank": 333,
+      "name": "Mia Diab",
+      "ranking_score": 22.3,
+      "events_counted": 2
+    },
+    {
+      "rank": 334,
+      "name": "Annabella Scafario",
+      "ranking_score": 22.25,
+      "events_counted": 5
+    },
+    {
+      "rank": 335,
+      "name": "JJ Bainton",
+      "ranking_score": 22.07,
+      "events_counted": 3
+    },
+    {
+      "rank": 336,
+      "name": "Wiley Grandy",
+      "ranking_score": 22.0,
+      "events_counted": 5
+    },
+    {
+      "rank": 337,
+      "name": "Maddie Saladino",
+      "ranking_score": 22.0,
+      "events_counted": 2
+    },
+    {
+      "rank": 338,
+      "name": "Joseph Sirey",
+      "ranking_score": 21.83,
+      "events_counted": 2
+    },
+    {
+      "rank": 339,
+      "name": "Thomas Forswall",
+      "ranking_score": 21.66,
+      "events_counted": 2
+    },
+    {
+      "rank": 340,
+      "name": "Natee Parke",
+      "ranking_score": 21.35,
+      "events_counted": 2
+    },
+    {
+      "rank": 341,
+      "name": "Colton Rapalje",
+      "ranking_score": 21.2,
+      "events_counted": 2
+    },
+    {
+      "rank": 342,
+      "name": "Harmony Tzhone",
+      "ranking_score": 21.16,
+      "events_counted": 2
+    },
+    {
+      "rank": 343,
+      "name": "Lucas Potter",
+      "ranking_score": 20.89,
+      "events_counted": 2
+    },
+    {
+      "rank": 344,
+      "name": "Alvaro Mu\u00f1oz Montes",
+      "ranking_score": 20.72,
+      "events_counted": 6
+    },
+    {
+      "rank": 345,
+      "name": "Kate OConnor",
+      "ranking_score": 20.54,
+      "events_counted": 5
+    },
+    {
+      "rank": 346,
+      "name": "Piper  Horgan",
+      "ranking_score": 20.46,
+      "events_counted": 3
+    },
+    {
+      "rank": 347,
+      "name": "Kaitlin Thomley",
+      "ranking_score": 20.23,
+      "events_counted": 3
+    },
+    {
+      "rank": 348,
+      "name": "Carderock Kasper",
+      "ranking_score": 20.08,
+      "events_counted": 2
+    },
+    {
+      "rank": 349,
+      "name": "Hei Yat Adriel Cheung",
+      "ranking_score": 19.83,
+      "events_counted": 3
+    },
+    {
+      "rank": 350,
+      "name": "Jack Wilmes",
+      "ranking_score": 19.82,
+      "events_counted": 3
+    },
+    {
+      "rank": 351,
+      "name": "Camille Tinker",
+      "ranking_score": 19.7,
+      "events_counted": 4
+    },
+    {
+      "rank": 352,
+      "name": "Brandon Lyu",
+      "ranking_score": 19.66,
+      "events_counted": 5
+    },
+    {
+      "rank": 353,
+      "name": "Rhetta Lowndes",
+      "ranking_score": 19.61,
+      "events_counted": 4
+    },
+    {
+      "rank": 354,
+      "name": "Teag Ozyck",
+      "ranking_score": 19.61,
+      "events_counted": 2
+    },
+    {
+      "rank": 355,
+      "name": "Charlie Franklin",
+      "ranking_score": 19.32,
+      "events_counted": 2
+    },
+    {
+      "rank": 356,
+      "name": "Derin Yazici",
+      "ranking_score": 18.96,
+      "events_counted": 3
+    },
+    {
+      "rank": 357,
+      "name": "Alessia Greco",
+      "ranking_score": 18.47,
+      "events_counted": 6
+    },
+    {
+      "rank": 358,
+      "name": "Wyatt Call",
+      "ranking_score": 18.4,
+      "events_counted": 3
+    },
+    {
+      "rank": 359,
+      "name": "Wyatt Fish",
+      "ranking_score": 18.36,
+      "events_counted": 2
+    },
+    {
+      "rank": 360,
+      "name": "James Davell",
+      "ranking_score": 18.24,
+      "events_counted": 2
+    },
+    {
+      "rank": 361,
+      "name": "Collin Fox",
+      "ranking_score": 17.77,
+      "events_counted": 2
+    },
+    {
+      "rank": 362,
+      "name": "Alice Bischoff",
+      "ranking_score": 17.59,
+      "events_counted": 4
+    },
+    {
+      "rank": 363,
+      "name": "Noah Yzzi",
+      "ranking_score": 17.52,
+      "events_counted": 5
+    },
+    {
+      "rank": 364,
+      "name": "Anders List",
+      "ranking_score": 17.41,
+      "events_counted": 4
+    },
+    {
+      "rank": 365,
+      "name": "Juliette Moll",
+      "ranking_score": 17.36,
+      "events_counted": 5
+    },
+    {
+      "rank": 366,
+      "name": "Kamden Mathas",
+      "ranking_score": 17.0,
+      "events_counted": 3
+    },
+    {
+      "rank": 367,
+      "name": "Austin Lee",
+      "ranking_score": 16.81,
+      "events_counted": 7
+    },
+    {
+      "rank": 368,
+      "name": "Hunter Meade",
+      "ranking_score": 16.73,
+      "events_counted": 3
+    },
+    {
+      "rank": 369,
+      "name": "Grant  Munder",
+      "ranking_score": 16.41,
+      "events_counted": 2
+    },
+    {
+      "rank": 370,
+      "name": "Morgan Font",
+      "ranking_score": 16.27,
+      "events_counted": 2
+    },
+    {
+      "rank": 371,
+      "name": "Patrick Palumbo",
+      "ranking_score": 16.07,
+      "events_counted": 2
+    },
+    {
+      "rank": 372,
+      "name": "Tabitha Godwin",
+      "ranking_score": 15.97,
+      "events_counted": 3
+    },
+    {
+      "rank": 373,
+      "name": "Levi Manchester",
+      "ranking_score": 15.7,
+      "events_counted": 2
+    },
+    {
+      "rank": 374,
+      "name": "Elizabeth Reynolds",
+      "ranking_score": 15.61,
+      "events_counted": 3
+    },
+    {
+      "rank": 375,
+      "name": "Tate Mclean",
+      "ranking_score": 15.3,
+      "events_counted": 2
+    },
+    {
+      "rank": 376,
+      "name": "Adelaide Knowles Bashir",
+      "ranking_score": 14.57,
+      "events_counted": 2
+    },
+    {
+      "rank": 377,
+      "name": "Lilou Ismael",
+      "ranking_score": 14.53,
+      "events_counted": 3
+    },
+    {
+      "rank": 378,
+      "name": "Brady Day",
+      "ranking_score": 14.48,
+      "events_counted": 3
+    },
+    {
+      "rank": 379,
+      "name": "Charlotte  Brooks",
+      "ranking_score": 14.38,
+      "events_counted": 2
+    },
+    {
+      "rank": 380,
+      "name": "Audrey Coleman",
+      "ranking_score": 14.31,
+      "events_counted": 2
+    },
+    {
+      "rank": 381,
+      "name": "Wells Siewert",
+      "ranking_score": 14.22,
+      "events_counted": 4
+    },
+    {
+      "rank": 382,
+      "name": "Cody Wood",
+      "ranking_score": 13.68,
+      "events_counted": 2
+    },
+    {
+      "rank": 383,
+      "name": "Hayden Tzhone",
+      "ranking_score": 13.64,
+      "events_counted": 2
+    },
+    {
+      "rank": 384,
+      "name": "Jameson Palumbo",
+      "ranking_score": 13.64,
+      "events_counted": 2
+    },
+    {
+      "rank": 385,
+      "name": "Kisuke Ishimori",
+      "ranking_score": 13.63,
+      "events_counted": 3
+    },
+    {
+      "rank": 386,
+      "name": "Caiden Maclellan",
+      "ranking_score": 13.57,
+      "events_counted": 2
+    },
+    {
+      "rank": 387,
+      "name": "Maggie Mackenroth",
+      "ranking_score": 13.37,
+      "events_counted": 3
+    },
+    {
+      "rank": 388,
+      "name": "Lachlan Curry",
+      "ranking_score": 13.1,
+      "events_counted": 3
+    },
+    {
+      "rank": 389,
+      "name": "Vincent Hebson",
+      "ranking_score": 12.82,
+      "events_counted": 2
+    },
+    {
+      "rank": 390,
+      "name": "Michael Wimberly",
+      "ranking_score": 12.61,
+      "events_counted": 4
+    },
+    {
+      "rank": 391,
+      "name": "William Brown V",
+      "ranking_score": 12.54,
+      "events_counted": 3
+    },
+    {
+      "rank": 392,
+      "name": "Alice Johnson",
+      "ranking_score": 12.16,
+      "events_counted": 2
+    },
+    {
+      "rank": 393,
+      "name": "Federico Fernandez",
+      "ranking_score": 11.92,
+      "events_counted": 5
+    },
+    {
+      "rank": 394,
+      "name": "Ford Daigle",
+      "ranking_score": 11.83,
+      "events_counted": 3
+    },
+    {
+      "rank": 395,
+      "name": "Lazo Jovanovich",
+      "ranking_score": 11.81,
+      "events_counted": 2
+    },
+    {
+      "rank": 396,
+      "name": "Claire Kovach",
+      "ranking_score": 11.67,
+      "events_counted": 3
+    },
+    {
+      "rank": 397,
+      "name": "Charlotte Kehoe",
+      "ranking_score": 11.46,
+      "events_counted": 3
+    },
+    {
+      "rank": 398,
+      "name": "Ryan Daly",
+      "ranking_score": 11.21,
+      "events_counted": 2
+    },
+    {
+      "rank": 399,
+      "name": "Pryce Everitt",
+      "ranking_score": 10.9,
+      "events_counted": 2
+    },
+    {
+      "rank": 400,
+      "name": "Ellis Williams",
+      "ranking_score": 10.71,
+      "events_counted": 4
+    },
+    {
+      "rank": 401,
+      "name": "Neve Irion",
+      "ranking_score": 10.18,
+      "events_counted": 4
+    },
+    {
+      "rank": 402,
+      "name": "Beau Phillips",
+      "ranking_score": 10.05,
+      "events_counted": 2
+    },
+    {
+      "rank": 403,
+      "name": "Emmett Toy-Lim",
+      "ranking_score": 9.81,
+      "events_counted": 3
+    },
+    {
+      "rank": 404,
+      "name": "Margaret Faust",
+      "ranking_score": 9.47,
+      "events_counted": 2
+    },
+    {
+      "rank": 405,
+      "name": "Weseloh Maxwell",
+      "ranking_score": 9.41,
+      "events_counted": 2
+    },
+    {
+      "rank": 406,
+      "name": "Rawlins Lowndes",
+      "ranking_score": 9.11,
+      "events_counted": 4
+    },
+    {
+      "rank": 407,
+      "name": "Arlo Willcox",
+      "ranking_score": 8.59,
+      "events_counted": 2
+    },
+    {
+      "rank": 408,
+      "name": "Eloise Bischoff",
+      "ranking_score": 8.47,
+      "events_counted": 4
+    },
+    {
+      "rank": 409,
+      "name": "Gabriela Orlando Solal",
+      "ranking_score": 8.34,
+      "events_counted": 2
+    },
+    {
+      "rank": 410,
+      "name": "Hikari Ferri",
+      "ranking_score": 8.26,
+      "events_counted": 3
+    },
+    {
+      "rank": 411,
+      "name": "Sloane  Schoellhorn",
+      "ranking_score": 8.01,
+      "events_counted": 2
+    },
+    {
+      "rank": 412,
+      "name": "TJ Fetter",
+      "ranking_score": 7.96,
+      "events_counted": 2
+    },
+    {
+      "rank": 413,
+      "name": "Jack Childs",
+      "ranking_score": 7.48,
+      "events_counted": 3
+    },
+    {
+      "rank": 414,
+      "name": "Jude Walker",
+      "ranking_score": 6.95,
+      "events_counted": 3
+    },
+    {
+      "rank": 415,
+      "name": "Ivins Talavera",
+      "ranking_score": 6.92,
+      "events_counted": 2
+    },
+    {
+      "rank": 416,
+      "name": "Claire Davis",
+      "ranking_score": 6.91,
+      "events_counted": 3
+    },
+    {
+      "rank": 417,
+      "name": "Levi Manchester",
+      "ranking_score": 6.82,
+      "events_counted": 2
+    },
+    {
+      "rank": 418,
+      "name": "Julia  Wise",
+      "ranking_score": 6.67,
+      "events_counted": 2
+    },
+    {
+      "rank": 419,
+      "name": "Ryan  Nguyen",
+      "ranking_score": 6.67,
+      "events_counted": 6
+    },
+    {
+      "rank": 420,
+      "name": "Ernie Horres",
+      "ranking_score": 6.51,
+      "events_counted": 2
+    },
+    {
+      "rank": 421,
+      "name": "Emma Werth",
+      "ranking_score": 6.38,
+      "events_counted": 2
+    },
+    {
+      "rank": 422,
+      "name": "ISABELLA Cychosz",
+      "ranking_score": 6.11,
+      "events_counted": 2
+    },
+    {
+      "rank": 423,
+      "name": "Hendrik Witteveen",
+      "ranking_score": 6.05,
+      "events_counted": 2
+    },
+    {
+      "rank": 424,
+      "name": "Giovanni Marzonie",
+      "ranking_score": 6.0,
+      "events_counted": 2
+    },
+    {
+      "rank": 425,
+      "name": "Merrick Downey",
+      "ranking_score": 5.97,
+      "events_counted": 2
+    },
+    {
+      "rank": 426,
+      "name": "Persephone Hooper",
+      "ranking_score": 5.96,
+      "events_counted": 2
+    },
+    {
+      "rank": 427,
+      "name": "Anna Buttacavoli",
+      "ranking_score": 5.92,
+      "events_counted": 2
+    },
+    {
+      "rank": 428,
+      "name": "Lila (Lee-lah) Santibanez",
+      "ranking_score": 5.61,
+      "events_counted": 2
+    },
+    {
+      "rank": 429,
+      "name": "Juliette Lythgoe",
+      "ranking_score": 5.33,
+      "events_counted": 2
+    },
+    {
+      "rank": 430,
+      "name": "Eli Denson",
+      "ranking_score": 5.03,
+      "events_counted": 2
+    },
+    {
+      "rank": 431,
+      "name": "AMELIA Cychosz",
+      "ranking_score": 4.88,
+      "events_counted": 2
+    },
+    {
+      "rank": 432,
+      "name": "Ashlyn Josephson",
+      "ranking_score": 4.82,
+      "events_counted": 3
+    },
+    {
+      "rank": 433,
+      "name": "Julia Lloyd",
+      "ranking_score": 4.67,
+      "events_counted": 3
+    },
+    {
+      "rank": 434,
+      "name": "William Maxwell",
+      "ranking_score": 4.62,
+      "events_counted": 2
+    },
+    {
+      "rank": 435,
+      "name": "Lucas Winograd",
+      "ranking_score": 4.47,
+      "events_counted": 2
+    },
+    {
+      "rank": 436,
+      "name": "Anna Kiernan",
+      "ranking_score": 4.4,
+      "events_counted": 2
+    },
+    {
+      "rank": 437,
+      "name": "Will Passis",
+      "ranking_score": 4.04,
+      "events_counted": 2
+    },
+    {
+      "rank": 438,
+      "name": "Gabriella Guerrera",
+      "ranking_score": 3.78,
+      "events_counted": 2
+    },
+    {
+      "rank": 439,
+      "name": "Jake Mulberg",
+      "ranking_score": 3.75,
+      "events_counted": 2
+    },
+    {
+      "rank": 440,
+      "name": "Didier  Worms",
+      "ranking_score": 3.69,
+      "events_counted": 2
+    },
+    {
+      "rank": 441,
+      "name": "Sebastian Compres",
+      "ranking_score": 3.59,
+      "events_counted": 2
+    },
+    {
+      "rank": 442,
+      "name": "Jasper Walker",
+      "ranking_score": 3.09,
+      "events_counted": 2
+    },
+    {
+      "rank": 443,
+      "name": "Sawyer Silberkraus",
+      "ranking_score": 3.08,
+      "events_counted": 2
+    },
+    {
+      "rank": 444,
+      "name": "Reagan Larson",
+      "ranking_score": 3.05,
+      "events_counted": 3
+    },
+    {
+      "rank": 445,
+      "name": "Sophie  Roberts",
+      "ranking_score": 2.39,
+      "events_counted": 3
+    },
+    {
+      "rank": 446,
+      "name": "Finn Price",
+      "ranking_score": 1.97,
+      "events_counted": 2
+    },
+    {
+      "rank": 447,
+      "name": "Madeleine Barbieri",
+      "ranking_score": 1.82,
+      "events_counted": 2
+    },
+    {
+      "rank": 448,
+      "name": "Chloe Frith",
+      "ranking_score": 1.37,
+      "events_counted": 2
+    },
+    {
+      "rank": 449,
+      "name": "Clara Bischoff",
+      "ranking_score": 0.87,
+      "events_counted": 4
+    },
+    {
+      "rank": 450,
+      "name": "Olivia Varela",
+      "ranking_score": 0.77,
+      "events_counted": 3
+    },
+    {
+      "rank": 451,
+      "name": "Anais  Marko",
+      "ranking_score": 0.39,
+      "events_counted": 2
+    },
+    {
+      "rank": 452,
+      "name": "Oliver Jordan",
+      "ranking_score": 0.28,
+      "events_counted": 2
+    }
+  ]
+}
