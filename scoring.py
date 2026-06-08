@@ -33,6 +33,25 @@ QUALIFY_MIN_EVENTS = 2
 USA_ONLY = True       # exclude non-USA country codes from the ranking
 ALLOWED_COUNTRY = "usa"
 
+# Manual merges: sailors YOU have confirmed are the same person but who split
+# across DIFFERENT REAL CLUBS (so the automatic merge correctly refuses to
+# guess). Each entry is a list of identity keys to fuse into one sailor.
+# Keys are in "normalized name|normalized club" form (the form shown in the
+# flags.log duplicate detector). The FIRST key in each list is the canonical
+# one whose name/club the merged sailor displays under.
+#
+# How to fill this: when the ranking shows the same real sailor twice, find
+# their two keys (name|club) and add a line here. Only do this when you are
+# CONFIDENT it is one person — a wrong merge fuses two real kids.
+#
+# Example:
+#   ["marshall rodriguez|lakewood yacht club",
+#    "marshall rodriguez|lauderdale yacht club",
+#    "marshall rodriguez|pensacola yacht club"],
+MANUAL_MERGES: list[list[str]] = [
+    # add confirmed same-sailor key groups here, one list per sailor
+]
+
 # Event multipliers. Keyed by a canonical event id you assign in your config.
 # Anything not listed defaults to 1.0.
 EVENT_MULTIPLIERS = {
@@ -220,6 +239,51 @@ CLUB_ALIASES = {
     "ccsc": "clearwater community sailing center",
     "clearwater csc": "clearwater community sailing center",
     "clearwater community sailing center": "clearwater community sailing center",
+
+    # ---- batch added from flags.log review (real clubs, verified) ----
+    "fyc": "falmouth yacht club",
+    "falmouth": "falmouth yacht club",
+    "falmouth yacht club": "falmouth yacht club",
+
+    "larchmont": "larchmont yacht club",
+    "larchmont yc": "larchmont yacht club",
+    "larchmont yacht club": "larchmont yacht club",
+
+    "mantoloking": "mantoloking yacht club",
+    "mantoloking yc": "mantoloking yacht club",
+    "mantoloking yacht club": "mantoloking yacht club",
+
+    "centeport yacht club": "centerport yacht club",   # typo seen in data
+    "centerport yc": "centerport yacht club",
+    "centerport yacht club": "centerport yacht club",
+
+    "oyc": "orient yacht club",
+    "orient yc": "orient yacht club",
+    "orient yacht club": "orient yacht club",
+
+    "saint augustine yacht club": "st augustine yacht club",
+    "st augustine yacht club": "st augustine yacht club",
+
+    "tred avon ycht club": "tred avon yacht club",      # typo seen in data
+    "tred avon yacht club": "tred avon yacht club",
+
+    "portland yc": "portland yacht club",
+    "portland yacht club": "portland yacht club",
+
+    "lehyc": "little egg harbor yc",
+    "little egg harbor yc": "little egg harbor yc",
+
+    "lavallette": "lavallette yacht club",
+    "lavallette yacht club": "lavallette yacht club",
+
+    "hyc": "hampton yacht club",
+    "hampton yacht club": "hampton yacht club",
+
+    "tom s river yacht club": "toms river yacht club",  # apostrophe-stripped variant
+    "toms river yacht club": "toms river yacht club",
+
+    "sachem s head yacht club": "sachem s head yacht club",
+    "shyc": "sachem s head yacht club",
 }
 
 def _strip_accents(s: str) -> str:
@@ -464,6 +528,26 @@ def build_ranking(all_event_scores: dict[str, list[EventScore]]) -> list[RankedS
             rs = sailors.setdefault(es.key, RankedSailor(key=es.key, name=es.name))
             rs.scores.append((event_id, es.result_score))
             rs.name = es.name
+
+    # Pass 0: apply MANUAL_MERGES — fuse keys you've confirmed are one sailor.
+    # Builds a map from any listed key -> its canonical (first) key, then folds
+    # every non-canonical sailor's scores into the canonical one.
+    canonical_of: dict[str, str] = {}
+    for group in MANUAL_MERGES:
+        if not group:
+            continue
+        canon = group[0]
+        for k in group:
+            canonical_of[k] = canon
+    for key in list(sailors.keys()):
+        canon = canonical_of.get(key)
+        if canon and canon != key and key in sailors:
+            target = sailors.setdefault(canon, RankedSailor(key=canon, name=sailors[key].name))
+            target.scores.extend(sailors[key].scores)
+            # keep the canonical key's display name if it already had one
+            if canon in sailors and sailors[canon].name:
+                pass
+            del sailors[key]
 
     # Pass 2: absorb name-only ("name|") keys into a unique name+club sailor.
     # Build: name -> list of real (name+club) keys with that name.
