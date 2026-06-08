@@ -1,0 +1,41 @@
+name: Update OPTI TV ranking
+
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-ranking:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests pyyaml beautifulsoup4
+
+      - name: Run ranking pipeline
+        run: python run.py
+
+      - name: Commit updated ranking
+        run: |
+          git config user.name "opti-tv-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add ranking.json flags.log
+          if git diff --staged --quiet; then
+            echo "No changes to ranking — nothing to commit."
+          else
+            git commit -m "Auto-update ranking ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
