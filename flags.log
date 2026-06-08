@@ -18,8 +18,8 @@ OK     west_coast: fleet_size=60, mult=1.0
 OK     texas_youth: fleet_size=32, mult=1.0
 OK     Chesapeake: fleet_size=71, mult=1.0
 OK     orange_bowl: fleet_size=226, mult=1.1
---- 317 possible duplicate(s) to review ---
-=== 149 sailors split across clubs; 158 club-pairs to review (worst first) ===
+--- 253 possible duplicate(s) to review ---
+=== 139 sailors split across clubs; 126 club-pairs to review (worst first) ===
 [  4 sailor(s)] 'bmrt'  <->  'lake geneva yacht club'   e.g. AMELIA Cychosz, George Geye, Henry Sorenson, ISABELLA Cychosz
             if same club, add to CLUB_ALIASES:  "bmrt": "lake geneva yacht club",
 [  4 sailor(s)] ''  <->  'riverside yacht club'   e.g. Brooks Pardi, Hayden Pardi, Jane Sykes, Thomas Alexopoulos
@@ -56,26 +56,18 @@ OK     orange_bowl: fleet_size=226, mult=1.1
             if same club, add to CLUB_ALIASES:  "": "miami yacht club",
 [  2 sailor(s)] ''  <->  'chicago yacht club'   e.g. Kellan Martin, Natalie Buchner
             if same club, add to CLUB_ALIASES:  "": "chicago yacht club",
-[  2 sailor(s)] 'falmouth yacht club'  <->  'fyc'   e.g. Trent Richards, Tyler Richards
-            if same club, add to CLUB_ALIASES:  "falmouth yacht club": "fyc",
 [  2 sailor(s)] 'annapolis yacht club'  <->  'san francisco yacht club'   e.g. Molly Kern, Quillin Moran
             if same club, add to CLUB_ALIASES:  "annapolis yacht club": "san francisco yacht club",
-[  2 sailor(s)] 'sachem s head yacht club'  <->  'shyc'   e.g. David  Fantarella, Sofia  Fantarella
-            if same club, add to CLUB_ALIASES:  "sachem s head yacht club": "shyc",
 [  2 sailor(s)] ''  <->  'palm beach sailing club'   e.g. Ari Waldman, Maxwell Jones
             if same club, add to CLUB_ALIASES:  "": "palm beach sailing club",
 [  2 sailor(s)] ''  <->  'orient yacht club'   e.g. Mia Diab, Noah Bellos
             if same club, add to CLUB_ALIASES:  "": "orient yacht club",
-[  2 sailor(s)] ''  <->  'oyc'   e.g. Mia Diab, Noah Bellos
-            if same club, add to CLUB_ALIASES:  "": "oyc",
-[  2 sailor(s)] 'orient yacht club'  <->  'oyc'   e.g. Mia Diab, Noah Bellos
-            if same club, add to CLUB_ALIASES:  "orient yacht club": "oyc",
 [  2 sailor(s)] ''  <->  'happy'   e.g. Alexander  Silva, Asher Bartning
             if same club, add to CLUB_ALIASES:  "": "happy",
-[  2 sailor(s)] ''  <->  'lehyc'   e.g. Levi Manchester, Van  Bekelja
-            if same club, add to CLUB_ALIASES:  "": "lehyc",
-[  2 sailor(s)] 'fairhope yc'  <->  'fyc'   e.g. Oliver Jordan, Ty Nichols
-            if same club, add to CLUB_ALIASES:  "fairhope yc": "fyc",
+[  2 sailor(s)] ''  <->  'little egg harbor yc'   e.g. Levi Manchester, Van  Bekelja
+            if same club, add to CLUB_ALIASES:  "": "little egg harbor yc",
+[  2 sailor(s)] 'fairhope yc'  <->  'falmouth yacht club'   e.g. Oliver Jordan, Ty Nichols
+            if same club, add to CLUB_ALIASES:  "fairhope yc": "falmouth yacht club",
 [  2 sailor(s)] ''  <->  'bmrt'   e.g. Rafi Ahmed, Zia Ahmed
             if same club, add to CLUB_ALIASES:  "": "bmrt",
 [  2 sailor(s)] ''  <->  'sccyc'   e.g. Eloise Chadwick, Joshua Wenokur
@@ -90,18 +82,12 @@ OK     orange_bowl: fleet_size=226, mult=1.1
             if same club, add to CLUB_ALIASES:  "lakewood yacht club": "pensacola yacht club",
 [  2 sailor(s)] 'lauderdale yacht club'  <->  'pensacola yacht club'   e.g. Marshall Rodriguez, Patrick Rodriguez
             if same club, add to CLUB_ALIASES:  "lauderdale yacht club": "pensacola yacht club",
+[  2 sailor(s)] ''  <->  'larchmont yacht club'   e.g. Claire Davis, Oliver Kehoe
+            if same club, add to CLUB_ALIASES:  "": "larchmont yacht club",
 [  2 sailor(s)] ''  <->  'centerport yacht club'   e.g. Annabelle  Buchner, Natalie Buchner
             if same club, add to CLUB_ALIASES:  "": "centerport yacht club",
-[  2 sailor(s)] ''  <->  'mantoloking yc'   e.g. Clara Wetzel, Ellen  Wetzel
-            if same club, add to CLUB_ALIASES:  "": "mantoloking yc",
-[  2 sailor(s)] 'mantoloking yacht club'  <->  'mantoloking yc'   e.g. Clara Wetzel, Ellen  Wetzel
-            if same club, add to CLUB_ALIASES:  "mantoloking yacht club": "mantoloking yc",
-[  2 sailor(s)] 'centerport yacht club'  <->  'centerport yc'   e.g. Caleb Goldman, Leah Goldman
-            if same club, add to CLUB_ALIASES:  "centerport yacht club": "centerport yc",
 [  2 sailor(s)] 'fort worth boat club'  <->  'rush creek yacht club'   e.g. Harmony Tzhone, Hayden Tzhone
             if same club, add to CLUB_ALIASES:  "fort worth boat club": "rush creek yacht club",
-[  2 sailor(s)] 'larchmont'  <->  'larchmont yc'   e.g. Eliza Roman, Kate OConnor
-            if same club, add to CLUB_ALIASES:  "larchmont": "larchmont yc",
 [  2 sailor(s)] ''  <->  'pysf'   e.g. Arlo Willcox, Chloe Frith
             if same club, add to CLUB_ALIASES:  "": "pysf",
 [  2 sailor(s)] 'fort worth bc'  <->  'rush creek yacht club'   e.g. J.R. Cutcher, Lila (Lee-lah) Santibanez
@@ -134,24 +120,18 @@ OK     orange_bowl: fleet_size=226, mult=1.1
             if same club, add to CLUB_ALIASES:  "": "leland yacht club",
 [  1 sailor(s)] 'leland yacht club'  <->  'palm beach sailing club'   e.g. Maxwell Jones
             if same club, add to CLUB_ALIASES:  "leland yacht club": "palm beach sailing club",
+[  1 sailor(s)] ''  <->  'hampton yacht club'   e.g. Colton Rapalje
+            if same club, add to CLUB_ALIASES:  "": "hampton yacht club",
 [  1 sailor(s)] ''  <->  'hyannis yacht club'   e.g. Colton Rapalje
             if same club, add to CLUB_ALIASES:  "": "hyannis yacht club",
-[  1 sailor(s)] ''  <->  'hyc'   e.g. Colton Rapalje
-            if same club, add to CLUB_ALIASES:  "": "hyc",
 [  1 sailor(s)] ''  <->  'pyc'   e.g. Colton Rapalje
             if same club, add to CLUB_ALIASES:  "": "pyc",
-[  1 sailor(s)] 'hyannis yacht club'  <->  'hyc'   e.g. Colton Rapalje
-            if same club, add to CLUB_ALIASES:  "hyannis yacht club": "hyc",
+[  1 sailor(s)] 'hampton yacht club'  <->  'hyannis yacht club'   e.g. Colton Rapalje
+            if same club, add to CLUB_ALIASES:  "hampton yacht club": "hyannis yacht club",
+[  1 sailor(s)] 'hampton yacht club'  <->  'pyc'   e.g. Colton Rapalje
+            if same club, add to CLUB_ALIASES:  "hampton yacht club": "pyc",
 [  1 sailor(s)] 'hyannis yacht club'  <->  'pyc'   e.g. Colton Rapalje
             if same club, add to CLUB_ALIASES:  "hyannis yacht club": "pyc",
-[  1 sailor(s)] 'hyc'  <->  'pyc'   e.g. Colton Rapalje
-            if same club, add to CLUB_ALIASES:  "hyc": "pyc",
-[  1 sailor(s)] ''  <->  'orient yc'   e.g. Mia Diab
-            if same club, add to CLUB_ALIASES:  "": "orient yc",
-[  1 sailor(s)] 'orient yacht club'  <->  'orient yc'   e.g. Mia Diab
-            if same club, add to CLUB_ALIASES:  "orient yacht club": "orient yc",
-[  1 sailor(s)] 'orient yc'  <->  'oyc'   e.g. Mia Diab
-            if same club, add to CLUB_ALIASES:  "orient yc": "oyc",
 [  1 sailor(s)] 'happy'  <->  'key biscayne yacht club'   e.g. Alexander  Silva
             if same club, add to CLUB_ALIASES:  "happy": "key biscayne yacht club",
 [  1 sailor(s)] 'annapolis yacht club'  <->  'key biscayne yacht club'   e.g. Christian Freyre
@@ -166,18 +146,12 @@ OK     orange_bowl: fleet_size=226, mult=1.1
             if same club, add to CLUB_ALIASES:  "annapolis yacht club": "ayc ssa",
 [  1 sailor(s)] ''  <->  'ocyc'   e.g. Annabella Scafario
             if same club, add to CLUB_ALIASES:  "": "ocyc",
-[  1 sailor(s)] 'saint augustine yacht club'  <->  'st augustine yacht club'   e.g. Amelia Graham
-            if same club, add to CLUB_ALIASES:  "saint augustine yacht club": "st augustine yacht club",
 [  1 sailor(s)] 'key biscayne yacht club'  <->  'miami yacht club'   e.g. Morgan Font
             if same club, add to CLUB_ALIASES:  "key biscayne yacht club": "miami yacht club",
 [  1 sailor(s)] 'mryc'  <->  'tred avon yacht club'   e.g. Ellis Williams
             if same club, add to CLUB_ALIASES:  "mryc": "tred avon yacht club",
-[  1 sailor(s)] 'mryc'  <->  'tred avon ycht club'   e.g. Ellis Williams
-            if same club, add to CLUB_ALIASES:  "mryc": "tred avon ycht club",
-[  1 sailor(s)] 'tred avon yacht club'  <->  'tred avon ycht club'   e.g. Ellis Williams
-            if same club, add to CLUB_ALIASES:  "tred avon yacht club": "tred avon ycht club",
-[  1 sailor(s)] 'fyc'  <->  'pyc'   e.g. Heather Macnair
-            if same club, add to CLUB_ALIASES:  "fyc": "pyc",
+[  1 sailor(s)] 'falmouth yacht club'  <->  'pyc'   e.g. Heather Macnair
+            if same club, add to CLUB_ALIASES:  "falmouth yacht club": "pyc",
 [  1 sailor(s)] ''  <->  'ocean gate yacht club'   e.g. Juliette Moll
             if same club, add to CLUB_ALIASES:  "": "ocean gate yacht club",
 [  1 sailor(s)] 'coral reef yacht club'  <->  'shelter island yacht club'   e.g. Grant  Munder
@@ -188,22 +162,16 @@ OK     orange_bowl: fleet_size=226, mult=1.1
             if same club, add to CLUB_ALIASES:  "palm beach sailing club": "tbd",
 [  1 sailor(s)] 'palm beach sailing club'  <->  'pbsc baro'   e.g. Oscar Plachecki
             if same club, add to CLUB_ALIASES:  "palm beach sailing club": "pbsc baro",
-[  1 sailor(s)] ''  <->  'little egg harbor yc'   e.g. Levi Manchester
-            if same club, add to CLUB_ALIASES:  "": "little egg harbor yc",
-[  1 sailor(s)] 'lehyc'  <->  'little egg harbor yc'   e.g. Levi Manchester
-            if same club, add to CLUB_ALIASES:  "lehyc": "little egg harbor yc",
 [  1 sailor(s)] 'scyc'  <->  'south carolina yacht club'   e.g. Jaylen Lawson
             if same club, add to CLUB_ALIASES:  "scyc": "south carolina yacht club",
-[  1 sailor(s)] 'hampton yacht club'  <->  'hyc'   e.g. Andrew Allgeier
-            if same club, add to CLUB_ALIASES:  "hampton yacht club": "hyc",
 [  1 sailor(s)] ''  <->  'scyc'   e.g. Benjamin Qualshie
             if same club, add to CLUB_ALIASES:  "": "scyc",
 [  1 sailor(s)] ''  <->  'surf city yacht club'   e.g. Benjamin Qualshie
             if same club, add to CLUB_ALIASES:  "": "surf city yacht club",
 [  1 sailor(s)] 'scyc'  <->  'surf city yacht club'   e.g. Benjamin Qualshie
             if same club, add to CLUB_ALIASES:  "scyc": "surf city yacht club",
-[  1 sailor(s)] 'coral reef yacht club'  <->  'larchmont yc'   e.g. Wills Gandy
-            if same club, add to CLUB_ALIASES:  "coral reef yacht club": "larchmont yc",
+[  1 sailor(s)] 'coral reef yacht club'  <->  'larchmont yacht club'   e.g. Wills Gandy
+            if same club, add to CLUB_ALIASES:  "coral reef yacht club": "larchmont yacht club",
 [  1 sailor(s)] 'key biscayne yacht club'  <->  'performance sailling institute'   e.g. Matteo Sarmento Biagi Melo
             if same club, add to CLUB_ALIASES:  "key biscayne yacht club": "performance sailling institute",
 [  1 sailor(s)] 'bwyc'  <->  'southern yacht club'   e.g. Theodore Hild
@@ -214,40 +182,18 @@ OK     orange_bowl: fleet_size=226, mult=1.1
             if same club, add to CLUB_ALIASES:  "": "dryc",
 [  1 sailor(s)] ''  <->  'sbyc'   e.g. Catherine Dilkes
             if same club, add to CLUB_ALIASES:  "": "sbyc",
-[  1 sailor(s)] 'lauderdale yacht club'  <->  'lavallette'   e.g. Bryce  Anderson
-            if same club, add to CLUB_ALIASES:  "lauderdale yacht club": "lavallette",
 [  1 sailor(s)] 'lauderdale yacht club'  <->  'lavallette yacht club'   e.g. Bryce  Anderson
             if same club, add to CLUB_ALIASES:  "lauderdale yacht club": "lavallette yacht club",
-[  1 sailor(s)] 'lavallette'  <->  'lavallette yacht club'   e.g. Bryce  Anderson
-            if same club, add to CLUB_ALIASES:  "lavallette": "lavallette yacht club",
-[  1 sailor(s)] ''  <->  'larchmont yc'   e.g. Oliver Kehoe
-            if same club, add to CLUB_ALIASES:  "": "larchmont yc",
 [  1 sailor(s)] 'san francisco yacht club'  <->  'sfyc and stfyc'   e.g. Sonda Ngongoseke von wunsch
             if same club, add to CLUB_ALIASES:  "san francisco yacht club": "sfyc and stfyc",
-[  1 sailor(s)] ''  <->  'centeport yacht club'   e.g. Natalie Buchner
-            if same club, add to CLUB_ALIASES:  "": "centeport yacht club",
-[  1 sailor(s)] 'centeport yacht club'  <->  'centerport yacht club'   e.g. Natalie Buchner
-            if same club, add to CLUB_ALIASES:  "centeport yacht club": "centerport yacht club",
-[  1 sailor(s)] 'centeport yacht club'  <->  'chicago yacht club'   e.g. Natalie Buchner
-            if same club, add to CLUB_ALIASES:  "centeport yacht club": "chicago yacht club",
 [  1 sailor(s)] 'centerport yacht club'  <->  'chicago yacht club'   e.g. Natalie Buchner
             if same club, add to CLUB_ALIASES:  "centerport yacht club": "chicago yacht club",
 [  1 sailor(s)] ''  <->  'bsc'   e.g. Raymond  Vasile
             if same club, add to CLUB_ALIASES:  "": "bsc",
 [  1 sailor(s)] ''  <->  'portland yacht club'   e.g. Gunnar Goethert
             if same club, add to CLUB_ALIASES:  "": "portland yacht club",
-[  1 sailor(s)] ''  <->  'portland yc'   e.g. Gunnar Goethert
-            if same club, add to CLUB_ALIASES:  "": "portland yc",
-[  1 sailor(s)] 'portland yacht club'  <->  'portland yc'   e.g. Gunnar Goethert
-            if same club, add to CLUB_ALIASES:  "portland yacht club": "portland yc",
 [  1 sailor(s)] ''  <->  'byc'   e.g. Max Hess
             if same club, add to CLUB_ALIASES:  "": "byc",
-[  1 sailor(s)] ''  <->  'mantoloking'   e.g. Ellen  Wetzel
-            if same club, add to CLUB_ALIASES:  "": "mantoloking",
-[  1 sailor(s)] 'mantoloking'  <->  'mantoloking yacht club'   e.g. Ellen  Wetzel
-            if same club, add to CLUB_ALIASES:  "mantoloking": "mantoloking yacht club",
-[  1 sailor(s)] 'mantoloking'  <->  'mantoloking yc'   e.g. Ellen  Wetzel
-            if same club, add to CLUB_ALIASES:  "mantoloking": "mantoloking yc",
 [  1 sailor(s)] ''  <->  'bcrp'   e.g. Parker Sandman
             if same club, add to CLUB_ALIASES:  "": "bcrp",
 [  1 sailor(s)] ''  <->  'none'   e.g. Lin Zhou
@@ -294,10 +240,6 @@ OK     orange_bowl: fleet_size=226, mult=1.1
             if same club, add to CLUB_ALIASES:  "shelter island yacht club": "shelter island yc cert",
 [  1 sailor(s)] ''  <->  'severn sailing association'   e.g. Oliver Butz
             if same club, add to CLUB_ALIASES:  "": "severn sailing association",
-[  1 sailor(s)] ''  <->  'tom s river yacht club'   e.g. Theodore  Hutler IV
-            if same club, add to CLUB_ALIASES:  "": "tom s river yacht club",
-[  1 sailor(s)] 'tom s river yacht club'  <->  'toms river yacht club'   e.g. Theodore  Hutler IV
-            if same club, add to CLUB_ALIASES:  "tom s river yacht club": "toms river yacht club",
 [  1 sailor(s)] ''  <->  'noroton yacht club'   e.g. Charlie Long
             if same club, add to CLUB_ALIASES:  "": "noroton yacht club",
 [  1 sailor(s)] 'palm beach sailing club'  <->  'pyc'   e.g. Surina Kelchner
@@ -314,16 +256,10 @@ OK     orange_bowl: fleet_size=226, mult=1.1
             if same club, add to CLUB_ALIASES:  "": "fhss",
 [  1 sailor(s)] ''  <->  'ness'   e.g. Vicky Van Berkel
             if same club, add to CLUB_ALIASES:  "": "ness",
-[  1 sailor(s)] 'larchmont'  <->  'larchmont yacht club'   e.g. Madeline Honorowski
-            if same club, add to CLUB_ALIASES:  "larchmont": "larchmont yacht club",
-[  1 sailor(s)] 'larchmont'  <->  'lauderdale yacht club'   e.g. Madeline Honorowski
-            if same club, add to CLUB_ALIASES:  "larchmont": "lauderdale yacht club",
 [  1 sailor(s)] 'larchmont yacht club'  <->  'lauderdale yacht club'   e.g. Madeline Honorowski
             if same club, add to CLUB_ALIASES:  "larchmont yacht club": "lauderdale yacht club",
 [  1 sailor(s)] 'bellport bay yacht club'  <->  'centerport yacht club'   e.g. Annabelle  Buchner
             if same club, add to CLUB_ALIASES:  "bellport bay yacht club": "centerport yacht club",
-[  1 sailor(s)] ''  <->  'larchmont'   e.g. Claire Davis
-            if same club, add to CLUB_ALIASES:  "": "larchmont",
 [  1 sailor(s)] ''  <->  'weekapaug yc'   e.g. Piper  Horgan
             if same club, add to CLUB_ALIASES:  "": "weekapaug yc",
 [  1 sailor(s)] ''  <->  'lmss'   e.g. George Howard
