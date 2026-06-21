@@ -7,7 +7,8 @@ Orchestrates the full pipeline:
        - fetch results (clubspot or regatta_network)
        - enforce 150 Championship-Fleet floor for non-USODA events (auto-drop + flag)
        - score the event (scoring.py)
-  3. aggregate best-of-5 mean across events (4-event qualification floor)
+  3. aggregate best-of-N mean across events (BEST_N and the qualification floor
+     are defined in scoring.py and imported; do not hardcode them here)
   4. write ranking.json  (consumed by the Squarespace embed)
      and a flags log    (events dropped / skipped / problems) for your review
 
@@ -30,6 +31,8 @@ from scoring import score_event, build_ranking, find_duplicate_candidates, REFER
 from scraper import fetch_event
 
 NON_USODA_FLOOR = 150
+STQ_MULTIPLIER = 1.25      # Spring Teams Qualifier weight (rotating; set via stq_status in events.yaml)
+PUBLISH_TOP_N = 50        # full ranking is computed; only the top N are written to ranking.json
 OUTPUT_JSON = "ranking.json"
 FLAGS_LOG = "flags.log"
 
@@ -81,8 +84,18 @@ def main():
             flags.append(f"ERROR  {eid}: fetch failed -> {e}")
             continue
 
+        # ---- effective multiplier: stq_status overrides the YAML multiplier ----
+        # events.yaml is the single source of truth. If stq_status is true this
+        # event is the Spring Teams Qualifier and gets STQ_MULTIPLIER regardless
+        # of its multiplier field; otherwise the multiplier field is used.
+        if ev.get("stq_status", False):
+            eff_mult = STQ_MULTIPLIER
+        else:
+            eff_mult = ev.get("multiplier", 1.0)
+
         # ---- score ----
-        scores = score_event(payload, event_id=eid, event_name=ev["name"])
+        scores = score_event(payload, event_id=eid, event_name=ev["name"],
+                              multiplier=eff_mult)
         fleet_size = scores[0].fleet_size if scores else 0
 
         # ---- 150 floor for non-USODA ----
@@ -95,13 +108,18 @@ def main():
             continue
 
         all_event_scores[eid] = scores
-        flags.append(f"OK     {eid}: fleet_size={fleet_size}, mult={ev.get('multiplier',1.0)}")
+        stq_note = " [STQ]" if ev.get("stq_status", False) else ""
+        flags.append(f"OK     {eid}: fleet_size={fleet_size}, mult={eff_mult}{stq_note}")
 
-    # ---- aggregate ----
-    ranking = build_ranking(all_event_scores)
+    # ---- aggregate (full field computed; we publish only the top N) ----
+    ranking, merge_flags, dup_warnings = build_ranking(all_event_scores)
+    if merge_flags:
+        flags.append(f"--- {len(merge_flags)} even-split merge(s) refused, review ---")
+        flags.extend(merge_flags)
+    total_ranked = len(ranking)
+    published = ranking[:PUBLISH_TOP_N]
 
     # ---- duplicate detection (same name, different club -> likely split) ----
-    dup_warnings = find_duplicate_candidates(all_event_scores)
     if dup_warnings:
         flags.append(f"--- {len(dup_warnings)} possible duplicate(s) to review ---")
         flags.extend(dup_warnings)
@@ -118,6 +136,8 @@ def main():
             "qualify_min_events": QUALIFY_MIN_EVENTS,
         },
         "events_scored": list(all_event_scores.keys()),
+        "total_ranked": total_ranked,
+        "publish_top_n": PUBLISH_TOP_N,
         "rankings": [
             {
                 "rank": i,
@@ -125,7 +145,7 @@ def main():
                 "ranking_score": s.ranking_score,
                 "events_counted": s.n_events,
             }
-            for i, s in enumerate(ranking, start=1)
+            for i, s in enumerate(published, start=1)
         ],
     }
 
@@ -134,8 +154,8 @@ def main():
     with open(FLAGS_LOG, "w") as f:
         f.write("\n".join(flags) + "\n")
 
-    print(f"wrote {OUTPUT_JSON}: {len(output['rankings'])} ranked sailors "
-          f"from {len(all_event_scores)} events")
+    print(f"wrote {OUTPUT_JSON}: published top {len(output['rankings'])} "
+          f"of {total_ranked} ranked sailors from {len(all_event_scores)} events")
     print(f"wrote {FLAGS_LOG}:")
     print("\n".join("  " + line for line in flags))
 

@@ -1,0 +1,227 @@
+finish_position,first_name,last_name,club,sail_number,country
+1,Manuel,Bragança,CRYC,4138,bra
+2,Jesper,Karlsen,CRYC,22415,
+3,Morgan,Rosenthal,CRYC,23961,
+4,Briggs,Kossmann,Coach Pulio Sailing,12,
+5,Samuel,Gerin,CRYC,16779,
+6,Tara,Maliah,Performance Sailing Institute,190,hkg
+7,Brooks,Pardi,LISOT,117,
+8,Tucker,Gowens,Performance Sailing Institute,12900,
+9,Jan,Palou Espinar,Performance Sailing Institute,3581,esp
+10,Levi,Hibbs,CRYC,310,
+11,Joshua,Wenokur,JK Sailing SCCYC,441,
+12,Zia,Ahmed,Coach Pulio Sailing,19,
+13,Finn,Hodgins,STYC,146,isv
+14,Ryan,Lee,Coach Pulio Sailing,343,
+15,Gino,Pichetti,CNSP-Lisot,4260,arg
+16,Audrey,Roachell,CRYC,39,
+17,Walton,Macpherson,Carolina Yacht Club SC,16715,
+18,Adam,Butz,Performance Sailing Institute,23405,
+19,Connor,Cylke,Lauderdale Yacht Club,23318,
+20,Lucio,Hanono,Argentina,4244,arg
+21,Caitlyn,Flynn,Performance Sailing Institute,23632,
+22,Felipe,Hutzler,Performance Sailing Institute,4171,bra
+23,André,Minns,YCSA,4330,bra
+24,Alexander,Freyre,KBYC,23430,
+25,Aislyn,Flynn,Performance Sailing Institute,23631,
+26,Maria De Lluc,Bestard-Mas,RCNP,3631,esp
+27,Storm,Husky Kim,BCS (Best Coast Sailing),21825,
+28,Charles Wesley,Hoffman,Carolina Yacht Club (SC),23460,
+29,Jingbo Jacob,Tu,RNSYS,1870,can
+30,Trey,Waters,Annapolis Yacht Club,7,
+31,Thomas,Alexopoulos,LISOT,23966,
+32,Ryan,Breck,Riverside Yacht Club,23031,
+33,Mason,Lim,Performance Sailing Institute,116,
+34,Rafi,Ahmed,Coach Pulio Sailing,18,
+35,Jonah,Watson,Coach Pulio Sailing,486,
+36,Marius,Garbayo Ante,LYC,23717,
+37,Olivia,Weber,CRYC,22906,
+38,Thomas,McBain,Royal Bermuda Yacht Club,63,ber
+39,Samantha,Feinstone,Annapolis Yacht Club,22761,
+40,Jaiden,Strickon,Performance Sailing Institute,23732,
+41,Helena,Katz,Argentina,4104,arg
+42,Tia,Kinnear,RNSYS,1856,can
+43,Lucía,Pascual Cabrera,Performance Sailing Institute,3481,esp
+44,Cameron,Bellina,SYC,23890,
+45,Marshall,Rodriguez,Lakewood Yacht Club,446,
+46,Dennis,Fiadzkou,CGSC,22336,
+47,Donato,Pichetti,Argentina,4175,arg
+48,Chloe,Dodd,Noroton Yacht Club,15725,
+49,Daniel,Moure,CRYC,23505,
+50,Quillin,Moran,Annapolis Yacht Club,5,
+51,Kellan,Martin,Performance Sailing Institute,341,
+52,Mary Anne,Osha Perez,Gold Winds Team,3165,esp
+53,Juan Augustin,Panacsi Dubra,Argentina,4195,arg
+54,Sofia,Carrillo,Performance Sailing Institute,361,per
+55,Griffin,Glennon,Hingham Yacht Club,23371,
+56,Alec,Voss Del Vecchio,CRYC,201,
+57,Lucas,Christiansen,Club Náutico de San Juan,70,pur
+58,Lucia,Pecina,Argentina,3828,arg
+59,Christian,Freyre,Annapolis Yacht Club,23081,
+60,Hunter,Reinbold,St. Thomas Yacht Club,167,isv
+61,Kip,Hodgins,STYC,144,isv
+62,Vincent,Mulcahy,BCS,515,
+63,Casey,Moure,Coral Reef Yacht Club,23504,
+64,Xiaoxi,Dai,Lakewood Yacht Club,208,
+65,Jackson,Jagusztyn,Lauderdale Yacht Club,23921,
+66,Avery,Pearsall,STYC,128,isv
+67,Casper,Ramm-Ericson,Performance Sailing Institute,4905,swe
+68,Rowan,Michel,Southern YC,23918,
+69,Clara,Wetzel,CERT,8058,
+70,Landon,Chin,Brant Beach Yacht Club,23691,
+71,Hayden,Spamer,CERT,268,
+72,Rex,Henagulph,RBYC,85,ber
+73,Francisco,Don,CRYC,115,
+74,Xiaonan,Dai,Lakewood Yacht Club,207,
+75,Will,Feld,CRYC,308,
+76,Valeria,Perez,Club Nautico de San Juan,91,pur
+77,Shunto,Sakama,Enoshima Yacht Club,3154,jpn
+78,Jane,Sykes,LISOT,22964,
+79,Cc,Alamgir,Bellport Bay Yacht Club,505,
+80,Catherine,Dilkes,TEAM LBI,22491,
+81,Renata,Fuhrmann,Argentina,3832,arg
+82,Christopher,Fulton,CRYC,501,
+83,Molly,Kern,Annapolis YC,23084,
+84,Hayden,Pardi,LISOT,118,
+85,Oliver,Butz,Performance Sailing Institute,79,
+86,Juan Ignacio,Panasci Dubra,CNMP,25,ita
+87,Michael,Mendelblatt,BBYC,23721,
+88,Steve,Nguyen,Coach Pulio Sailing,21216,
+89,Matteo,Sarmento Biagi Melo,KBYC,23437,
+90,Nathan,Pulido,LYC,22990,
+91,Heidi,Sanchez,TRYC,7320,
+92,Trent,Richards,FYC,22482,
+93,Ivan,Riano Jr,,305,
+94,Savannah,Fraind,Coral Reef Yacht Club,23443,
+95,Felipe,Abrunhosa,Performance Sailing Miami,23829,
+96,Dylan,Strickon,Performance Sailing Institute,21818,
+97,Brooks,Crawford,Annapolis Yacht Club,23082,
+98,Myer,Macpherson,Carolina Yacht Club SC,187,
+99,Allison,Meade,SYC,23963,
+100,Frank,Krivan,BCS (Best Coast Sailing),18524,
+101,Ebrahim,Sheikh,RVYC,1959,can
+102,Hadassah,Pendrak,Lauderdale Yacht Club,23215,
+103,Eloise,Chadwick,SCCYC,224,
+104,Thaya,Jaimovich Landeo,Argentina,3675,arg
+105,Hayes,Lewis,LISOT,23788,
+106,Rogan,Meade,SYC,23962,
+107,Miguel,Leite,RBYC,54,ber
+108,Sam,Von Schwarz,Annapolis Yacht Club,342,
+109,Miles,Aguiar,CRYC,21870,
+110,Lucia,Musumeci,Argentina,3866,arg
+111,Tomas,Saner,YCA,4020,arg
+112,Ignacio,Muñoz Montes,Performance Sailing Institute,20913,
+113,Eliot,Fox,Falmouth Yacht Club,23200,
+114,Anna,Kennedy,Carolina Yacht Club (SC),311,
+115,Leah,Goldman,Centerport Yacht Club,335,
+116,Aaron,Riker,RBYC,47,ber
+117,Will,Kaiser,SFYC,21120,
+118,"William ""Liam""",Moore,LISOT,23152,
+119,Arthur,Yepes,KBYC,21812,
+120,Sebastian,Crofton,PBSC,20688,
+121,Adrien,Dearmon,Lauderdale Yacht Club,22234,
+122,Isla,Chin,Brant Beach Yacht Club,23007,
+123,Mathias,Urban,CGSC,4271,bra
+124,Calypso,Coulter,Lauderdale Yacht Club,88,ber
+125,Mathew,Castro,CRYC,443,
+126,Benjamin,Qualshie,,14693,
+127,Archie,Dove,Annapolis Yacht Club,21437,
+128,William,Lowndes,Carolina Yacht Club SC,23834,
+129,Hudson,Cavell,Lauderdale Yacht Club,346,
+130,Vasil,Kurtev,Lauderdale Yacht Club,337,
+131,Anna,Sguario,CRYC,2396,
+132,Mia,Diab,Orient Yacht Club,111,
+133,Wesley,McKenney,Lauderdale Yacht Club,814,
+134,Finn,Munro,Bellport Bay Yacht Club,390,
+135,Ishmael,Dill,RBYC,58,ber
+136,Raul Julian,Ramos,CGSC,21438,
+137,Carolina,Cadarso,Goldwin,365,per
+138,Alexander,Silva,Key Biscayne Yacht Club,23133,
+139,Gabriella,Ferraro Oltramari,Lauderdale Yacht Club,22483,
+140,Sterling,Sawyer,Lakewood,16102,
+141,Eddie,Danish,Norfolk Yacht,199,
+142,Robinson,Fox,Falmouth Yacht Club,228,
+143,Finn,Powers,Annapolis Yacht Club,23314,
+144,"Colton ""C""",Hillel,Annapolis Yacht Club,23929,
+145,Jacqueline (Jp),Smith,Annapolis Yacht Club,19788,
+146,Cecilia,Christiansen,Club Náutico de San Juan,92,pur
+147,Oliver,Moure,CRYC,23503,
+148,Liam,Bruchmann,Chicago Yacht Club,23294,
+149,Natalie,Buchner,LISOT,252,
+150,Franco Manuel,Mangual Casellas,Club Nautico de San Juan,102,pur
+151,Patrick,Rodriguez,Lakewood Yacht Club,19288,
+152,Rosalyn,Maher,Lakewood Yacht Club,23099,
+153,Edmund,Rutledge,Lauderdale Yacht Club,22474,
+154,Max,Bachmann,CRYC,22756,
+155,Benjamin,De Couto,RBYC,28,ber
+156,Maximiliano,Fernandez,Performance Sailing Institute,17852,
+157,Theodore,Card,SDYC,10392,
+158,Levi,Manchester,CERT,237,
+159,Morgan,Font,KBYC,22574,
+160,Jack,Thaon D'Arnoldi,CGSC,273,
+161,Asher,Bartning,Performance Sailing Institute,23763,
+162,George,Howard,MYC,45,
+163,Fadei,Xu,Royal Vancouver Yacht Club,1964,can
+164,Juliette,Moll,Cert,6362,
+165,Caleb,Goldman,Centerport Yacht Club,336,
+166,Carson,Ning,SFYC,21300,
+167,Madeleine,McMahan,Lakewood Yacht Club,23830,
+168,Ellen,Wetzel,CERT,22208,
+169,Dov,Mashav,CGSC,15049,
+170,Annie,Moore,Carolina YC (SC),20,
+171,Owen,Santini,LISOT Indian Harbor Yacht Club,20936,
+172,Zaizad,Panthaki,CRYC,19238,
+173,Jane,Contreras,LYC,23973,
+174,Roselyn,Chang,NYCC,22002,
+175,Alfie,Jansma,RBYC,79,ber
+176,Tom,Zhang,KBYC,23378,
+177,Rhetta,Lowndes,Carolina Yacht Club SC,23833,
+178,Amelia,Graham,St. Augustine Yacht Club,23073,
+179,Heather,Macnair,FYC,23114,
+180,Lilou,Ismael,Annapolis Yacht Club,22583,
+181,Heneage,Baugh,AYC,21513,
+182,Asli,Memis,Port Credit Yacht Club,1917,can
+183,Brandon,Lyu,LISOT,521,
+184,Henry,Vandamme,LISOT,18928,
+185,Eliza,Roman,Larchmont YC,20967,
+186,Federico,Fernandez,Performance Sailing Institute,23661,
+187,Hunter,Meade,SYC,23441,
+188,Maxton,Damiano,LYC,22986,
+189,Ryan,Nguyen,BCS,450,
+190,Michael,Wimberly,Lakewood Yacht Club,23831,
+191,James,De Couto,,89,ber
+192,Annabella,Scafario,CERT,23343,
+193,Neve,Irion,KBYC,508,
+194,Angela Qing,Wang,RNSYS,1876,can
+195,Leo,Decouto,RBYC,090,ber
+196,Regan,Irion,KBYC,23313,
+197,Juliette,Lythgoe,CGSC,23730,
+198,Elizabeth,Reynolds,Chicago Yacht Club,22433,
+199,Sailor,Irion,KBYC,23693,
+200,Rawlins,Lowndes,Carolina Yacht Club SC,21762,
+201,Alice,Bischoff,Noroton YC,22287,
+202,Persephone,Hooper,Chicago Yacht Club,20193,
+203,Eloise,Bischoff,Noroton YC,12372,
+204,Poppy,Card,SDYC,10022,
+205,Sebastian,Compres,CRYC,1026,
+206,Alessia,Greco,TRYC,7237,
+207,Alvaro,Muñoz Montes,Performance Sailing Institute,495,
+208,Brennan,Hoy,LYC,13982,
+209,Clara,Bianchi,CGSC,22953,
+210,Austin,Lee,CCSC,20912,
+211,Ray,Wu,SPYC,23100,
+212,Madeleine,Barbieri,LISOT,23638,
+213,Jack,Childs,NYCC,23380,
+214,Hudson,Pitcher,RHADC,19,ber
+215,Hani,Lyu,LISOT,520,
+216,Annabelle,Buchner,LISOT,23872,
+217,Amelia,Compres,CRYC,826,dom
+218,Olivia,Varela,Annapolis Yacht Club,23948,
+219,Ford,Daigle,Annapolis Yacht Club,6595,
+220,Adelaide,Lewis,LISOT,23597,
+221,William,Brown,TRYC,21853,
+222,Ethan,Adelsberg,RHADC,23,ber
+223,Declan,Felgenhauer,San Diego Yacht Club,110022,
+224,Clara,Findel,SVG,23974,ger
+225,Jake,Saladino,Shelter Island YC,15293,
+226,Clara,Bischoff,Noroton YC,20246,

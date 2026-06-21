@@ -51,12 +51,11 @@ ALLOWED_COUNTRY = "usa"
 MANUAL_MERGES: list[list[str]] = [
     # add confirmed same-sailor key groups here, one list per sailor
 
-    # Eloise Hild — one sailor, lists "Southern YC / Bay Waveland YC" at
-    # gulf_coast and "Bay Waveland YC" alone at midwinters. 1-1 split, blank
-    # sail numbers so the frequency guard refused; confirmed one person via
-    # whereis.py (Bay Waveland appears in both club strings).
-    ["eloise hild|southern yacht club",
-     "eloise hild|bay waveland yc"],
+    # Justin Callahan — sailed 5 events; listed "Annapolis YC / Tred Avon YC"
+    # at some, "Tred Avon YC" alone at others -> two keys. Confirmed one sailor
+    # via whereis.py (all 5 sailed, real nets). Annapolis key canonical (3 events).
+    ["justin callahan|annapolis yacht club",
+     "justin callahan|tred avon yacht club"],
 ]
 
 # Event multipliers now live in events.yaml (single source of truth) and are
@@ -289,11 +288,6 @@ CLUB_ALIASES = {
     "sachem s head yacht club": "sachem s head yacht club",
     "shyc": "sachem s head yacht club",
 
-    "indian harbor yacht club": "indian harbor yacht club",
-    "ihyc": "indian harbor yacht club",
-    "indian harbor": "indian harbor yacht club",
-    "lisot indian harbor yacht club": "indian harbor yacht club",
-    
     # ---- batch added from flags.log review, session 2 (verified same-club) ----
     "syc": "southern yacht club",                  # Meade family; full name canonical
     "miles river yacht club": "miles river yc",
@@ -336,7 +330,7 @@ TRAVEL_TEAMS = {
     "team manos",
     "gold winds team",
     "gold winds",
-    "goldwin",               # misspelling seen in data
+    "goldwin",
     "bcs",
     "bcs best coast sailing",
     "best coast sailing",
@@ -431,7 +425,6 @@ class EventScore:
     fleet_size: int
     result_score: float
     club: str = ""   # canonical resolved club, for clubs_seen in build_ranking
-    sail_number: str = ""   # carried for frequency-merge even-split guard
 
 
 def parse_clubspot_event(payload: dict) -> list[SailorResult]:
@@ -514,7 +507,6 @@ def score_event(payload: dict, event_id: str, event_name: str,
             finish_position=finish_position, fleet_size=fleet_size,
             result_score=round(result_score, 2),
             club=canon_club,
-            sail_number=r.sail_number,
         ))
     return out
 
@@ -528,7 +520,6 @@ class RankedSailor:
     key: str
     name: str
     clubs_seen: set = field(default_factory=set)
-    sail_numbers: set[str] = field(default_factory=set)
     scores: list = field(default_factory=list)  # (event_id, result_score)
 
     @property
@@ -541,7 +532,7 @@ class RankedSailor:
         return round(sum(best) / len(best), 2) if best else 0.0
 
 
-def build_ranking(all_event_scores: dict[str, list[EventScore]]) -> tuple[list[RankedSailor], list[str], list[str]]:
+def build_ranking(all_event_scores: dict[str, list[EventScore]]) -> list[RankedSailor]:
     """
     all_event_scores: {event_id: [EventScore, ...]}
 
@@ -561,44 +552,6 @@ def build_ranking(all_event_scores: dict[str, list[EventScore]]) -> tuple[list[R
             rs.name = es.name
             if es.club:
                 rs.clubs_seen.add(es.club)
-            if es.sail_number:
-                rs.sail_numbers.add(es.sail_number)
-
-    # Pass -1: reconcile multi-club splits by event frequency.
-    # resolve_club() picks the FIRST real club in a multi-club string, so a
-    # sailor whose affiliation is listed in different orders across events
-    # (e.g. "Lakewood/SFYC" vs "SFYC/StFYC") splits into multiple keys. Give
-    # each name ONE canonical key: the club with the MOST events. A strictly
-    # larger count merges freely. An exact TIE at the top is the collision-risk
-    # zone (possibly two different same-named sailors), so it merges ONLY if the
-    # two keys share a sail number; otherwise it is refused and flagged.
-    from collections import defaultdict as _dd
-    merge_flags: list[str] = []
-    _manual_keys = {k for grp in MANUAL_MERGES for k in grp}
-    _real_by_name: dict[str, list[str]] = _dd(list)
-    for _key in sailors:
-        _nm, _, _club = _key.partition("|")
-        if _club:
-            _real_by_name[_nm].append(_key)
-    for _nm, _keys in _real_by_name.items():
-        if len(_keys) < 2:
-            continue
-        _canon = max(_keys, key=lambda k: (len(sailors[k].scores), k))
-        _top = len(sailors[_canon].scores)
-        for _k in [x for x in _keys if x != _canon]:
-            if len(sailors[_k].scores) == _top:
-                _shared = {s for s in (sailors[_canon].sail_numbers & sailors[_k].sail_numbers) if s}
-                if not _shared:
-                    if _canon in _manual_keys or _k in _manual_keys:
-                        continue  # Pass 0 (MANUAL_MERGES) handles this sailor
-                    merge_flags.append(
-                        f"MERGE? '{_nm}' even split, no sail match: "
-                        f"'{_canon}' vs '{_k}' -- review manually")
-                    continue
-            sailors[_canon].scores.extend(sailors[_k].scores)
-            sailors[_canon].clubs_seen |= sailors[_k].clubs_seen
-            sailors[_canon].sail_numbers |= sailors[_k].sail_numbers
-            del sailors[_k]
 
     # Pass 0: apply MANUAL_MERGES — fuse keys you've confirmed are one sailor.
     # Builds a map from any listed key -> its canonical (first) key, then folds
@@ -653,44 +606,9 @@ def build_ranking(all_event_scores: dict[str, list[EventScore]]) -> tuple[list[R
     for k in merged_away:
         del sailors[k]
 
-    dup_warnings = find_split_survivors(sailors)
     qualified = [s for s in sailors.values() if s.n_events >= QUALIFY_MIN_EVENTS]
     qualified.sort(key=lambda s: s.ranking_score, reverse=True)
-    return qualified, merge_flags, dup_warnings
-
-
-def find_split_survivors(sailors: dict) -> list[str]:
-    """
-    POST-MERGE duplicate report. Runs on the FINAL sailors dict (after the
-    frequency pass, Pass 0, and Pass 2), so it only reports names that STILL
-    map to 2+ distinct keys — genuine unresolved same-name ambiguities, not
-    splits the passes already fixed. This is the report you act on.
-    """
-    from itertools import combinations
-    by_name: dict[str, dict] = {}
-    for key, rs in sailors.items():
-        name_part, _, club_part = key.partition("|")
-        by_name.setdefault(name_part, {})[club_part] = rs.name
-
-    pairs: dict[tuple, list] = {}
-    for name_part, club_map in by_name.items():
-        if len(club_map) > 1:
-            clubs = sorted(club_map.keys())
-            display = next(iter(club_map.values()))
-            for a, b in combinations(clubs, 2):
-                pairs.setdefault((a, b), []).append(display)
-    if not pairs:
-        return []
-    ranked = sorted(pairs.items(), key=lambda kv: len(kv[1]), reverse=True)
-    lines = []
-    total = sum(1 for n, cm in by_name.items() if len(cm) > 1)
-    lines.append(f"=== {total} UNRESOLVED same-name split(s) post-merge "
-                 f"(review: one person or two?) ===")
-    for (a, b), names in ranked:
-        uniq = sorted(set(names))
-        sample = ", ".join(uniq[:6]) + (" ..." if len(uniq) > 6 else "")
-        lines.append(f"[{len(uniq):>3}] '{a}'  <->  '{b}'   e.g. {sample}")
-    return lines
+    return qualified
 
 
 def find_duplicate_candidates(all_event_scores: dict[str, list[EventScore]]) -> list[str]:

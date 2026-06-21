@@ -17,8 +17,15 @@
 #      but set fleet_filter to the fleet name shown in the standings if multiple fleets exist).
 #
 # multiplier: 1.0 default. Trials 1.25, Nationals 1.15 (already set).
-# usoda: true  -> no 150-boat floor applied.
-# usoda: false -> scraper enforces the 150 Championship-Fleet floor; auto-drops if under.
+# usoda: true  -> NO size floor. POLICY (decided, not an oversight): USODA sanction
+#                 IS the credibility credential, so USODA events count at any fleet size.
+# usoda: false -> non-USODA event; scraper enforces the 150 Championship-Fleet floor
+#                 and auto-drops if under. The floor exists ONLY to gate non-USODA events.
+#
+# stq_status: true -> Spring Teams Qualifier (rotating annual designation). When true,
+#                 the qualifier multiplier (1.25) applies REGARDLESS of the multiplier
+#                 field. Rotate by moving stq_status:true to next season's host event.
+#                 Only ONE event should have stq_status:true per season.
 # active: false -> event is ignored this run (use to stage events before results post).
 #
 # window anchor: the previous Team Trials date. Events dated >= anchor and <= today
@@ -36,12 +43,13 @@ events:
   - id: sunshine_state
     name: "USODA Sunshine State Championship"
     platform: clubspot
-    regatta_id: "anqiZ8G2n7"
-    class_id: "qWhwytMjzH"
-    date: "2026-02-14"
+    regatta_id: "DCNH3Uqq5Y"
+    class_id: "wKwBdIvMpp"
+    date: "2026-03-07"
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
 
   - id: nationals
     name: "USODA National Championship"
@@ -52,6 +60,7 @@ events:
     multiplier: 1.15
     usoda: true
     active: true
+    stq_status: false
 
   - id: team_trials
     name: "USODA Team Trials"
@@ -62,6 +71,7 @@ events:
     multiplier: 1.25
     usoda: true
     active: true
+    stq_status: false
 
   - id: midwinters
     name: "USODA Midwinter Championship"
@@ -72,6 +82,7 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
 
   - id: atlantic_coast_gold
     name: "USODA Atlantic Coast Championship Gold Fleet"
@@ -82,16 +93,7 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
-
-  - id: atlantic_coast_silver
-    name: "USODA Atlantic Coast Championship Silver Fleet"
-    platform: clubspot
-    regatta_id: "QIbpENNi3M"
-    class_id: "23Bek8QbNV"
-    date: "2025-09-06"
-    multiplier: 1.0
-    usoda: true
-    active: true
+    stq_status: false
 
   - id: great_lakes
     name: "USODA Great Lakes Championship"
@@ -102,6 +104,7 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
 
   - id: gulf_coast
     name: "USODA Gulf Coast Championship"
@@ -112,6 +115,7 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
 
   - id: mid_america
     name: "USODA Mid-America Championship"
@@ -122,6 +126,7 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
 
   - id: midwest
     name: "USODA Midwest Championship"
@@ -129,9 +134,10 @@ events:
     regatta_id: "6A4wtp0URb"
     class_id: "c6s4ylg3g8"
     date: "2025-10-11"
-    multiplier: 1.25
+    multiplier: 1.25   # set by stq_status below (Spring Teams Qualifier 2025-26); see header
     usoda: true
     active: true
+    stq_status: true
 
   - id: new_england
     name: "USODA New England Championship"
@@ -142,6 +148,7 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
 
   - id: new_jersey_gold
     name: "USODA New Jersey State Championship Gold Fleet"
@@ -152,16 +159,7 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
-
-  - id: new_jersey_silver
-    name: "USODA New Jersey State Championship Silver Fleet"
-    platform: clubspot
-    regatta_id: "9X5aU1DNTq"
-    class_id: "mY5bywF16D"
-    date: "2025-08-18"
-    multiplier: 1.0
-    usoda: true
-    active: true
+    stq_status: false
 
   - id: northwest
     name: "USODA Northwest Championship"
@@ -172,6 +170,7 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
 
   - id: pacific_coast
     name: "USODA Pacific Coast Championship"
@@ -182,8 +181,9 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
 
-  - id: Southeast
+  - id: southeast
     name: "USODA Southeast Championship"
     platform: clubspot
     regatta_id: "7RTvUFkNHg"
@@ -192,6 +192,7 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
 
   - id: west_coast
     name: "USODA West Coast Championship"
@@ -202,6 +203,7 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
 
   - id: texas_youth
     name: "USODA Texas Youth Race Week"
@@ -212,8 +214,9 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
 
-  - id: Chesapeake
+  - id: chesapeake
     name: "USODA Chesapeake Bay Championship"
     platform: clubspot
     regatta_id: "O4t58OxETv"
@@ -222,6 +225,18 @@ events:
     multiplier: 1.0
     usoda: true
     active: true
+    stq_status: false
+
+  - id: valentines
+    name: "USODA Valentine's Day Regatta"
+    platform: clubspot
+    regatta_id: "anqiZ8G2n7"
+    class_id: "qWhwytMjzH"
+    date: "2026-02-07"
+    multiplier: 1.0
+    usoda: true
+    active: true
+    stq_status: false
 
   # add the remaining USODA regionals the same way:
   # atlantic_coast, great_lakes, gulf_coast, mid_america, midwest,
@@ -239,3 +254,4 @@ events:
     multiplier: 1.1
     usoda: false
     active: true
+    stq_status: false
