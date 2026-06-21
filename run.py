@@ -36,6 +36,17 @@ PUBLISH_TOP_N = 50        # full ranking is computed; only the top N are written
 OUTPUT_JSON = "ranking.json"
 FLAGS_LOG = "flags.log"
 
+# Display-only club override for sailors who never list a real home club
+# (travel-team-only). Keys are normalized lowercase names. Display only —
+# does NOT affect identity/merging. Revisit with general passthrough later.
+SAILOR_DISPLAY_CLUB = {
+    "jaiden strickon": "Performance Sailing Institute",
+    "ryan lee": "Coach Pulio Sailing",
+    "adam butz": "Performance Sailing Institute",
+    "storm husky kim": "Best Coast Sailing",
+}
+
+
 
 def in_window(event_date: str, anchor: str, today: dt.date) -> bool:
     if not event_date:
@@ -142,6 +153,8 @@ def main():
             {
                 "rank": i,
                 "name": s.name,
+                "club": (s.key.split("|", 1)[1] if "|" in s.key and s.key.split("|", 1)[1]
+                         else SAILOR_DISPLAY_CLUB.get(s.name.strip().lower(), "")),
                 "ranking_score": s.ranking_score,
                 "events_counted": s.n_events,
             }
