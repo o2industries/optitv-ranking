@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-22T21:25:12.899745+00:00",
+  "generated_at": "2026-06-23T17:31:18.083761+00:00",
   "window_anchor": "2025-06-01",
-  "window_end": "2026-06-22",
+  "window_end": "2026-06-23",
   "method": {
     "formula": "((fleet_size - finish_position)/fleet_size)^P * 100 * sqrt(fleet_size/REF) * multiplier",
     "placing_power": 1.5,
