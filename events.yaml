@@ -98,9 +98,9 @@ events:
   - id: great_lakes
     name: "USODA Great Lakes Championship"
     platform: clubspot
-    regatta_id: "1kBu5jAm6Y"
-    class_id: "Ze2513ux1B"
-    date: "2025-06-28"
+    regatta_id: "TV7MOqRkOW"
+    class_id: "kKmndhYElf"
+    date: "2026-06-13"
     multiplier: 1.0
     usoda: true
     active: true
