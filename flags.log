@@ -8,13 +8,13 @@ OK     gulf_coast: fleet_size=66, mult=1.0
 OK     mid_america: fleet_size=38, mult=1.0
 OK     midwest: fleet_size=269, mult=1.25 [STQ]
 OK     new_england: fleet_size=164, mult=1.0
-OK     new_jersey_gold: fleet_size=112, mult=1.0
+OK     new_jersey_gold: fleet_size=146, mult=1.0
 OK     northwest: fleet_size=22, mult=1.0
 OK     pacific_coast: fleet_size=50, mult=1.0
 OK     southeast: fleet_size=125, mult=1.0
 OK     west_coast: fleet_size=60, mult=1.0
 OK     texas_youth: fleet_size=32, mult=1.0
-OK     chesapeake: fleet_size=71, mult=1.0
+OK     chesapeake: fleet_size=63, mult=1.0
 OK     valentines: fleet_size=197, mult=1.0
 OK     orange_bowl: fleet_size=226, mult=1.1
 --- 1 even-split merge(s) refused, review ---
