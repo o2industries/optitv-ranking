@@ -208,9 +208,9 @@ events:
   - id: texas_youth
     name: "USODA Texas Youth Race Week"
     platform: clubspot
-    regatta_id: "bHLy71uNDe"
-    class_id: "Co36ZrevqB"
-    date: "2025-07-10"
+    regatta_id: "w3LVEGGOUP"
+    class_id: "yljQJ05XAc"
+    date: "2026-07-09"
     multiplier: 1.0
     usoda: true
     active: true
