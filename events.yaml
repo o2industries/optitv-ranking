@@ -153,9 +153,9 @@ events:
   - id: new_jersey_gold
     name: "USODA New Jersey State Championship Gold Fleet"
     platform: clubspot
-    regatta_id: "9X5aU1DNTq"
-    class_id: "WVq66GPoDs"
-    date: "2025-08-18"
+    regatta_id: "tkK8DroGsf"
+    class_id: "3iVYpl056F"
+    date: "2026-07-13"
     multiplier: 1.0
     usoda: true
     active: true
@@ -219,9 +219,9 @@ events:
   - id: chesapeake
     name: "USODA Chesapeake Bay Championship"
     platform: clubspot
-    regatta_id: "O4t58OxETv"
-    class_id: "AoCBDt4Vc6"
-    date: "2025-07-10"
+    regatta_id: "BRvaDauJ34"
+    class_id: "eSvH1kai3L"
+    date: "2026-06-25"
     multiplier: 1.0
     usoda: true
     active: true
