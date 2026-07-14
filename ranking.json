@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T21:35:56.266495+00:00",
+  "generated_at": "2026-07-14T21:39:14.542171+00:00",
   "window_anchor": "2025-06-01",
   "window_end": "2026-07-14",
   "method": {
@@ -94,7 +94,7 @@
       "name": "Ivan Riano Jr",
       "club": "coral reef yacht club",
       "ranking_score": 172.86,
-      "events_counted": 8
+      "events_counted": 9
     },
     {
       "rank": 10,
@@ -106,9 +106,9 @@
     {
       "rank": 11,
       "name": "Zia Ahmed",
-      "club": "bmrt",
+      "club": "glss",
       "ranking_score": 171.33,
-      "events_counted": 5
+      "events_counted": 6
     },
     {
       "rank": 12,
@@ -141,9 +141,9 @@
     {
       "rank": 16,
       "name": "Rafi Ahmed",
-      "club": "bmrt",
+      "club": "glss",
       "ranking_score": 167.28,
-      "events_counted": 5
+      "events_counted": 6
     },
     {
       "rank": 17,
@@ -192,7 +192,7 @@
       "name": "Alec Voss Del Vecchio",
       "club": "coral reef yacht club",
       "ranking_score": 156.09,
-      "events_counted": 7
+      "events_counted": 8
     },
     {
       "rank": 24,

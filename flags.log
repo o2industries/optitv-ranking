@@ -3,7 +3,7 @@ OK     nationals: fleet_size=258, mult=1.15
 OK     team_trials: fleet_size=228, mult=1.25
 OK     midwinters: fleet_size=47, mult=1.0
 OK     atlantic_coast_gold: fleet_size=139, mult=1.0
-OK     great_lakes: fleet_size=30, mult=1.0
+OK     great_lakes: fleet_size=48, mult=1.0
 OK     gulf_coast: fleet_size=66, mult=1.0
 OK     mid_america: fleet_size=38, mult=1.0
 OK     midwest: fleet_size=269, mult=1.25 [STQ]
@@ -17,3 +17,8 @@ OK     texas_youth: fleet_size=32, mult=1.0
 OK     chesapeake: fleet_size=71, mult=1.0
 OK     valentines: fleet_size=197, mult=1.0
 OK     orange_bowl: fleet_size=226, mult=1.1
+--- 1 even-split merge(s) refused, review ---
+MERGE? 'marshall adams' even split, no sail match: 'marshall adams|grosse pointe yacht club' vs 'marshall adams|gpyc' -- review manually
+--- 2 possible duplicate(s) to review ---
+=== 1 UNRESOLVED same-name split(s) post-merge (review: one person or two?) ===
+[  1] 'gpyc'  <->  'grosse pointe yacht club'   e.g. Marshall Adams
