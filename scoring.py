@@ -305,6 +305,11 @@ CLUB_ALIASES = {
     "haysf": "haysf",
     "saycsc": "st augustine yacht club",
     "palm beach": "palm beach sailing club",
+
+    # ---- Grosse Pointe Yacht Club ----
+    "gpyc": "grosse pointe yacht club",
+    "grosse pointe yc": "grosse pointe yacht club",
+    "grosse pointe yacht club": "grosse pointe yacht club",
 }
 
 def _strip_accents(s: str) -> str:

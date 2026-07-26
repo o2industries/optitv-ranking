@@ -59,6 +59,23 @@ def in_window(event_date: str, anchor: str, today: dt.date) -> bool:
     return a <= d <= today
 
 
+def load_optout_keys(path: str = "optouts.yaml") -> set[str]:
+    """Canonical identity keys to remove from PUBLIC output by request.
+    Opted-out sailors were scored normally upstream, so they STILL count
+    toward other sailors' fleet sizes and finish positions -- they are only
+    dropped from ranking.json. Match is on the canonical key, lowercased.
+    Missing file -> no opt-outs (safe default).
+    NOTE: this filters run.py's final list ONLY. When profiles.json is built it
+    MUST filter on this same key set, or an opted-out sailor reappears there."""
+    try:
+        with open(path) as f:
+            data = yaml.safe_load(f) or {}
+    except FileNotFoundError:
+        return set()
+    return {(e.get("key") or "").strip().lower()
+            for e in (data.get("optouts") or []) if e.get("key")}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="validate config, skip network")
@@ -127,6 +144,20 @@ def main():
     if merge_flags:
         flags.append(f"--- {len(merge_flags)} even-split merge(s) refused, review ---")
         flags.extend(merge_flags)
+    # ---- opt-out removal (privacy): drop requested sailors from OUTPUT only ----
+    # They remain in others' fleet sizes / positions (scored upstream). Removing
+    # a mid-list sailor backfills the top N and re-numbers ranks contiguously, so
+    # there is no visible gap where they were. A key matching NOBODY is logged
+    # LOUD: a stale key means a removed sailor is silently still public.
+    optout_keys = load_optout_keys()
+    if optout_keys:
+        matched = {s.key for s in ranking if s.key in optout_keys}
+        ranking = [s for s in ranking if s.key not in optout_keys]
+        for k in sorted(matched):
+            flags.append(f"OPTOUT removed: '{k}'")
+        for k in sorted(optout_keys - matched):
+            flags.append(f"OPTOUT NO MATCH: '{k}' matched zero sailors -- stale key? "
+                         f"run whereis.py; sailor may STILL be public")
     total_ranked = len(ranking)
     published = ranking[:PUBLISH_TOP_N]
 
