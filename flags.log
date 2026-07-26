@@ -17,8 +17,3 @@ OK     texas_youth: fleet_size=32, mult=1.0
 OK     chesapeake: fleet_size=63, mult=1.0
 OK     valentines: fleet_size=197, mult=1.0
 OK     orange_bowl: fleet_size=226, mult=1.1
---- 1 even-split merge(s) refused, review ---
-MERGE? 'marshall adams' even split, no sail match: 'marshall adams|grosse pointe yacht club' vs 'marshall adams|gpyc' -- review manually
---- 2 possible duplicate(s) to review ---
-=== 1 UNRESOLVED same-name split(s) post-merge (review: one person or two?) ===
-[  1] 'gpyc'  <->  'grosse pointe yacht club'   e.g. Marshall Adams

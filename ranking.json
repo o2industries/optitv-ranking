@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-25T12:01:50.086142+00:00",
+  "generated_at": "2026-07-26T01:24:40.630498+00:00",
   "window_anchor": "2025-06-01",
-  "window_end": "2026-07-25",
+  "window_end": "2026-07-26",
   "method": {
     "formula": "((fleet_size - finish_position)/fleet_size)^P * 100 * sqrt(fleet_size/REF) * multiplier",
     "placing_power": 1.5,
@@ -30,7 +30,7 @@
     "valentines",
     "orange_bowl"
   ],
-  "total_ranked": 467,
+  "total_ranked": 468,
   "publish_top_n": 50,
   "rankings": [
     {
