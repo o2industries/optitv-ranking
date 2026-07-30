@@ -33,6 +33,12 @@ from scraper import fetch_event
 NON_USODA_FLOOR = 150
 STQ_MULTIPLIER = 1.25      # Spring Teams Qualifier weight (rotating; set via stq_status in events.yaml)
 PUBLISH_TOP_N = 50        # full ranking is computed; only the top N are written to ranking.json
+# Sanity floors. A run that falls below either of these is presumed broken
+# (upstream fetch failure, bad config) rather than a real collapse in the
+# data, so run.py refuses to overwrite a good ranking.json with it.
+# Current healthy run: 19 events, ~468 ranked.
+MIN_RANKED_FLOOR = 300
+MIN_EVENTS_FLOOR = 15
 OUTPUT_JSON = "ranking.json"
 FLAGS_LOG = "flags.log"
 
@@ -192,6 +198,17 @@ def main():
             for i, s in enumerate(published, start=1)
         ],
     }
+
+    # ---- sanity guard: refuse to publish a degenerate run ----
+    if len(all_event_scores) < MIN_EVENTS_FLOOR or total_ranked < MIN_RANKED_FLOOR:
+        flags.append(f"ABORT  refusing to write {OUTPUT_JSON}: "
+                     f"events={len(all_event_scores)} (floor {MIN_EVENTS_FLOOR}), "
+                     f"ranked={total_ranked} (floor {MIN_RANKED_FLOOR}). "
+                     f"Existing ranking.json left untouched.")
+        with open(FLAGS_LOG, "w") as f:
+            f.write("\n".join(flags) + "\n")
+        print("\n".join(flags))
+        sys.exit(1)
 
     with open(OUTPUT_JSON, "w") as f:
         json.dump(output, f, indent=2)

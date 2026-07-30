@@ -16,6 +16,8 @@ sandbox — run it in your GitHub Actions environment (or any machine online).
 """
 
 from __future__ import annotations
+import json
+import os
 import sys
 import time
 import requests
@@ -215,15 +217,66 @@ def fetch_manual(csv_path: str) -> dict:
 # Dispatch
 # ---------------------------------------------------------------------------
 
-def fetch_event(ev: dict) -> dict:
+CACHE_DIR = "cache"
+
+
+def cache_path(event_id: str) -> str:
+    return os.path.join(CACHE_DIR, f"{event_id}.json")
+
+
+def read_cache(event_id: str) -> dict | None:
+    """Return a cached payload, or None if absent/unreadable/empty."""
+    p = cache_path(event_id)
+    if not os.path.exists(p):
+        return None
+    try:
+        with open(p) as f:
+            data = json.load(f)
+    except (OSError, ValueError):
+        return None
+    rows = data.get("scoresByRegistration")
+    if not rows:
+        return None
+    return {"scoresByRegistration": rows}
+
+
+def write_cache(event_id: str, payload: dict) -> None:
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    with open(cache_path(event_id), "w") as f:
+        json.dump(payload, f)
+
+
+def fetch_event(ev: dict, refresh: bool = False) -> dict:
+    """
+    Cache-first. Regatta results are FINAL once posted, so each event is
+    fetched from the network exactly once (by warm_cache.py, from a machine
+    Clubspot allows) and served from cache/ forever after. GitHub Actions
+    runners are 403'd by Clubspot; they read cache/ and never call out.
+
+    manual events are NOT cached -- the CSV is already local, and a second
+    copy is exactly the drift trap this project keeps hitting.
+    """
+    eid = ev.get("id", "")
     platform = ev.get("platform")
-    if platform == "clubspot":
-        return fetch_clubspot(ev["regatta_id"], ev["class_id"])
-    if platform == "regatta_network":
-        return fetch_regatta_network(ev["regatta_id"], ev.get("fleet_filter"))
+
     if platform == "manual":
         return fetch_manual(ev.get("results_file", ""))
-    raise ValueError(f"unknown platform '{platform}' for event {ev.get('id')}")
+
+    if eid and not refresh:
+        cached = read_cache(eid)
+        if cached is not None:
+            return cached
+
+    if platform == "clubspot":
+        payload = fetch_clubspot(ev["regatta_id"], ev["class_id"])
+    elif platform == "regatta_network":
+        payload = fetch_regatta_network(ev["regatta_id"], ev.get("fleet_filter"))
+    else:
+        raise ValueError(f"unknown platform '{platform}' for event {eid}")
+
+    if eid:
+        write_cache(eid, payload)
+    return payload
 
 
 if __name__ == "__main__":
