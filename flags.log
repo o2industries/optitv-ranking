@@ -1,12 +1,12 @@
 OK     sunshine_state: fleet_size=246, mult=1.0
-OK     nationals: fleet_size=258, mult=1.15
-OK     team_trials: fleet_size=228, mult=1.25
+OK     nationals: fleet_size=80, entry=319 [GOLD SPLIT], mult=1.15
+OK     team_trials: fleet_size=77, entry=228 [GOLD SPLIT], mult=1.25
 OK     midwinters: fleet_size=47, mult=1.0
 OK     atlantic_coast_gold: fleet_size=139, mult=1.0
 OK     great_lakes: fleet_size=48, mult=1.0
 OK     gulf_coast: fleet_size=66, mult=1.0
 OK     mid_america: fleet_size=38, mult=1.0
-OK     midwest: fleet_size=269, mult=1.25 [STQ]
+OK     midwest: fleet_size=91, entry=269 [GOLD SPLIT], mult=1.25 [STQ]
 OK     new_england: fleet_size=164, mult=1.0
 OK     new_jersey_gold: fleet_size=146, mult=1.0
 OK     northwest: fleet_size=22, mult=1.0
