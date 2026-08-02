@@ -427,6 +427,7 @@ class SailorResult:
     net: float
     sailed_series: bool
     last_race_finish: float  # for tie-breaking; lower is better
+    finals_fleet: str = ""   # Clubspot finals fleet id (qualifying/finals events)
 
 @dataclass
 class EventScore:
@@ -437,6 +438,33 @@ class EventScore:
     result_score: float
     club: str = ""   # canonical resolved club, for clubs_seen in build_ranking
     sail_number: str = ""   # carried for frequency-merge even-split guard
+    strength_size: int = 0  # FULL championship entry; sqrt weight uses this,
+                            # while fleet_size (Gold) sets the percentile
+
+
+# ---------------------------------------------------------------------------
+# Qualifying / finals events: isolate the GOLD fleet
+# ---------------------------------------------------------------------------
+# Clubspot's `one_design_with_fleets` scoring returns Gold, Silver, Bronze and
+# Emerald in a SINGLE payload, separated only by
+# registrationObject.assignments.finals. Points are not offset between fleets,
+# so a flat net sort mixes divisions. Gold is the fleet with the LOWEST MEAN
+# NET. Fleet ids repeat across regattas (Clubspot clones the template), so this
+# is always computed within the payload at hand and never matched by id.
+#
+# Returns "" for flat events (fewer than 2 distinct finals fleets), which
+# disables the filter entirely -- flat events are untouched.
+
+def gold_fleet_id(rows: list) -> str:
+    nets: dict[str, list] = {}
+    for r in rows:
+        fid = getattr(r, "finals_fleet", "")
+        if not fid:
+            continue
+        nets.setdefault(fid, []).append(r.net)
+    if len(nets) < 2:
+        return ""
+    return min(nets, key=lambda f: sum(nets[f]) / len(nets[f]))
 
 
 def parse_clubspot_event(payload: dict) -> list[SailorResult]:
@@ -451,6 +479,7 @@ def parse_clubspot_event(payload: dict) -> list[SailorResult]:
         country = (reg.get("sailNumber_country", "") or "").lower()
         net = entry.get("net")
         scoring = entry.get("scoring_data", []) or []
+        finals_fleet = ((reg.get("assignments", {}) or {}).get("finals") or "")
 
         # Did they actually sail the series? At least one race with a real
         # finishing position (numeric points and not a DNC-like letter score).
@@ -478,6 +507,7 @@ def parse_clubspot_event(payload: dict) -> list[SailorResult]:
             country=country,
             net=float(net), sailed_series=sailed,
             last_race_finish=float(last_race_finish) if last_race_finish != math.inf else 1e9,
+            finals_fleet=finals_fleet,
         ))
     return rows
 
@@ -486,11 +516,25 @@ def score_event(payload: dict, event_id: str, event_name: str,
                 multiplier: float = 1.0) -> list[EventScore]:
     rows = parse_clubspot_event(payload)
 
-    # fleet_size = sailors who sailed the series
     sailed = [r for r in rows if r.sailed_series]
-    fleet_size = len(sailed)
-    if fleet_size == 0:
+    if not sailed:
         return []
+
+    # strength_size = EVERY sailor who raced the championship, all finals fleets.
+    # This is what the sqrt event weight uses: a Gold sailor earned their place
+    # out of the whole entry, not out of the 80 they ended up racing.
+    strength_size = len(sailed)
+
+    # Gold-fleet isolation. Returns "" for flat events -> no filtering at all.
+    gold = gold_fleet_id(sailed)
+    if gold:
+        sailed = [r for r in sailed if r.finals_fleet == gold]
+        if not sailed:
+            return []
+
+    # fleet_size = the fleet actually raced (Gold, or the whole thing if flat).
+    # This is the percentile denominator, so placing spreads properly at the front.
+    fleet_size = len(sailed)
 
     # finish_position = rank on net ascending; tie-break by last-race finish
     sailed.sort(key=lambda r: (r.net, r.last_race_finish))
@@ -498,7 +542,7 @@ def score_event(payload: dict, event_id: str, event_name: str,
     # Multiplier passed in from run.py, sourced from events.yaml (single source
     # of truth). Old EVENT_MULTIPLIERS dict removed so config/scorer can't drift.
     mult = multiplier
-    dampen = math.sqrt(fleet_size / REFERENCE_FLEET)
+    dampen = math.sqrt(strength_size / REFERENCE_FLEET)
 
     out: list[EventScore] = []
     pos = 0
@@ -517,6 +561,7 @@ def score_event(payload: dict, event_id: str, event_name: str,
         out.append(EventScore(
             key=r.key, name=f"{r.first} {r.last}".strip(),
             finish_position=finish_position, fleet_size=fleet_size,
+            strength_size=strength_size,
             result_score=round(result_score, 2),
             club=canon_club,
             sail_number=r.sail_number,

@@ -50,6 +50,8 @@ SAILOR_DISPLAY_CLUB = {
     "ryan lee": "Coach Pulio Sailing",
     "adam butz": "Performance Sailing Institute",
     "storm husky kim": "Best Coast Sailing",
+    "aislyn flynn": "Performance Sailing Institute",
+    "joshua wenokur": "JK Sailing",
 }
 
 
@@ -131,10 +133,13 @@ def main():
         scores = score_event(payload, event_id=eid, event_name=ev["name"],
                               multiplier=eff_mult)
         fleet_size = scores[0].fleet_size if scores else 0
+        # Full championship entry. Equals fleet_size for flat events; for
+        # qualifying/finals events it is the whole entry, not just Gold.
+        strength_size = scores[0].strength_size if scores else 0
 
         # ---- 150 floor for non-USODA ----
-        if not ev.get("usoda", False) and fleet_size < NON_USODA_FLOOR:
-            flags.append(f"DROP   {eid}: non-USODA fleet_size={fleet_size} < {NON_USODA_FLOOR} floor")
+        if not ev.get("usoda", False) and strength_size < NON_USODA_FLOOR:
+            flags.append(f"DROP   {eid}: non-USODA entry={strength_size} < {NON_USODA_FLOOR} floor")
             continue
 
         if fleet_size == 0:
@@ -143,7 +148,9 @@ def main():
 
         all_event_scores[eid] = scores
         stq_note = " [STQ]" if ev.get("stq_status", False) else ""
-        flags.append(f"OK     {eid}: fleet_size={fleet_size}, mult={eff_mult}{stq_note}")
+        gold_note = f", entry={strength_size} [GOLD SPLIT]" if strength_size != fleet_size else ""
+        flags.append(f"OK     {eid}: fleet_size={fleet_size}{gold_note}, "
+                     f"mult={eff_mult}{stq_note}")
 
     # ---- aggregate (full field computed; we publish only the top N) ----
     ranking, merge_flags, dup_warnings = build_ranking(all_event_scores)
@@ -177,7 +184,9 @@ def main():
         "window_anchor": anchor,
         "window_end": today.isoformat(),
         "method": {
-            "formula": "((fleet_size - finish_position)/fleet_size)^P * 100 * sqrt(fleet_size/REF) * multiplier",
+            "formula": "((fleet_size - finish_position)/fleet_size)^P * 100 * sqrt(strength_size/REF) * multiplier",
+            "fleet_size": "the fleet actually raced (Gold only for qualifying/finals events)",
+            "strength_size": "full championship entry across all finals fleets",
             "placing_power": PLACING_POWER,
             "reference_fleet": REFERENCE_FLEET,
             "best_n": BEST_N,

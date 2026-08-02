@@ -54,9 +54,9 @@ events:
   - id: nationals
     name: "USODA National Championship"
     platform: clubspot
-    regatta_id: "BS95PL9HBf"       
-    class_id: "WN7uWOYw7A"         
-    date: "2025-07-31"
+    regatta_id: "lUgdYPewBC"       
+    class_id: "nywhg38KSF"         
+    date: "2026-07-29"
     multiplier: 1.15
     usoda: true
     active: true

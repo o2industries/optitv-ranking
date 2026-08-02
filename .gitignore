@@ -1,0 +1,7 @@
+*.bak
+*.bak_*
+__pycache__/
+.DS_Store
+patch_*.py
+patch_*.py
+patch_*.py
