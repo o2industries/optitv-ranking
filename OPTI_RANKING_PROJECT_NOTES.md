@@ -272,3 +272,219 @@ finisher; fleet_size = row count. Floor + country filter still apply.
 - Wrote methodology copy (Gold-only, best-of-3, multipliers, 150 floor, ranking-vs-
   selection distinction), config-verified against events.yaml.
 - Confirmed sqrt fleet weight is NOT over-weighting top sailors (they rank on percentile).
+---
+
+## CORRECTIONS TO EARLIER SECTIONS (2026-08-02)
+> Three stale facts cost real time this session. Fix them ABOVE as well as here.
+
+1. **Working folder moved.** Notes said
+   `/Users/albertoolivo/Desktop/Python scripts/files/`. It is now
+   `~/Desktop/optitv-repo`, a real `git clone` of `o2industries/optitv-ranking`.
+   The old `~/Desktop/OPTI TV TOP 50/files/` is RETIRED — renamed, kept as a
+   fallback, never edited again.
+
+2. **"The which copy trap" is CLOSED at the deploy level.** The working folder
+   IS the repo. No more manual web upload. `git add` explicit files →
+   `git commit` → `git push`. Never `git add -A` (it sweeps in patch scripts and
+   backups). Never stage `ranking.json` or `flags.log` — the bot owns both;
+   `git checkout -- ranking.json flags.log` to discard local copies before a pull.
+
+3. **The events.yaml header comment was WRONG.** It said the class_id must not be
+   "Green or RWB". RWB *is* Championship — Red/White/Blue are age bands, and they
+   split into Gold and Silver. The real rule: **the class must resolve to the GOLD
+   fleet.** For flat events that is a dedicated `_gold` class_id. For
+   qualifying/finals events there is no Gold class_id at all — see below.
+
+4. **The deploy check is `git log --oneline -5 origin/main`, NOT curl on
+   raw.githubusercontent.** The CDN served a 3-hour-old `ranking.json` today and
+   read exactly like a failed deploy. Git has no CDN in front of it. Look for a
+   `github-actions[bot]` "Auto-update ranking" commit stacked on top of yours.
+
+---
+
+## QUALIFYING / FINALS EVENTS — GOLD ISOLATION + TWO SIZES (added 2026-08-02)
+
+### The bug
+Clubspot's `one_design_with_fleets` scoring method returns **every finals fleet
+in ONE payload**. Gold / Silver / Bronze / Emerald are distinguished only by
+`registrationObject.assignments.finals`. There is no separate Gold class_id to
+point `events.yaml` at.
+
+Points are **not offset between fleets**. Measured on 2026 Nationals:
+
+| finals fleet | boats | mean net |
+|---|---|---|
+| 1M8oG4vxKG (Gold) | 80 | 279 |
+| w1bEBAHBPD | 79 | 420 |
+| zNW3SIJX7m | 80 | 424 |
+| 0sgKrpLljB | 80 | 424 |
+
+The lower three are statistically identical — parallel fleets, not a ranked
+continuum. So the old flat `sort(net ascending)` interleaved Silver sailors into
+Gold finishing positions. This had been true since launch at **Nationals, Team
+Trials, and Midwest** — the three highest-multiplier events in the pool.
+
+Affected events confirmed 2026-08-02:
+`nationals` (Gold 80 of 319) · `team_trials` (Gold 77 of 228) ·
+`midwest` (Gold 91 of 269). All 15 other events are flat and untouched.
+
+**Fleet ids repeat across regattas** (Clubspot clones the template — the same
+`1M8oG4vxKG` is Gold at all three events). Never match a fleet by id; always
+compute within the payload at hand.
+
+### The rule (in `scoring.py`, `gold_fleet_id()`)
+Gold = **the finals fleet with the LOWEST MEAN NET**. Returns `""` when fewer
+than 2 distinct finals fleets exist, which disables the filter entirely, so flat
+events are byte-identical. No per-event config. Nothing to maintain. A new event
+that splits is handled the day it enters the pool.
+
+### TWO SIZES — the important part
+`fleet_size` was doing two unrelated jobs, and they diverged the moment Gold
+became a subset. They are now separate fields on `EventScore`:
+
+- **`fleet_size`** = the fleet actually raced (Gold: 77–91). Sets the
+  **percentile denominator**, so placing still spreads properly at the front.
+- **`strength_size`** = the FULL championship entry (228–320). Sets the
+  **sqrt event weight** — a Gold sailor earned their place out of the whole
+  entry, not out of the 80 they ended up racing.
+
+For flat events the two are identical.
+
+**Why not Gold for both:** Orange Bowl (226, flat) would have become the heaviest
+event on the board — above Nationals and Team Trials. A non-USODA invitational
+outweighing the national championship is indefensible.
+
+**Why not full entry for both:** finish positions 1–80 against a denominator of
+320 puts every Gold sailor in the 0.75–1.00 percentile band, which the 1.5 power
+then flattens into near-identical scores. Destroys discrimination at the event
+that matters most.
+
+**Public wording:** *"placing is measured within the fleet you raced; event
+strength is measured by the full championship entry."*
+
+The 150 non-USODA floor now gates on `strength_size`, not Gold.
+
+### flags.log format
+Fleeted events print `fleet_size=80, entry=319 [GOLD SPLIT]`. A `[GOLD SPLIT]`
+tag on a known-flat event means the selector is misfiring — STOP.
+
+---
+
+## HOW TO ADD / UPDATE AN EVENT (current, 2026-08-02)
+
+1. Open the results page → F12 → Network → XHR → find the
+   `clubspot-results-v{4,5}/{REGATTA_ID}?boatClassIDs={CLASS_ID}` call.
+   **Copy BOTH ids from the SAME call.** They are two halves of one address;
+   mixing years silently returns an empty fleet and the event DROPs with
+   "no scored sailors". This burned a full session on 2026-08-02 — a new
+   regatta_id was pasted with last year's class_id, and vice versa.
+2. Verify the class before trusting it:
+   ```
+   curl -s "https://results.theclubspot.com/clubspot-results-v5/REGATTA?boatClassIDs=CLASS" \
+   | python3 -c "
+   import sys,json,collections
+   d=json.load(sys.stdin)['scoresByRegistration']
+   b=d[0]['registrationObject']['boatClassObject']
+   print('CLASS:',b['name'],'| method:',b['scoring']['method'],'| regs:',b['registrations'])
+   c=collections.defaultdict(list)
+   for r in d:
+       f=r['registrationObject'].get('assignments',{}).get('finals')
+       c[f].append(r['net'])
+   for f,n in sorted(c.items(), key=lambda x: sum(x[1])/len(x[1])):
+       print(' ',f,len(n),'mean net',round(sum(n)/len(n)))
+   "
+   ```
+   `name` must be a Championship class, NOT "Green Fleet".
+   `method: one_design_with_fleets` + multiple fleets = the Gold filter applies.
+3. Edit `events.yaml`.
+4. `python3 warm_cache.py --refresh --only <event_id>`
+   **`--refresh` is mandatory when changing an id on an EXISTING event.** Plain
+   `warm_cache` sees the old cache file, prints CACHED, and the pipeline scores
+   last year's regatta forever while reporting green.
+5. `python3 run.py` — gut-check flags.log. Flat events must not move.
+6. `git add events.yaml cache/<event_id>.json && git commit && git push`
+7. Confirm with `git log --oneline -5 origin/main` (NOT curl).
+
+---
+
+## SESSION LOG
+### 2026-08-02 — Gold isolation, 2026 Nationals, repo clone
+- **Christian Petersen anomaly root-caused.** He rose while doing nothing:
+  `ranking_score` divides by `len(best)`, not `BEST_N`, so a 2-event sailor is
+  scored on a 2-result mean and is untouchable by new events, while everyone
+  around him got diluted. Resolved incidentally — the 2026 Nationals upload
+  replaced his 2025 result and he left the top 15.
+- **Loaded 2026 Nationals.** Correct ids: `regatta_id lUgdYPewBC` /
+  `class_id nywhg38KSF` ("Opti Championship", 320 entries). Several wrong
+  combinations were tried first, including a Green Fleet class_id (YEQU2JgPkJ,
+  99 boats) and mixed-year pairs. `sunshine_state` correctly reverts to
+  `DCNH3Uqq5Y` / `wKwBdIvMpp`.
+- **Discovered and fixed the fleeted-event bug** (see section above).
+  `total_ranked` 483 → **388**: ~95 sailors whose only results were in lower
+  finals fleets correctly left a Gold-only board.
+- **Migrated to a git clone.** All six code files were byte-identical to the
+  repo — no drift to reconcile. Brought across `events.yaml`, the 319-row
+  nationals cache, and `warm_cache.py` (which had NEVER been backed up
+  anywhere — one machine failure from losing the ability to add events).
+  Added `.gitignore` (`*.bak`, `*.bak_*`, `patch_*.py`, `__pycache__`,
+  `.DS_Store`) and removed the committed `scoring.py.bak`.
+- Added `aislyn flynn` → Performance Sailing Institute and
+  `joshua wenokur` → JK Sailing to `SAILOR_DISPLAY_CLUB`. Both were rendering
+  **blank clubs in the public top 15**. Zero blanks now across all 50.
+- Deployed as commit `6ef8d5f`; Action #71 green; bot committed `5d9f49b`.
+  Top 15 reviewed by Alberto — reads better than the pre-fix board.
+
+### Rejected this session (do not relitigate without new information)
+- **Rebuilding run.py.** It is 225 lines of orchestration with nothing
+  redundant. The three "patches" in it are the cache-first fetch, the abort
+  guard, and the opt-out filter — two exist because production broke without
+  them. `scoring.py` (751 lines) is the heavy file, and ~400 of that is the
+  alias table plus the three merge passes, verified sailor-by-sailor across 468
+  names. A rewrite trades a verified identity layer for a tidy one, days before
+  launch, with no way to prove the new one is right.
+- **`QUALIFY_MIN_EVENTS` 2 → 3.** It does not fix the underlying issue. A sailor
+  with three stale results is exactly as frozen as one with two; min-3 just
+  requires one more old result before the freeze. Staleness is a WINDOW problem.
+- **Advancing the anchor to the 2026 Team Trials date.** Only 6 events in the
+  pool post-date 2026-04-23, so the pool would collapse and the abort guard
+  would fire. "Anchored to previous Team Trials" necessarily lags a full season:
+  advance it each spring to the PRIOR year's Trials, once the fall/winter
+  runnings have repopulated the pool.
+
+---
+
+## OPEN ITEMS (restated 2026-08-02, priority order)
+1. **WINDOW HONESTY — launch blocking.** `window_anchor: 2025-06-01` is fixed and
+   has never moved; the pool now spans 14 months. The methodology page says
+   "rolling 12 months." **That is not what the config does.** Either implement a
+   rolling window (`patch_window.py` exists, unapplied — note it would drop
+   new_england and northwest immediately, and `MIN_EVENTS_FLOOR = 15` becomes a
+   dated fuse: pool hits 14 events around Sept 27) or reword the page to
+   something true: *"the most recent running of each event in the pool."*
+2. **Squarespace opt-out form.** Copy complete, not built. Launch-blocking by
+   Alberto's own rule: removal works internally but no parent can reach it.
+3. **`optouts.yaml` needs requester email + `requested_on` per entry.** A bare
+   key list cannot authenticate a restore request. Fix before there are real
+   entries to backfill.
+4. **Nine identity splits are HIDDEN, not fixed.** Luong ×2, Shackleford, Maddie
+   Lim, Macnair, Deblinger, Saladino, Bonaci, Taylor. They vanished from
+   flags.log only because those sailors raced lower finals fleets and left
+   scope. They return the day one sails Gold. Most are simple aliases
+   (`cyc1853`/`cyc 1853`, `shelter island`/`shelter island yacht club`,
+   `del rey yc`/`dryc`).
+5. **`MIN_RANKED_FLOOR = 300`** now has 88 sailors of headroom, not 168.
+   Revisit alongside the window decision.
+6. **`SAILOR_DISPLAY_CLUB` is failing at roughly the rate new sailors enter the
+   top 50.** Three blanks appeared in two consecutive runs. Replace with a
+   general affiliation passthrough.
+7. **Kill the `lyc → lauderdale` alias** (still in CLUB_ALIASES, still wrong —
+   LYC is ambiguous: Lavallette / Lauderdale / Larchmont / Leland).
+8. **Delete the dead `find_duplicate_candidates`** in scoring.py (~50 lines,
+   unused since the post-merge detector replaced it).
+9. **Bump Actions version pins** — Node 20 deprecation, deadline 2026-09-16.
+10. **Pursue direct access** with Clubspot and SAILTI.
+11. **Profiles Phase 1** (`profiles.json`) — note the schema now carries BOTH
+    `fleet_size` and `strength_size` per event row.
+12. **Scraper still uses v4**; v5 is live and returns the same shape. Not broken,
+    but the ID-verification workflow above uses v5 — don't misdiagnose a future
+    v4 retirement the way the 403 nearly was.
