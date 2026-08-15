@@ -65,23 +65,23 @@ events:
   - id: team_trials
     name: "USODA Team Trials"
     platform: clubspot
-    regatta_id: "MJPltRlXPA"       
-    class_id: "XvDEJVjRgD"          
-    date: "2026-04-23"
+    regatta_id: ""       
+    class_id: ""          
+    date: ""
     multiplier: 1.25
     usoda: true
-    active: true
+    active: false
     stq_status: false
 
   - id: midwinters
     name: "USODA Midwinter Championship"
     platform: clubspot
-    regatta_id: "0hfYJK17wk"
-    class_id: "Av4nDnjYFj"
+    regatta_id: ""
+    class_id: ""
     date: "2025-11-28"
     multiplier: 1.0
     usoda: true
-    active: true
+    active: false
     stq_status: false
 
   - id: atlantic_coast_gold
@@ -142,12 +142,12 @@ events:
   - id: new_england
     name: "USODA New England Championship"
     platform: clubspot
-    regatta_id: "b1ep9ZFOPV"
-    class_id: "EYZrpRJLaY"
+    regatta_id: "yrT9f2bOVg"
+    class_id: ""
     date: "2025-06-30"
     multiplier: 1.0
     usoda: true
-    active: true
+    active: false
     stq_status: false
 
   - id: new_jersey_gold
