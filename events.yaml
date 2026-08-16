@@ -147,7 +147,7 @@ events:
     date: "2026-08-12"
     multiplier: 1.0
     usoda: true
-    active: false
+    active: true
     stq_status: false
 
   - id: new_jersey_gold
