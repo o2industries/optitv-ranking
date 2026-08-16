@@ -1,7 +1,7 @@
 OK     sunshine_state: fleet_size=246, mult=1.0
 OK     nationals: fleet_size=80, entry=319 [GOLD SPLIT], mult=1.15
 SKIP   team_trials: inactive
-SKIP   midwinters: inactive
+OK     midwinters: fleet_size=47, mult=1.0
 OK     atlantic_coast_gold: fleet_size=139, mult=1.0
 OK     great_lakes: fleet_size=48, mult=1.0
 OK     gulf_coast: fleet_size=66, mult=1.0

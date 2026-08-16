@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T11:17:27.268526+00:00",
+  "generated_at": "2026-08-16T14:55:09.230298+00:00",
   "window_anchor": "2025-06-01",
   "window_end": "2026-08-16",
   "method": {
@@ -14,6 +14,7 @@
   "events_scored": [
     "sunshine_state",
     "nationals",
+    "midwinters",
     "atlantic_coast_gold",
     "great_lakes",
     "gulf_coast",
@@ -29,7 +30,7 @@
     "valentines",
     "orange_bowl"
   ],
-  "total_ranked": 358,
+  "total_ranked": 369,
   "publish_top_n": 50,
   "rankings": [
     {
@@ -273,9 +274,9 @@
     {
       "rank": 35,
       "name": "Marshall Rodriguez",
-      "club": "pensacola yacht club",
+      "club": "fwbc",
       "ranking_score": 122.46,
-      "events_counted": 6
+      "events_counted": 7
     },
     {
       "rank": 36,
@@ -352,7 +353,7 @@
       "name": "Jack  Van Orden",
       "club": "brant beach yacht club",
       "ranking_score": 113.89,
-      "events_counted": 5
+      "events_counted": 6
     },
     {
       "rank": 47,
