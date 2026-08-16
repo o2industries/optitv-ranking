@@ -76,12 +76,12 @@ events:
   - id: midwinters
     name: "USODA Midwinter Championship"
     platform: clubspot
-    regatta_id: ""
-    class_id: ""
+    regatta_id: "0hfYJK17wk"
+    class_id: "Av4nDnjYFj"
     date: "2025-11-28"
     multiplier: 1.0
     usoda: true
-    active: false
+    active: true
     stq_status: false
 
   - id: atlantic_coast_gold
@@ -143,8 +143,8 @@ events:
     name: "USODA New England Championship"
     platform: clubspot
     regatta_id: "yrT9f2bOVg"
-    class_id: ""
-    date: "2025-06-30"
+    class_id: "1L1fBECBU8"
+    date: "2026-08-12"
     multiplier: 1.0
     usoda: true
     active: false
