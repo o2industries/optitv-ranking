@@ -33,8 +33,7 @@
 # =============================================================================
 
 run_config:
-  window_anchor: "2025-06-01"   # previous Team Trials date; edit each season
-  # today is computed automatically at run time
+  window_anchor: "2025-10-20"   
 
 events:
 
