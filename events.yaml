@@ -87,9 +87,9 @@ events:
   - id: atlantic_coast_gold
     name: "USODA Atlantic Coast Championship Gold Fleet"
     platform: clubspot
-    regatta_id: "QIbpENNi3M"
-    class_id: "OLCOFjicY4"
-    date: "2025-09-06"
+    regatta_id: "DpGNAEcxM3"
+    class_id: "392AkO0nYp"
+    date: "2026-09-13"
     multiplier: 1.0
     usoda: true
     active: true
@@ -131,13 +131,13 @@ events:
   - id: midwest
     name: "USODA Midwest Championship"
     platform: clubspot
-    regatta_id: "6A4wtp0URb"
-    class_id: "c6s4ylg3g8"
-    date: "2025-10-11"
-    multiplier: 1.25   # set by stq_status below (Spring Teams Qualifier 2025-26); see header
+    regatta_id: "hRHiKDX27j"
+    class_id: "IHuHFuHEbE"
+    date: "2026-09-13"
+    multiplier: 1.0   
     usoda: true
     active: true
-    stq_status: true
+    stq_status: false
 
   - id: new_england
     name: "USODA New England Championship"
@@ -164,9 +164,9 @@ events:
   - id: northwest
     name: "USODA Northwest Championship"
     platform: clubspot
-    regatta_id: "lZU38T7YsN"
-    class_id: "JgyTx212Fh"
-    date: "2025-07-19"
+    regatta_id: "EY2fV14D8r"
+    class_id: "DA7MjAVpAv"
+    date: "2026-07-19"
     multiplier: 1.0
     usoda: true
     active: true
@@ -175,9 +175,9 @@ events:
   - id: pacific_coast
     name: "USODA Pacific Coast Championship"
     platform: clubspot
-    regatta_id: "tQmblHWH4b"
-    class_id: "6lAqW7upkk"
-    date: "2025-09-27"
+    regatta_id: "scAueh76kt"
+    class_id: "TBAGPCAo9E"
+    date: "2026-10-04"
     multiplier: 1.0
     usoda: true
     active: true
@@ -197,9 +197,9 @@ events:
   - id: west_coast
     name: "USODA West Coast Championship"
     platform: clubspot
-    regatta_id: "fqhTlF2Cr5"
-    class_id: "JTho1UkmUU"
-    date: "2025-08-29"
+    regatta_id: "nvDEeAoJrk"
+    class_id: "0BdGeMCffX"
+    date: "2026-09-27"
     multiplier: 1.0
     usoda: true
     active: true
