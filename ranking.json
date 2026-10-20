@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T15:32:37.373034+00:00",
+  "generated_at": "2026-10-20T23:17:00.834455+00:00",
   "window_anchor": "2025-06-01",
   "window_end": "2026-10-20",
   "method": {
@@ -36,352 +36,352 @@
   "rankings": [
     {
       "rank": 1,
-      "name": "Briggs Kossmann",
-      "club": "",
-      "ranking_score": 179.64,
-      "events_counted": 2
+      "name": "Walton Macpherson",
+      "club": "carolina yacht club sc",
+      "ranking_score": 161.67,
+      "events_counted": 5
     },
     {
       "rank": 2,
-      "name": "Walton Macpherson",
-      "club": "carolina yacht club sc",
-      "ranking_score": 175.11,
+      "name": "Samuel Gerin",
+      "club": "coral reef yacht club",
+      "ranking_score": 160.12,
       "events_counted": 5
     },
     {
       "rank": 3,
-      "name": "Samuel Gerin",
-      "club": "coral reef yacht club",
-      "ranking_score": 171.6,
-      "events_counted": 5
+      "name": "Briggs Kossmann",
+      "club": "",
+      "ranking_score": 159.82,
+      "events_counted": 2
     },
     {
       "rank": 4,
-      "name": "Jaiden Strickon",
-      "club": "Performance Sailing Institute",
-      "ranking_score": 166.04,
-      "events_counted": 5
-    },
-    {
-      "rank": 5,
       "name": "Tucker Johnson",
       "club": "hampton yacht club",
-      "ranking_score": 166.04,
+      "ranking_score": 153.49,
       "events_counted": 6
     },
     {
-      "rank": 6,
-      "name": "Thomas Alexopoulos",
+      "rank": 5,
+      "name": "Brooks Pardi",
       "club": "riverside yacht club",
-      "ranking_score": 159.96,
+      "ranking_score": 153.18,
+      "events_counted": 5
+    },
+    {
+      "rank": 6,
+      "name": "Jaiden Strickon",
+      "club": "Performance Sailing Institute",
+      "ranking_score": 153.05,
       "events_counted": 5
     },
     {
       "rank": 7,
-      "name": "Brooks Pardi",
-      "club": "riverside yacht club",
-      "ranking_score": 157.9,
-      "events_counted": 5
-    },
-    {
-      "rank": 8,
-      "name": "Constantino Conrad",
-      "club": "st petersburg yacht club",
-      "ranking_score": 157.34,
-      "events_counted": 2
-    },
-    {
-      "rank": 9,
-      "name": "Ivan Riano Jr",
-      "club": "coral reef yacht club",
-      "ranking_score": 155.62,
-      "events_counted": 8
-    },
-    {
-      "rank": 10,
-      "name": "Caitlyn Flynn",
-      "club": "carolina yacht club sc",
-      "ranking_score": 153.96,
-      "events_counted": 7
-    },
-    {
-      "rank": 11,
       "name": "Aislyn Flynn",
       "club": "Performance Sailing Institute",
       "ranking_score": 152.65,
       "events_counted": 7
     },
     {
-      "rank": 12,
+      "rank": 8,
       "name": "Alexander Freyre",
       "club": "key biscayne yacht club",
       "ranking_score": 152.6,
       "events_counted": 5
     },
     {
-      "rank": 13,
-      "name": "Francisco Don",
-      "club": "coral reef yacht club",
-      "ranking_score": 150.48,
+      "rank": 9,
+      "name": "Thomas Alexopoulos",
+      "club": "riverside yacht club",
+      "ranking_score": 149.74,
       "events_counted": 5
     },
     {
-      "rank": 14,
-      "name": "Maxime McCulloch",
-      "club": "lakewood yacht club",
-      "ranking_score": 150.27,
-      "events_counted": 7
-    },
-    {
-      "rank": 15,
+      "rank": 10,
       "name": "Ryan Breck",
       "club": "riverside yacht club",
       "ranking_score": 148.5,
       "events_counted": 6
     },
     {
-      "rank": 16,
-      "name": "Morgan Rosenthal",
-      "club": "coral reef yacht club",
-      "ranking_score": 148.45,
-      "events_counted": 5
-    },
-    {
-      "rank": 17,
+      "rank": 11,
       "name": "Audrey Roachell",
       "club": "coral reef yacht club",
       "ranking_score": 147.41,
       "events_counted": 5
     },
     {
-      "rank": 18,
+      "rank": 12,
       "name": "Levi Hibbs",
       "club": "coral reef yacht club",
       "ranking_score": 147.14,
       "events_counted": 4
     },
     {
-      "rank": 19,
+      "rank": 13,
       "name": "Connor Cylke",
       "club": "lauderdale yacht club",
       "ranking_score": 143.96,
       "events_counted": 4
     },
     {
-      "rank": 20,
-      "name": "Thomas Weidner",
-      "club": "st petersburg yacht club",
-      "ranking_score": 142.75,
-      "events_counted": 5
+      "rank": 14,
+      "name": "Ivan Riano Jr",
+      "club": "coral reef yacht club",
+      "ranking_score": 142.84,
+      "events_counted": 8
     },
     {
-      "rank": 21,
+      "rank": 15,
+      "name": "Caitlyn Flynn",
+      "club": "carolina yacht club sc",
+      "ranking_score": 142.27,
+      "events_counted": 7
+    },
+    {
+      "rank": 16,
       "name": "Tucker Gowens",
       "club": "st petersburg yacht club",
       "ranking_score": 142.01,
       "events_counted": 7
     },
     {
-      "rank": 22,
+      "rank": 17,
       "name": "Cc Alamgir",
       "club": "bellport bay yacht club",
       "ranking_score": 140.84,
       "events_counted": 5
     },
     {
-      "rank": 23,
+      "rank": 18,
+      "name": "Constantino Conrad",
+      "club": "st petersburg yacht club",
+      "ranking_score": 139.49,
+      "events_counted": 2
+    },
+    {
+      "rank": 19,
+      "name": "Maxime McCulloch",
+      "club": "lakewood yacht club",
+      "ranking_score": 139.01,
+      "events_counted": 7
+    },
+    {
+      "rank": 20,
       "name": "Trey Waters",
       "club": "annapolis yacht club",
       "ranking_score": 138.31,
       "events_counted": 5
     },
     {
-      "rank": 24,
+      "rank": 21,
+      "name": "Francisco Don",
+      "club": "coral reef yacht club",
+      "ranking_score": 138.14,
+      "events_counted": 5
+    },
+    {
+      "rank": 22,
+      "name": "Morgan Rosenthal",
+      "club": "coral reef yacht club",
+      "ranking_score": 137.82,
+      "events_counted": 5
+    },
+    {
+      "rank": 23,
       "name": "Storm Husky Kim",
       "club": "Best Coast Sailing",
       "ranking_score": 134.92,
       "events_counted": 6
     },
     {
-      "rank": 25,
-      "name": "Dalton Cellamare",
+      "rank": 24,
+      "name": "Thomas Weidner",
       "club": "st petersburg yacht club",
-      "ranking_score": 130.97,
-      "events_counted": 4
+      "ranking_score": 131.69,
+      "events_counted": 5
     },
     {
-      "rank": 26,
-      "name": "Daniel Moure",
-      "club": "coral reef yacht club",
-      "ranking_score": 129.88,
-      "events_counted": 6
-    },
-    {
-      "rank": 27,
+      "rank": 25,
       "name": "Olivia Weber",
       "club": "coral reef yacht club",
       "ranking_score": 129.16,
       "events_counted": 5
     },
     {
-      "rank": 28,
-      "name": "Kellan Martin",
-      "club": "norfolk ycc",
-      "ranking_score": 128.55,
-      "events_counted": 7
-    },
-    {
-      "rank": 29,
+      "rank": 26,
       "name": "Jackson Jagusztyn",
       "club": "lauderdale yacht club",
       "ranking_score": 128.47,
       "events_counted": 5
     },
     {
-      "rank": 30,
+      "rank": 27,
       "name": "Christian Freyre",
       "club": "key biscayne yacht club",
       "ranking_score": 126.69,
       "events_counted": 5
     },
     {
-      "rank": 31,
+      "rank": 28,
       "name": "Joshua Wenokur",
       "club": "JK Sailing",
       "ranking_score": 126.39,
       "events_counted": 3
     },
     {
-      "rank": 32,
-      "name": "Adam Butz",
-      "club": "Performance Sailing Institute",
-      "ranking_score": 126.25,
-      "events_counted": 4
-    },
-    {
-      "rank": 33,
+      "rank": 29,
       "name": "Ryan Lee",
       "club": "Coach Pulio Sailing",
       "ranking_score": 126.15,
       "events_counted": 6
     },
     {
-      "rank": 34,
+      "rank": 30,
       "name": "Alec Voss Del Vecchio",
       "club": "coral reef yacht club",
       "ranking_score": 125.98,
       "events_counted": 7
     },
     {
-      "rank": 35,
+      "rank": 31,
       "name": "Mason Lim",
       "club": "jk sccyc",
       "ranking_score": 125.69,
       "events_counted": 7
     },
     {
-      "rank": 36,
+      "rank": 32,
       "name": "Casey Moure",
       "club": "coral reef yacht club",
       "ranking_score": 125.51,
       "events_counted": 6
     },
     {
-      "rank": 37,
+      "rank": 33,
       "name": "Jonah Watson",
       "club": "lauderdale yacht club",
       "ranking_score": 124.91,
       "events_counted": 8
     },
     {
-      "rank": 38,
-      "name": "Rafi Ahmed",
-      "club": "glss",
-      "ranking_score": 123.45,
-      "events_counted": 4
-    },
-    {
-      "rank": 39,
-      "name": "Cole Parnell",
-      "club": "carolina yacht club sc",
-      "ranking_score": 123.41,
-      "events_counted": 2
-    },
-    {
-      "rank": 40,
+      "rank": 34,
       "name": "Marshall Rodriguez",
       "club": "fwbc",
       "ranking_score": 122.46,
       "events_counted": 8
     },
     {
-      "rank": 41,
+      "rank": 35,
+      "name": "Dalton Cellamare",
+      "club": "st petersburg yacht club",
+      "ranking_score": 121.35,
+      "events_counted": 4
+    },
+    {
+      "rank": 36,
       "name": "Quillin Moran",
       "club": "annapolis yacht club",
       "ranking_score": 120.78,
       "events_counted": 8
     },
     {
-      "rank": 42,
-      "name": "Olympia McCulloch",
-      "club": "lakewood yacht club",
-      "ranking_score": 120.22,
+      "rank": 37,
+      "name": "Daniel Moure",
+      "club": "coral reef yacht club",
+      "ranking_score": 120.06,
+      "events_counted": 6
+    },
+    {
+      "rank": 38,
+      "name": "Charles Wesley Hoffman",
+      "club": "pensacola yacht club",
+      "ranking_score": 118.35,
+      "events_counted": 5
+    },
+    {
+      "rank": 39,
+      "name": "Kellan Martin",
+      "club": "norfolk ycc",
+      "ranking_score": 118.12,
       "events_counted": 7
     },
     {
-      "rank": 43,
-      "name": "Daniel Skutch Tyson",
-      "club": "annapolis yacht club",
-      "ranking_score": 118.96,
-      "events_counted": 4
-    },
-    {
-      "rank": 44,
-      "name": "Charles Wesley Hoffman",
-      "club": "pensacola yacht club",
-      "ranking_score": 118.6,
-      "events_counted": 5
-    },
-    {
-      "rank": 45,
-      "name": "Samantha Feinstone",
-      "club": "annapolis yacht club",
-      "ranking_score": 118.22,
-      "events_counted": 5
-    },
-    {
-      "rank": 46,
+      "rank": 40,
       "name": "Liam  Kandt",
       "club": "lauderdale yacht club",
       "ranking_score": 117.99,
       "events_counted": 3
     },
     {
-      "rank": 47,
-      "name": "Wesley Johnson",
-      "club": "hampton yacht club",
-      "ranking_score": 115.68,
-      "events_counted": 6
+      "rank": 41,
+      "name": "Adam Butz",
+      "club": "Performance Sailing Institute",
+      "ranking_score": 117.22,
+      "events_counted": 4
     },
     {
-      "rank": 48,
+      "rank": 42,
       "name": "Willis Cantey",
       "club": "carolina yacht club sc",
       "ranking_score": 115.56,
       "events_counted": 2
     },
     {
-      "rank": 49,
+      "rank": 43,
+      "name": "Samantha Feinstone",
+      "club": "annapolis yacht club",
+      "ranking_score": 115.44,
+      "events_counted": 5
+    },
+    {
+      "rank": 44,
       "name": "Zia Ahmed",
       "club": "glss",
       "ranking_score": 115.08,
       "events_counted": 4
     },
     {
-      "rank": 50,
+      "rank": 45,
       "name": "Tyler Richards",
       "club": "falmouth yacht club",
       "ranking_score": 114.52,
+      "events_counted": 2
+    },
+    {
+      "rank": 46,
+      "name": "Cameron Bellina",
+      "club": "southern yacht club",
+      "ranking_score": 113.9,
+      "events_counted": 5
+    },
+    {
+      "rank": 47,
+      "name": "Jack  Van Orden",
+      "club": "brant beach yacht club",
+      "ranking_score": 113.89,
+      "events_counted": 7
+    },
+    {
+      "rank": 48,
+      "name": "Olympia McCulloch",
+      "club": "lakewood yacht club",
+      "ranking_score": 113.23,
+      "events_counted": 7
+    },
+    {
+      "rank": 49,
+      "name": "Rafi Ahmed",
+      "club": "glss",
+      "ranking_score": 112.6,
+      "events_counted": 4
+    },
+    {
+      "rank": 50,
+      "name": "Cole Parnell",
+      "club": "carolina yacht club sc",
+      "ranking_score": 110.75,
       "events_counted": 2
     }
   ]
