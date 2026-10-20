@@ -1,2 +1,4 @@
 # optouts.yaml — sailors removed from PUBLIC output by request.
-optouts: []
+optouts:
+ -key "walton macpherson|carolina yacht club
+    requested_on: "2026-09-10"
