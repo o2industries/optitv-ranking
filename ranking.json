@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T23:46:34.756871+00:00",
-  "window_anchor": "2025-06-01",
+  "generated_at": "2026-10-20T23:50:16.182915+00:00",
+  "window_anchor": "2025-10-20",
   "window_end": "2026-10-20",
   "method": {
     "formula": "((fleet_size - finish_position)/fleet_size)^P * 100 * sqrt(strength_size/REF) * multiplier",
