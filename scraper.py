@@ -246,6 +246,26 @@ def write_cache(event_id: str, payload: dict) -> None:
         json.dump(payload, f)
 
 
+class StaleCacheError(RuntimeError):
+    """Cache file holds a different regatta than events.yaml, and the
+    re-fetch failed. run.py treats this as fatal so the Action goes RED
+    instead of silently scoring last season's regatta."""
+
+
+def cache_matches_regatta(event_id: str, regatta_id: str) -> bool:
+    """True if cache/{event_id}.json was fetched for this regatta_id.
+    Clubspot payloads embed the regatta's objectId in every registration,
+    so a plain text search is exact. Works for warm_cache files and for
+    files saved from a browser."""
+    if not regatta_id:
+        return True
+    try:
+        with open(cache_path(event_id)) as f:
+            return f'"{regatta_id}"' in f.read()
+    except OSError:
+        return False
+
+
 def fetch_event(ev: dict, refresh: bool = False) -> dict:
     """
     Cache-first. Regatta results are FINAL once posted, so each event is
@@ -262,17 +282,35 @@ def fetch_event(ev: dict, refresh: bool = False) -> dict:
     if platform == "manual":
         return fetch_manual(ev.get("results_file", ""))
 
+    stale = False
     if eid and not refresh:
         cached = read_cache(eid)
         if cached is not None:
-            return cached
+            # Guard: a cache file is keyed by event id, NOT regatta id. When a
+            # regatta_id changes in events.yaml (new season), the old file
+            # would otherwise be served forever while runs report green.
+            rid = ev.get("regatta_id", "")
+            if platform != "clubspot" or cache_matches_regatta(eid, rid):
+                return cached
+            stale = True
 
-    if platform == "clubspot":
-        payload = fetch_clubspot(ev["regatta_id"], ev["class_id"])
-    elif platform == "regatta_network":
-        payload = fetch_regatta_network(ev["regatta_id"], ev.get("fleet_filter"))
-    else:
-        raise ValueError(f"unknown platform '{platform}' for event {eid}")
+    try:
+        if platform == "clubspot":
+            payload = fetch_clubspot(ev["regatta_id"], ev["class_id"])
+        elif platform == "regatta_network":
+            payload = fetch_regatta_network(ev["regatta_id"], ev.get("fleet_filter"))
+        else:
+            raise ValueError(f"unknown platform '{platform}' for event {eid}")
+    except Exception as e:
+        if stale:
+            url = (CLUBSPOT_URL.format(regatta_id=ev["regatta_id"])
+                   + f"?boatClassIDs={ev.get('class_id', '')}")
+            raise StaleCacheError(
+                f"cache/{eid}.json is a DIFFERENT regatta than events.yaml "
+                f"(regatta_id={ev['regatta_id']}) and re-fetch failed ({e}). "
+                f"Open {url} in a browser, save as {eid}.json, upload to cache/."
+            ) from e
+        raise
 
     if eid:
         write_cache(eid, payload)

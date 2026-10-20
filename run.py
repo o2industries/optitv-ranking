@@ -28,7 +28,7 @@ import sys
 import yaml
 
 from scoring import score_event, build_ranking, find_duplicate_candidates, REFERENCE_FLEET, PLACING_POWER, BEST_N, QUALIFY_MIN_EVENTS
-from scraper import fetch_event
+from scraper import fetch_event, StaleCacheError
 
 NON_USODA_FLOOR = 150
 STQ_MULTIPLIER = 1.25      # Spring Teams Qualifier weight (rotating; set via stq_status in events.yaml)
@@ -96,6 +96,7 @@ def main():
     anchor = cfg["run_config"]["window_anchor"]
     today = dt.date.today()
     flags: list[str] = []
+    stale_events: list[str] = []
     all_event_scores: dict[str, list] = {}
 
     for ev in cfg["events"]:
@@ -116,6 +117,10 @@ def main():
         # ---- fetch ----
         try:
             payload = fetch_event(ev)
+        except StaleCacheError as e:
+            stale_events.append(eid)
+            flags.append(f"STALE  {eid}: {e}")
+            continue
         except Exception as e:
             flags.append(f"ERROR  {eid}: fetch failed -> {e}")
             continue
@@ -209,6 +214,14 @@ def main():
     }
 
     # ---- sanity guard: refuse to publish a degenerate run ----
+    if stale_events:
+        flags.append(f"ABORT  refusing to write {OUTPUT_JSON}: stale cache for "
+                     f"{', '.join(stale_events)} (see STALE lines above). "
+                     f"Existing ranking.json left untouched.")
+        with open(FLAGS_LOG, "w") as f:
+            f.write("\n".join(flags) + "\n")
+        print("\n".join(flags))
+        sys.exit(1)
     if len(all_event_scores) < MIN_EVENTS_FLOOR or total_ranked < MIN_RANKED_FLOOR:
         flags.append(f"ABORT  refusing to write {OUTPUT_JSON}: "
                      f"events={len(all_event_scores)} (floor {MIN_EVENTS_FLOOR}), "
