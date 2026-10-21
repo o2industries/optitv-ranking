@@ -20,6 +20,7 @@ OK     orange_bowl: fleet_size=226, mult=1.1
 --- 1 even-split merge(s) refused, review ---
 MERGE? 'joseph callahan' even split, no sail match: 'joseph callahan|tred avon yacht club' vs 'joseph callahan|annapolis yacht club' -- review manually
 OPTOUT removed: 'walton macpherson|carolina yacht club sc'
+ACTIVE removed 130 sailor(s) with no result since 2026-04-23 (last Team Trials)
 --- 2 possible duplicate(s) to review ---
 === 1 UNRESOLVED same-name split(s) post-merge (review: one person or two?) ===
 [  1] 'annapolis yacht club'  <->  'tred avon yacht club'   e.g. Joseph Callahan
