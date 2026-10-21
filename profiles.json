@@ -1,0 +1,2957 @@
+{
+  "generated_at": "2026-10-21T00:07:00.233791+00:00",
+  "profiles": {
+    "samuel gerin|coral reef yacht club": {
+      "name": "Samuel Gerin",
+      "ranking_score": 159.23,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 6,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.925,
+          "multiplier": 1.15,
+          "score": 182.73,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 5,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9746,
+          "multiplier": 1.0,
+          "score": 135.05,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 5,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.9779,
+          "multiplier": 1.1,
+          "score": 159.91,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 12,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.904,
+          "multiplier": 1.0,
+          "score": 96.1,
+          "counting": false
+        }
+      ]
+    },
+    "aislyn flynn|": {
+      "name": "Aislyn Flynn",
+      "ranking_score": 152.65,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 10,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.875,
+          "multiplier": 1.15,
+          "score": 168.11,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 6,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9756,
+          "multiplier": 1.0,
+          "score": 151.14,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 11,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9442,
+          "multiplier": 1.0,
+          "score": 128.77,
+          "counting": false
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 25,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8894,
+          "multiplier": 1.1,
+          "score": 138.7,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 36,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.712,
+          "multiplier": 1.0,
+          "score": 67.17,
+          "counting": false
+        }
+      ]
+    },
+    "alexander freyre|key biscayne yacht club": {
+      "name": "Alexander Freyre",
+      "ranking_score": 152.6,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 7,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.9125,
+          "multiplier": 1.15,
+          "score": 179.04,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 19,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9228,
+          "multiplier": 1.0,
+          "score": 139.03,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 3,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9848,
+          "multiplier": 1.0,
+          "score": 137.16,
+          "counting": false
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 24,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8938,
+          "multiplier": 1.1,
+          "score": 139.74,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 4,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.968,
+          "multiplier": 1.0,
+          "score": 106.48,
+          "counting": false
+        }
+      ]
+    },
+    "brooks pardi|riverside yacht club": {
+      "name": "Brooks Pardi",
+      "ranking_score": 150.49,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 2,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.9835,
+          "multiplier": 1.0,
+          "score": 107.28,
+          "counting": true
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 5,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.9375,
+          "multiplier": 1.15,
+          "score": 186.44,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 7,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.969,
+          "multiplier": 1.1,
+          "score": 157.74,
+          "counting": true
+        }
+      ]
+    },
+    "ryan breck|riverside yacht club": {
+      "name": "Ryan Breck",
+      "ranking_score": 148.5,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 4,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.9669,
+          "multiplier": 1.0,
+          "score": 104.59,
+          "counting": false
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 12,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.85,
+          "multiplier": 1.15,
+          "score": 160.96,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 4,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9837,
+          "multiplier": 1.0,
+          "score": 153.03,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 32,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8584,
+          "multiplier": 1.1,
+          "score": 131.52,
+          "counting": true
+        }
+      ]
+    },
+    "audrey roachell|coral reef yacht club": {
+      "name": "Audrey Roachell",
+      "ranking_score": 147.41,
+      "events": [
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 1,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9959,
+          "multiplier": 1.0,
+          "score": 155.89,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 2,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9898,
+          "multiplier": 1.0,
+          "score": 138.22,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 16,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.9292,
+          "multiplier": 1.1,
+          "score": 148.12,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 18,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.856,
+          "multiplier": 1.0,
+          "score": 88.55,
+          "counting": false
+        }
+      ]
+    },
+    "levi hibbs|coral reef yacht club": {
+      "name": "Levi Hibbs",
+      "ranking_score": 147.14,
+      "events": [
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 3,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9878,
+          "multiplier": 1.0,
+          "score": 153.98,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 7,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9645,
+          "multiplier": 1.0,
+          "score": 132.94,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 10,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.9558,
+          "multiplier": 1.1,
+          "score": 154.51,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 3,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.976,
+          "multiplier": 1.0,
+          "score": 107.8,
+          "counting": false
+        }
+      ]
+    },
+    "connor cylke|lauderdale yacht club": {
+      "name": "Connor Cylke",
+      "ranking_score": 143.96,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 16,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.8,
+          "multiplier": 1.15,
+          "score": 146.97,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 18,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9268,
+          "multiplier": 1.0,
+          "score": 139.95,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 19,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.9159,
+          "multiplier": 1.1,
+          "score": 144.96,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 2,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.984,
+          "multiplier": 1.0,
+          "score": 109.13,
+          "counting": false
+        }
+      ]
+    },
+    "jaiden strickon|": {
+      "name": "Jaiden Strickon",
+      "ranking_score": 142.21,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 14,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.825,
+          "multiplier": 1.15,
+          "score": 153.91,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 8,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9675,
+          "multiplier": 1.0,
+          "score": 149.26,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 40,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.823,
+          "multiplier": 1.1,
+          "score": 123.47,
+          "counting": true
+        }
+      ]
+    },
+    "tucker gowens|st petersburg yacht club": {
+      "name": "Tucker Gowens",
+      "ranking_score": 142.01,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 21,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.7375,
+          "multiplier": 1.15,
+          "score": 130.09,
+          "counting": true
+        },
+        {
+          "event_id": "gulf_coast",
+          "event_name": "USODA Gulf Coast Championship",
+          "date": "2026-03-21",
+          "finish_position": 3,
+          "fleet_size": 66,
+          "strength_size": 66,
+          "percentile": 0.9545,
+          "multiplier": 1.0,
+          "score": 75.76,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 49,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.8008,
+          "multiplier": 1.0,
+          "score": 112.4,
+          "counting": false
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 1,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9949,
+          "multiplier": 1.0,
+          "score": 139.29,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 8,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.9646,
+          "multiplier": 1.1,
+          "score": 156.66,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 25,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.8,
+          "multiplier": 1.0,
+          "score": 80.0,
+          "counting": false
+        }
+      ]
+    },
+    "cc alamgir|bellport bay yacht club": {
+      "name": "Cc Alamgir",
+      "ranking_score": 140.84,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 8,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.9339,
+          "multiplier": 1.0,
+          "score": 99.27,
+          "counting": false
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 11,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.8625,
+          "multiplier": 1.15,
+          "score": 164.52,
+          "counting": true
+        },
+        {
+          "event_id": "new_jersey_gold",
+          "event_name": "USODA New Jersey State Championship Gold Fleet",
+          "date": "2026-07-13",
+          "finish_position": 3,
+          "fleet_size": 146,
+          "strength_size": 146,
+          "percentile": 0.9795,
+          "multiplier": 1.0,
+          "score": 117.13,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 17,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9309,
+          "multiplier": 1.0,
+          "score": 140.87,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 79,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.6504,
+          "multiplier": 1.1,
+          "score": 86.75,
+          "counting": false
+        }
+      ]
+    },
+    "trey waters|annapolis yacht club": {
+      "name": "Trey Waters",
+      "ranking_score": 138.31,
+      "events": [
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 10,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9593,
+          "multiplier": 1.0,
+          "score": 147.38,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 6,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9695,
+          "multiplier": 1.0,
+          "score": 133.99,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 30,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8673,
+          "multiplier": 1.1,
+          "score": 133.56,
+          "counting": true
+        }
+      ]
+    },
+    "caitlyn flynn|carolina yacht club sc": {
+      "name": "Caitlyn Flynn",
+      "ranking_score": 137.74,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 42,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.475,
+          "multiplier": 1.15,
+          "score": 67.24,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 14,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9431,
+          "multiplier": 1.0,
+          "score": 143.65,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 13,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.934,
+          "multiplier": 1.0,
+          "score": 126.7,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 21,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.9071,
+          "multiplier": 1.1,
+          "score": 142.86,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 40,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.68,
+          "multiplier": 1.0,
+          "score": 62.69,
+          "counting": false
+        }
+      ]
+    },
+    "morgan rosenthal|coral reef yacht club": {
+      "name": "Morgan Rosenthal",
+      "ranking_score": 135.45,
+      "events": [
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 36,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.8537,
+          "multiplier": 1.0,
+          "score": 123.71,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 19,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9036,
+          "multiplier": 1.0,
+          "score": 120.55,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 3,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.9867,
+          "multiplier": 1.1,
+          "score": 162.08,
+          "counting": true
+        }
+      ]
+    },
+    "storm husky kim|": {
+      "name": "Storm Husky Kim",
+      "ranking_score": 134.92,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 23,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.7125,
+          "multiplier": 1.15,
+          "score": 123.53,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 13,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9472,
+          "multiplier": 1.0,
+          "score": 144.58,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 27,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8805,
+          "multiplier": 1.1,
+          "score": 136.64,
+          "counting": true
+        }
+      ]
+    },
+    "ivan riano jr|coral reef yacht club": {
+      "name": "Ivan Riano Jr",
+      "ranking_score": 132.6,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 20,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.75,
+          "multiplier": 1.15,
+          "score": 133.41,
+          "counting": true
+        },
+        {
+          "event_id": "great_lakes",
+          "event_name": "USODA Great Lakes Championship",
+          "date": "2026-06-13",
+          "finish_position": 4,
+          "fleet_size": 48,
+          "strength_size": 48,
+          "percentile": 0.9167,
+          "multiplier": 1.0,
+          "score": 60.8,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 16,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.935,
+          "multiplier": 1.0,
+          "score": 141.79,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 17,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9137,
+          "multiplier": 1.0,
+          "score": 122.59,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 93,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.5885,
+          "multiplier": 1.1,
+          "score": 74.66,
+          "counting": false
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 44,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.648,
+          "multiplier": 1.0,
+          "score": 58.32,
+          "counting": false
+        }
+      ]
+    },
+    "maxime mcculloch|lakewood yacht club": {
+      "name": "Maxime McCulloch",
+      "ranking_score": 129.9,
+      "events": [
+        {
+          "event_id": "new_england",
+          "event_name": "USODA New England Championship",
+          "date": "2026-08-12",
+          "finish_position": 5,
+          "fleet_size": 153,
+          "strength_size": 153,
+          "percentile": 0.9673,
+          "multiplier": 1.0,
+          "score": 117.68,
+          "counting": true
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 25,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.6875,
+          "multiplier": 1.15,
+          "score": 117.09,
+          "counting": true
+        },
+        {
+          "event_id": "gulf_coast",
+          "event_name": "USODA Gulf Coast Championship",
+          "date": "2026-03-21",
+          "finish_position": 4,
+          "fleet_size": 66,
+          "strength_size": 66,
+          "percentile": 0.9394,
+          "multiplier": 1.0,
+          "score": 73.97,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 2,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9919,
+          "multiplier": 1.0,
+          "score": 154.94,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 51,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.592,
+          "multiplier": 1.0,
+          "score": 50.93,
+          "counting": false
+        }
+      ]
+    },
+    "olivia weber|coral reef yacht club": {
+      "name": "Olivia Weber",
+      "ranking_score": 129.16,
+      "events": [
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 12,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9512,
+          "multiplier": 1.0,
+          "score": 145.51,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 24,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.8782,
+          "multiplier": 1.0,
+          "score": 115.51,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 37,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8363,
+          "multiplier": 1.1,
+          "score": 126.47,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 45,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.64,
+          "multiplier": 1.0,
+          "score": 57.24,
+          "counting": false
+        }
+      ]
+    },
+    "tucker johnson|hampton yacht club": {
+      "name": "Tucker Johnson",
+      "ranking_score": 128.47,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 4,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.95,
+          "multiplier": 1.15,
+          "score": 190.19,
+          "counting": true
+        },
+        {
+          "event_id": "new_jersey_gold",
+          "event_name": "USODA New Jersey State Championship Gold Fleet",
+          "date": "2026-07-13",
+          "finish_position": 1,
+          "fleet_size": 146,
+          "strength_size": 146,
+          "percentile": 0.9932,
+          "multiplier": 1.0,
+          "score": 119.59,
+          "counting": true
+        },
+        {
+          "event_id": "chesapeake",
+          "event_name": "USODA Chesapeake Bay Championship",
+          "date": "2026-06-25",
+          "finish_position": 2,
+          "fleet_size": 63,
+          "strength_size": 63,
+          "percentile": 0.9683,
+          "multiplier": 1.0,
+          "score": 75.62,
+          "counting": true
+        }
+      ]
+    },
+    "christian freyre|key biscayne yacht club": {
+      "name": "Christian Freyre",
+      "ranking_score": 126.69,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 15,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.8125,
+          "multiplier": 1.15,
+          "score": 150.43,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 35,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.8577,
+          "multiplier": 1.0,
+          "score": 124.59,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 75,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.6193,
+          "multiplier": 1.0,
+          "score": 68.4,
+          "counting": false
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 59,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.7389,
+          "multiplier": 1.1,
+          "score": 105.04,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 48,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.616,
+          "multiplier": 1.0,
+          "score": 54.05,
+          "counting": false
+        }
+      ]
+    },
+    "alec voss del vecchio|coral reef yacht club": {
+      "name": "Alec Voss Del Vecchio",
+      "ranking_score": 125.98,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 29,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.6375,
+          "multiplier": 1.15,
+          "score": 104.55,
+          "counting": false
+        },
+        {
+          "event_id": "great_lakes",
+          "event_name": "USODA Great Lakes Championship",
+          "date": "2026-06-13",
+          "finish_position": 3,
+          "fleet_size": 48,
+          "strength_size": 48,
+          "percentile": 0.9375,
+          "multiplier": 1.0,
+          "score": 62.89,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 11,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9553,
+          "multiplier": 1.0,
+          "score": 146.44,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 16,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9188,
+          "multiplier": 1.0,
+          "score": 123.61,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 56,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.7522,
+          "multiplier": 1.1,
+          "score": 107.88,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 32,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.744,
+          "multiplier": 1.0,
+          "score": 71.75,
+          "counting": false
+        }
+      ]
+    },
+    "mason lim|dryc": {
+      "name": "Mason Lim",
+      "ranking_score": 125.69,
+      "events": [
+        {
+          "event_id": "pacific_coast",
+          "event_name": "USODA Pacific Coast Championship",
+          "date": "2026-10-04",
+          "finish_position": 5,
+          "fleet_size": 71,
+          "strength_size": 71,
+          "percentile": 0.9296,
+          "multiplier": 1.0,
+          "score": 75.52,
+          "counting": false
+        },
+        {
+          "event_id": "west_coast",
+          "event_name": "USODA West Coast Championship",
+          "date": "2026-09-27",
+          "finish_position": 1,
+          "fleet_size": 79,
+          "strength_size": 79,
+          "percentile": 0.9873,
+          "multiplier": 1.0,
+          "score": 87.2,
+          "counting": false
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 26,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.675,
+          "multiplier": 1.15,
+          "score": 113.91,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 26,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.8943,
+          "multiplier": 1.0,
+          "score": 132.65,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 33,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.854,
+          "multiplier": 1.1,
+          "score": 130.5,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 54,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.568,
+          "multiplier": 1.0,
+          "score": 47.86,
+          "counting": false
+        }
+      ]
+    },
+    "jackson jagusztyn|lauderdale yacht club": {
+      "name": "Jackson Jagusztyn",
+      "ranking_score": 125.39,
+      "events": [
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 5,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9797,
+          "multiplier": 1.0,
+          "score": 152.09,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 15,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9239,
+          "multiplier": 1.0,
+          "score": 124.64,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 65,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.7124,
+          "multiplier": 1.1,
+          "score": 99.43,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 29,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.768,
+          "multiplier": 1.0,
+          "score": 75.25,
+          "counting": false
+        }
+      ]
+    },
+    "marshall rodriguez|fwbc": {
+      "name": "Marshall Rodriguez",
+      "ranking_score": 122.46,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 27,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.6625,
+          "multiplier": 1.15,
+          "score": 110.76,
+          "counting": true
+        },
+        {
+          "event_id": "gulf_coast",
+          "event_name": "USODA Gulf Coast Championship",
+          "date": "2026-03-21",
+          "finish_position": 10,
+          "fleet_size": 66,
+          "strength_size": 66,
+          "percentile": 0.8485,
+          "multiplier": 1.0,
+          "score": 63.49,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 20,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9187,
+          "multiplier": 1.0,
+          "score": 138.11,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 45,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8009,
+          "multiplier": 1.1,
+          "score": 118.52,
+          "counting": true
+        },
+        {
+          "event_id": "midwinters",
+          "event_name": "USODA Midwinter Championship",
+          "date": "2025-11-28",
+          "finish_position": 1,
+          "fleet_size": 47,
+          "strength_size": 47,
+          "percentile": 0.9787,
+          "multiplier": 1.0,
+          "score": 66.38,
+          "counting": false
+        },
+        {
+          "event_id": "mid_america",
+          "event_name": "USODA Mid-America Championship",
+          "date": "2025-11-08",
+          "finish_position": 2,
+          "fleet_size": 38,
+          "strength_size": 38,
+          "percentile": 0.9474,
+          "multiplier": 1.0,
+          "score": 56.84,
+          "counting": false
+        }
+      ]
+    },
+    "jonah watson|": {
+      "name": "Jonah Watson",
+      "ranking_score": 121.5,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 50,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.375,
+          "multiplier": 1.15,
+          "score": 47.17,
+          "counting": false
+        },
+        {
+          "event_id": "gulf_coast",
+          "event_name": "USODA Gulf Coast Championship",
+          "date": "2026-03-21",
+          "finish_position": 2,
+          "fleet_size": 66,
+          "strength_size": 66,
+          "percentile": 0.9697,
+          "multiplier": 1.0,
+          "score": 77.58,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 73,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.7033,
+          "multiplier": 1.0,
+          "score": 92.5,
+          "counting": false
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 9,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9543,
+          "multiplier": 1.0,
+          "score": 130.85,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 35,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8451,
+          "multiplier": 1.1,
+          "score": 128.48,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 5,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.96,
+          "multiplier": 1.0,
+          "score": 105.16,
+          "counting": true
+        }
+      ]
+    },
+    "casey moure|coral reef yacht club": {
+      "name": "Casey Moure",
+      "ranking_score": 121.18,
+      "events": [
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 15,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.939,
+          "multiplier": 1.0,
+          "score": 142.72,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 20,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.8985,
+          "multiplier": 1.0,
+          "score": 119.53,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 63,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.7212,
+          "multiplier": 1.1,
+          "score": 101.29,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 14,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.888,
+          "multiplier": 1.0,
+          "score": 93.56,
+          "counting": false
+        }
+      ]
+    },
+    "quillin moran|annapolis yacht club": {
+      "name": "Quillin Moran",
+      "ranking_score": 120.78,
+      "events": [
+        {
+          "event_id": "pacific_coast",
+          "event_name": "USODA Pacific Coast Championship",
+          "date": "2026-10-04",
+          "finish_position": 3,
+          "fleet_size": 71,
+          "strength_size": 71,
+          "percentile": 0.9577,
+          "multiplier": 1.0,
+          "score": 78.98,
+          "counting": false
+        },
+        {
+          "event_id": "west_coast",
+          "event_name": "USODA West Coast Championship",
+          "date": "2026-09-27",
+          "finish_position": 2,
+          "fleet_size": 79,
+          "strength_size": 79,
+          "percentile": 0.9747,
+          "multiplier": 1.0,
+          "score": 85.53,
+          "counting": false
+        },
+        {
+          "event_id": "new_england",
+          "event_name": "USODA New England Championship",
+          "date": "2026-08-12",
+          "finish_position": 21,
+          "fleet_size": 153,
+          "strength_size": 153,
+          "percentile": 0.8627,
+          "multiplier": 1.0,
+          "score": 99.12,
+          "counting": false
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 18,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.775,
+          "multiplier": 1.15,
+          "score": 140.13,
+          "counting": true
+        },
+        {
+          "event_id": "chesapeake",
+          "event_name": "USODA Chesapeake Bay Championship",
+          "date": "2026-06-25",
+          "finish_position": 3,
+          "fleet_size": 63,
+          "strength_size": 63,
+          "percentile": 0.9524,
+          "multiplier": 1.0,
+          "score": 73.77,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 79,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.6789,
+          "multiplier": 1.0,
+          "score": 87.73,
+          "counting": false
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 31,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.8426,
+          "multiplier": 1.0,
+          "score": 108.57,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 50,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.7788,
+          "multiplier": 1.1,
+          "score": 113.65,
+          "counting": true
+        }
+      ]
+    },
+    "francisco don|coral reef yacht club": {
+      "name": "Francisco Don",
+      "ranking_score": 119.49,
+      "events": [
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 24,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9024,
+          "multiplier": 1.0,
+          "score": 134.46,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 8,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9594,
+          "multiplier": 1.0,
+          "score": 131.89,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 73,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.677,
+          "multiplier": 1.1,
+          "score": 92.11,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 55,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.56,
+          "multiplier": 1.0,
+          "score": 46.85,
+          "counting": false
+        }
+      ]
+    },
+    "daniel moure|coral reef yacht club": {
+      "name": "Daniel Moure",
+      "ranking_score": 118.54,
+      "events": [
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 48,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.8049,
+          "multiplier": 1.0,
+          "score": 113.26,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 12,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9391,
+          "multiplier": 1.0,
+          "score": 127.73,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 49,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.7832,
+          "multiplier": 1.1,
+          "score": 114.62,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 33,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.736,
+          "multiplier": 1.0,
+          "score": 70.59,
+          "counting": false
+        }
+      ]
+    },
+    "jack van orden|brant beach yacht club": {
+      "name": "Jack  Van Orden",
+      "ranking_score": 113.89,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 16,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.8678,
+          "multiplier": 1.0,
+          "score": 88.92,
+          "counting": false
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 22,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.725,
+          "multiplier": 1.15,
+          "score": 126.79,
+          "counting": true
+        },
+        {
+          "event_id": "new_jersey_gold",
+          "event_name": "USODA New Jersey State Championship Gold Fleet",
+          "date": "2026-07-13",
+          "finish_position": 4,
+          "fleet_size": 146,
+          "strength_size": 146,
+          "percentile": 0.9726,
+          "multiplier": 1.0,
+          "score": 115.9,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 65,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.7358,
+          "multiplier": 1.0,
+          "score": 98.99,
+          "counting": true
+        },
+        {
+          "event_id": "midwinters",
+          "event_name": "USODA Midwinter Championship",
+          "date": "2025-11-28",
+          "finish_position": 8,
+          "fleet_size": 47,
+          "strength_size": 47,
+          "percentile": 0.8298,
+          "multiplier": 1.0,
+          "score": 51.82,
+          "counting": false
+        }
+      ]
+    },
+    "olympia mcculloch|lakewood yacht club": {
+      "name": "Olympia McCulloch",
+      "ranking_score": 112.51,
+      "events": [
+        {
+          "event_id": "new_england",
+          "event_name": "USODA New England Championship",
+          "date": "2026-08-12",
+          "finish_position": 12,
+          "fleet_size": 153,
+          "strength_size": 153,
+          "percentile": 0.9216,
+          "multiplier": 1.0,
+          "score": 109.43,
+          "counting": true
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 35,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.5625,
+          "multiplier": 1.15,
+          "score": 86.65,
+          "counting": false
+        },
+        {
+          "event_id": "gulf_coast",
+          "event_name": "USODA Gulf Coast Championship",
+          "date": "2026-03-21",
+          "finish_position": 11,
+          "fleet_size": 66,
+          "strength_size": 66,
+          "percentile": 0.8333,
+          "multiplier": 1.0,
+          "score": 61.8,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 31,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.874,
+          "multiplier": 1.0,
+          "score": 128.15,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 9,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.928,
+          "multiplier": 1.0,
+          "score": 99.95,
+          "counting": true
+        }
+      ]
+    },
+    "thomas weidner|st petersburg yacht club": {
+      "name": "Thomas Weidner",
+      "ranking_score": 111.54,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 19,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.7625,
+          "multiplier": 1.15,
+          "score": 136.76,
+          "counting": true
+        },
+        {
+          "event_id": "gulf_coast",
+          "event_name": "USODA Gulf Coast Championship",
+          "date": "2026-03-21",
+          "finish_position": 5,
+          "fleet_size": 66,
+          "strength_size": 66,
+          "percentile": 0.9242,
+          "multiplier": 1.0,
+          "score": 72.19,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 14,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.9289,
+          "multiplier": 1.0,
+          "score": 125.66,
+          "counting": true
+        }
+      ]
+    },
+    "ryan lee|": {
+      "name": "Ryan Lee",
+      "ranking_score": 111.48,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 41,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.4875,
+          "multiplier": 1.15,
+          "score": 69.91,
+          "counting": false
+        },
+        {
+          "event_id": "gulf_coast",
+          "event_name": "USODA Gulf Coast Championship",
+          "date": "2026-03-21",
+          "finish_position": 1,
+          "fleet_size": 66,
+          "strength_size": 66,
+          "percentile": 0.9848,
+          "multiplier": 1.0,
+          "score": 79.4,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 58,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.7642,
+          "multiplier": 1.0,
+          "score": 104.79,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 14,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.9381,
+          "multiplier": 1.1,
+          "score": 150.24,
+          "counting": true
+        }
+      ]
+    },
+    "charles wesley hoffman|pensacola yacht club": {
+      "name": "Charles Wesley Hoffman",
+      "ranking_score": 110.99,
+      "events": [
+        {
+          "event_id": "chesapeake",
+          "event_name": "USODA Chesapeake Bay Championship",
+          "date": "2026-06-25",
+          "finish_position": 6,
+          "fleet_size": 63,
+          "strength_size": 63,
+          "percentile": 0.9048,
+          "multiplier": 1.0,
+          "score": 68.31,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 30,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.878,
+          "multiplier": 1.0,
+          "score": 129.05,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 28,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8761,
+          "multiplier": 1.1,
+          "score": 135.61,
+          "counting": true
+        }
+      ]
+    },
+    "will feld|coral reef yacht club": {
+      "name": "Will Feld",
+      "ranking_score": 110.53,
+      "events": [
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 27,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.8902,
+          "multiplier": 1.0,
+          "score": 131.74,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 30,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.8477,
+          "multiplier": 1.0,
+          "score": 109.55,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 75,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.6681,
+          "multiplier": 1.1,
+          "score": 90.31,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 38,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.696,
+          "multiplier": 1.0,
+          "score": 64.92,
+          "counting": false
+        }
+      ]
+    },
+    "sterling sawyer|lakewood yacht club": {
+      "name": "Sterling Sawyer",
+      "ranking_score": 109.19,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 6,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.9504,
+          "multiplier": 1.0,
+          "score": 101.92,
+          "counting": true
+        },
+        {
+          "event_id": "texas_youth",
+          "event_name": "USODA Texas Youth Race Week",
+          "date": "2026-07-09",
+          "finish_position": 1,
+          "fleet_size": 32,
+          "strength_size": 32,
+          "percentile": 0.9688,
+          "multiplier": 1.0,
+          "score": 53.94,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 47,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.8089,
+          "multiplier": 1.0,
+          "score": 114.12,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 28,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.8579,
+          "multiplier": 1.0,
+          "score": 111.52,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 140,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.3805,
+          "multiplier": 1.1,
+          "score": 38.82,
+          "counting": false
+        },
+        {
+          "event_id": "mid_america",
+          "event_name": "USODA Mid-America Championship",
+          "date": "2025-11-08",
+          "finish_position": 4,
+          "fleet_size": 38,
+          "strength_size": 38,
+          "percentile": 0.8947,
+          "multiplier": 1.0,
+          "score": 52.17,
+          "counting": false
+        }
+      ]
+    },
+    "thomas alexopoulos|ryc": {
+      "name": "Thomas Alexopoulos",
+      "ranking_score": 108.83,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 3,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.9625,
+          "multiplier": 1.15,
+          "score": 193.95,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 31,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8628,
+          "multiplier": 1.1,
+          "score": 132.54,
+          "counting": true
+        }
+      ]
+    },
+    "robinson fox|falmouth yacht club": {
+      "name": "Robinson Fox",
+      "ranking_score": 108.29,
+      "events": [
+        {
+          "event_id": "new_england",
+          "event_name": "USODA New England Championship",
+          "date": "2026-08-12",
+          "finish_position": 4,
+          "fleet_size": 153,
+          "strength_size": 153,
+          "percentile": 0.9739,
+          "multiplier": 1.0,
+          "score": 118.87,
+          "counting": true
+        },
+        {
+          "event_id": "new_jersey_gold",
+          "event_name": "USODA New Jersey State Championship Gold Fleet",
+          "date": "2026-07-13",
+          "finish_position": 17,
+          "fleet_size": 146,
+          "strength_size": 146,
+          "percentile": 0.8836,
+          "multiplier": 1.0,
+          "score": 100.35,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 34,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.8274,
+          "multiplier": 1.0,
+          "score": 105.64,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 142,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.3717,
+          "multiplier": 1.1,
+          "score": 37.47,
+          "counting": false
+        }
+      ]
+    },
+    "charlie long|": {
+      "name": "Charlie Long",
+      "ranking_score": 107.17,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 5,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.9587,
+          "multiplier": 1.0,
+          "score": 103.25,
+          "counting": true
+        },
+        {
+          "event_id": "new_england",
+          "event_name": "USODA New England Championship",
+          "date": "2026-08-12",
+          "finish_position": 16,
+          "fleet_size": 153,
+          "strength_size": 153,
+          "percentile": 0.8954,
+          "multiplier": 1.0,
+          "score": 104.81,
+          "counting": true
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 44,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.45,
+          "multiplier": 1.15,
+          "score": 62.0,
+          "counting": false
+        },
+        {
+          "event_id": "new_jersey_gold",
+          "event_name": "USODA New Jersey State Championship Gold Fleet",
+          "date": "2026-07-13",
+          "finish_position": 6,
+          "fleet_size": 146,
+          "strength_size": 146,
+          "percentile": 0.9589,
+          "multiplier": 1.0,
+          "score": 113.46,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 76,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.6911,
+          "multiplier": 1.0,
+          "score": 90.1,
+          "counting": false
+        }
+      ]
+    },
+    "marius garbayo ante|lauderdale yacht club": {
+      "name": "Marius Garbayo Ante",
+      "ranking_score": 106.93,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 21,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.8264,
+          "multiplier": 1.0,
+          "score": 82.64,
+          "counting": true
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 52,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.35,
+          "multiplier": 1.15,
+          "score": 42.53,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 51,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.7927,
+          "multiplier": 1.0,
+          "score": 110.69,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 36,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8407,
+          "multiplier": 1.1,
+          "score": 127.47,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 24,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.808,
+          "multiplier": 1.0,
+          "score": 81.2,
+          "counting": false
+        }
+      ]
+    },
+    "theodore hutler iv|": {
+      "name": "Theodore  Hutler IV",
+      "ranking_score": 106.68,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 3,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.9752,
+          "multiplier": 1.0,
+          "score": 105.93,
+          "counting": true
+        },
+        {
+          "event_id": "new_england",
+          "event_name": "USODA New England Championship",
+          "date": "2026-08-12",
+          "finish_position": 24,
+          "fleet_size": 153,
+          "strength_size": 153,
+          "percentile": 0.8431,
+          "multiplier": 1.0,
+          "score": 95.76,
+          "counting": true
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 63,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.2125,
+          "multiplier": 1.15,
+          "score": 20.12,
+          "counting": false
+        },
+        {
+          "event_id": "new_jersey_gold",
+          "event_name": "USODA New Jersey State Championship Gold Fleet",
+          "date": "2026-07-13",
+          "finish_position": 2,
+          "fleet_size": 146,
+          "strength_size": 146,
+          "percentile": 0.9863,
+          "multiplier": 1.0,
+          "score": 118.36,
+          "counting": true
+        }
+      ]
+    },
+    "james bell|seawanhaka corinthian yacht club": {
+      "name": "James  Bell",
+      "ranking_score": 104.77,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 19,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.843,
+          "multiplier": 1.0,
+          "score": 85.14,
+          "counting": false
+        },
+        {
+          "event_id": "new_england",
+          "event_name": "USODA New England Championship",
+          "date": "2026-08-12",
+          "finish_position": 20,
+          "fleet_size": 153,
+          "strength_size": 153,
+          "percentile": 0.8693,
+          "multiplier": 1.0,
+          "score": 100.25,
+          "counting": true
+        },
+        {
+          "event_id": "new_jersey_gold",
+          "event_name": "USODA New Jersey State Championship Gold Fleet",
+          "date": "2026-07-13",
+          "finish_position": 11,
+          "fleet_size": 146,
+          "strength_size": 146,
+          "percentile": 0.9247,
+          "multiplier": 1.0,
+          "score": 107.44,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 33,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.8325,
+          "multiplier": 1.0,
+          "score": 106.61,
+          "counting": true
+        }
+      ]
+    },
+    "hayden spamer|miami yacht club": {
+      "name": "Hayden Spamer",
+      "ranking_score": 102.72,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 15,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.876,
+          "multiplier": 1.0,
+          "score": 90.19,
+          "counting": false
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 60,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.25,
+          "multiplier": 1.15,
+          "score": 25.67,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 69,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.7195,
+          "multiplier": 1.0,
+          "score": 95.72,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 21,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.8934,
+          "multiplier": 1.0,
+          "score": 118.52,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 71,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.6858,
+          "multiplier": 1.1,
+          "score": 93.93,
+          "counting": true
+        },
+        {
+          "event_id": "southeast",
+          "event_name": "USODA Southeast Championship",
+          "date": "2025-11-01",
+          "finish_position": 35,
+          "fleet_size": 125,
+          "strength_size": 125,
+          "percentile": 0.72,
+          "multiplier": 1.0,
+          "score": 68.31,
+          "counting": false
+        }
+      ]
+    },
+    "cameron bellina|southern yacht club": {
+      "name": "Cameron Bellina",
+      "ranking_score": 101.66,
+      "events": [
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 48,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.4,
+          "multiplier": 1.15,
+          "score": 51.96,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 34,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.8618,
+          "multiplier": 1.0,
+          "score": 125.48,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 44,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.8053,
+          "multiplier": 1.1,
+          "score": 119.51,
+          "counting": true
+        },
+        {
+          "event_id": "midwinters",
+          "event_name": "USODA Midwinter Championship",
+          "date": "2025-11-28",
+          "finish_position": 4,
+          "fleet_size": 47,
+          "strength_size": 47,
+          "percentile": 0.9149,
+          "multiplier": 1.0,
+          "score": 59.99,
+          "counting": true
+        }
+      ]
+    },
+    "joshua wenokur|": {
+      "name": "Joshua Wenokur",
+      "ranking_score": 101.21,
+      "events": [
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 7,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.9715,
+          "multiplier": 1.0,
+          "score": 150.2,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 11,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.9513,
+          "multiplier": 1.1,
+          "score": 153.44,
+          "counting": true
+        }
+      ]
+    },
+    "drayke glass|shrewsbury sailing and yacht club": {
+      "name": "Drayke Glass",
+      "ranking_score": 101.18,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 10,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.9174,
+          "multiplier": 1.0,
+          "score": 96.65,
+          "counting": true
+        },
+        {
+          "event_id": "new_england",
+          "event_name": "USODA New England Championship",
+          "date": "2026-08-12",
+          "finish_position": 25,
+          "fleet_size": 153,
+          "strength_size": 153,
+          "percentile": 0.8366,
+          "multiplier": 1.0,
+          "score": 94.65,
+          "counting": true
+        },
+        {
+          "event_id": "new_jersey_gold",
+          "event_name": "USODA New Jersey State Championship Gold Fleet",
+          "date": "2026-07-13",
+          "finish_position": 7,
+          "fleet_size": 146,
+          "strength_size": 146,
+          "percentile": 0.9521,
+          "multiplier": 1.0,
+          "score": 112.25,
+          "counting": true
+        },
+        {
+          "event_id": "gulf_coast",
+          "event_name": "USODA Gulf Coast Championship",
+          "date": "2026-03-21",
+          "finish_position": 37,
+          "fleet_size": 66,
+          "strength_size": 66,
+          "percentile": 0.4394,
+          "multiplier": 1.0,
+          "score": 23.66,
+          "counting": false
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 148,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.3984,
+          "multiplier": 1.0,
+          "score": 39.44,
+          "counting": false
+        }
+      ]
+    },
+    "benjamin qualshie|scyc": {
+      "name": "Benjamin Qualshie",
+      "ranking_score": 101.16,
+      "events": [
+        {
+          "event_id": "atlantic_coast_gold",
+          "event_name": "USODA Atlantic Coast Championship Gold Fleet",
+          "date": "2026-09-13",
+          "finish_position": 13,
+          "fleet_size": 121,
+          "strength_size": 121,
+          "percentile": 0.8926,
+          "multiplier": 1.0,
+          "score": 92.76,
+          "counting": true
+        },
+        {
+          "event_id": "new_england",
+          "event_name": "USODA New England Championship",
+          "date": "2026-08-12",
+          "finish_position": 57,
+          "fleet_size": 153,
+          "strength_size": 153,
+          "percentile": 0.6275,
+          "multiplier": 1.0,
+          "score": 61.48,
+          "counting": false
+        },
+        {
+          "event_id": "new_jersey_gold",
+          "event_name": "USODA New Jersey State Championship Gold Fleet",
+          "date": "2026-07-13",
+          "finish_position": 18,
+          "fleet_size": 146,
+          "strength_size": 146,
+          "percentile": 0.8767,
+          "multiplier": 1.0,
+          "score": 99.19,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 50,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.7967,
+          "multiplier": 1.0,
+          "score": 111.54,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 126,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.4425,
+          "multiplier": 1.1,
+          "score": 48.67,
+          "counting": false
+        }
+      ]
+    },
+    "vincent mulcahy|best coast sailing team": {
+      "name": "Vincent Mulcahy",
+      "ranking_score": 100.69,
+      "events": [
+        {
+          "event_id": "pacific_coast",
+          "event_name": "USODA Pacific Coast Championship",
+          "date": "2026-10-04",
+          "finish_position": 1,
+          "fleet_size": 71,
+          "strength_size": 71,
+          "percentile": 0.9859,
+          "multiplier": 1.0,
+          "score": 82.49,
+          "counting": false
+        },
+        {
+          "event_id": "west_coast",
+          "event_name": "USODA West Coast Championship",
+          "date": "2026-09-27",
+          "finish_position": 3,
+          "fleet_size": 79,
+          "strength_size": 79,
+          "percentile": 0.962,
+          "multiplier": 1.0,
+          "score": 83.87,
+          "counting": false
+        },
+        {
+          "event_id": "new_england",
+          "event_name": "USODA New England Championship",
+          "date": "2026-08-12",
+          "finish_position": 19,
+          "fleet_size": 153,
+          "strength_size": 153,
+          "percentile": 0.8758,
+          "multiplier": 1.0,
+          "score": 101.38,
+          "counting": true
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 31,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.6125,
+          "multiplier": 1.15,
+          "score": 98.46,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 62,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.7257,
+          "multiplier": 1.1,
+          "score": 102.22,
+          "counting": true
+        }
+      ]
+    },
+    "george wyatt tyson|annapolis yacht club": {
+      "name": "George Wyatt Tyson",
+      "ranking_score": 100.45,
+      "events": [
+        {
+          "event_id": "new_england",
+          "event_name": "USODA New England Championship",
+          "date": "2026-08-12",
+          "finish_position": 2,
+          "fleet_size": 153,
+          "strength_size": 153,
+          "percentile": 0.9869,
+          "multiplier": 1.0,
+          "score": 121.28,
+          "counting": true
+        },
+        {
+          "event_id": "nationals",
+          "event_name": "USODA National Championship",
+          "date": "2026-07-29",
+          "finish_position": 73,
+          "fleet_size": 80,
+          "strength_size": 319,
+          "percentile": 0.0875,
+          "multiplier": 1.15,
+          "score": 5.32,
+          "counting": false
+        },
+        {
+          "event_id": "chesapeake",
+          "event_name": "USODA Chesapeake Bay Championship",
+          "date": "2026-06-25",
+          "finish_position": 4,
+          "fleet_size": 63,
+          "strength_size": 63,
+          "percentile": 0.9365,
+          "multiplier": 1.0,
+          "score": 71.93,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 54,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.7805,
+          "multiplier": 1.0,
+          "score": 108.15,
+          "counting": true
+        }
+      ]
+    },
+    "will kaiser|san francisco yacht club": {
+      "name": "Will Kaiser",
+      "ranking_score": 100.23,
+      "events": [
+        {
+          "event_id": "west_coast",
+          "event_name": "USODA West Coast Championship",
+          "date": "2026-09-27",
+          "finish_position": 13,
+          "fleet_size": 79,
+          "strength_size": 79,
+          "percentile": 0.8354,
+          "multiplier": 1.0,
+          "score": 67.87,
+          "counting": true
+        },
+        {
+          "event_id": "sunshine_state",
+          "event_name": "USODA Sunshine State Championship",
+          "date": "2026-03-07",
+          "finish_position": 41,
+          "fleet_size": 246,
+          "strength_size": 246,
+          "percentile": 0.8333,
+          "multiplier": 1.0,
+          "score": 119.32,
+          "counting": true
+        },
+        {
+          "event_id": "valentines",
+          "event_name": "USODA Valentine's Day Regatta",
+          "date": "2026-02-07",
+          "finish_position": 26,
+          "fleet_size": 197,
+          "strength_size": 197,
+          "percentile": 0.868,
+          "multiplier": 1.0,
+          "score": 113.51,
+          "counting": true
+        },
+        {
+          "event_id": "orange_bowl",
+          "event_name": "Orange Bowl Int'l Youth Regatta \u2014 Optimist",
+          "date": "2025-12-27",
+          "finish_position": 117,
+          "fleet_size": 226,
+          "strength_size": 226,
+          "percentile": 0.4823,
+          "multiplier": 1.1,
+          "score": 55.39,
+          "counting": false
+        }
+      ]
+    }
+  }
+}
