@@ -587,8 +587,13 @@ class RankedSailor:
 
     @property
     def ranking_score(self) -> float:
+        # Strict best-of-N: always divide by BEST_N. A sailor with fewer than
+        # BEST_N results has the missing ones counted as zero, so "mean of
+        # best three" is literally true and a 2-event sailor can't outrank
+        # 3+-event sailors on a smaller denominator. (Changed 2026-10-20;
+        # previously divided by len(best).)
         best = sorted((s for _, s in self.scores), reverse=True)[:BEST_N]
-        return round(sum(best) / len(best), 2) if best else 0.0
+        return round(sum(best) / BEST_N, 2) if best else 0.0
 
 
 def build_ranking(all_event_scores: dict[str, list[EventScore]]) -> tuple[list[RankedSailor], list[str], list[str]]:

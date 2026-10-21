@@ -41,6 +41,7 @@ MIN_RANKED_FLOOR = 300
 MIN_EVENTS_FLOOR = 15
 OUTPUT_JSON = "ranking.json"
 FLAGS_LOG = "flags.log"
+PROFILES_JSON = "profiles.json"   # per-event detail for the published top N
 
 # Display-only club override for sailors who never list a real home club
 # (travel-team-only). Keys are normalized lowercase names. Display only —
@@ -84,6 +85,55 @@ def load_optout_keys(path: str = "optouts.yaml") -> set[str]:
             for e in (data.get("optouts") or []) if e.get("key")}
 
 
+def build_profiles(published, all_event_scores, event_meta, flags) -> dict:
+    """Per-event breakdown for each PUBLISHED sailor, keyed by identity key.
+
+    Built from `published`, which is already opt-out filtered and capped at
+    the top N -- so an opted-out sailor can never appear here.
+
+    RankedSailor.scores only holds (event_id, result_score); the identity
+    merges move those tuples between keys. So each result is matched back to
+    its EventScore by (event_id, name part of key, score). Every merge is
+    same-name, so the name part is stable; two same-name sailors with an
+    identical score at one event would need identical finishes, which can't
+    happen. Any unmatched result is logged loudly rather than guessed.
+    """
+    index = {}
+    for eid, scores in all_event_scores.items():
+        for es in scores:
+            index[(eid, es.key.split("|", 1)[0], es.result_score)] = es
+
+    out = {}
+    for s in published:
+        nm = s.key.split("|", 1)[0]
+        # the BEST_N highest scores are the ones that count (ties: first wins)
+        order = sorted(range(len(s.scores)), key=lambda i: s.scores[i][1], reverse=True)
+        counting = set(order[:BEST_N])
+        events = []
+        for i, (eid, score) in enumerate(s.scores):
+            es = index.get((eid, nm, score))
+            meta = event_meta.get(eid, {})
+            if es is None:
+                flags.append(f"PROFILE NO MATCH: {s.key} @ {eid} score={score}")
+                continue
+            events.append({
+                "event_id": eid,
+                "event_name": meta.get("name", eid),
+                "date": meta.get("date", ""),
+                "finish_position": es.finish_position,
+                "fleet_size": es.fleet_size,
+                "strength_size": es.strength_size or es.fleet_size,
+                "percentile": round((es.fleet_size - es.finish_position) / es.fleet_size, 4),
+                "multiplier": meta.get("multiplier", 1.0),
+                "score": score,
+                "counting": i in counting,
+            })
+        events.sort(key=lambda e: e["date"], reverse=True)
+        out[s.key] = {"name": s.name, "ranking_score": s.ranking_score,
+                      "events": events}
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="validate config, skip network")
@@ -97,6 +147,7 @@ def main():
     today = dt.date.today()
     flags: list[str] = []
     stale_events: list[str] = []
+    event_meta: dict[str, dict] = {}
     all_event_scores: dict[str, list] = {}
 
     for ev in cfg["events"]:
@@ -152,6 +203,8 @@ def main():
             continue
 
         all_event_scores[eid] = scores
+        event_meta[eid] = {"name": ev["name"], "date": ev.get("date", ""),
+                           "multiplier": eff_mult}
         stq_note = " [STQ]" if ev.get("stq_status", False) else ""
         gold_note = f", entry={strength_size} [GOLD SPLIT]" if strength_size != fleet_size else ""
         flags.append(f"OK     {eid}: fleet_size={fleet_size}{gold_note}, "
@@ -208,6 +261,7 @@ def main():
                          else SAILOR_DISPLAY_CLUB.get(s.name.strip().lower(), "")),
                 "ranking_score": s.ranking_score,
                 "events_counted": s.n_events,
+                "key": s.key,   # exact join key for profiles.json
             }
             for i, s in enumerate(published, start=1)
         ],
@@ -232,8 +286,13 @@ def main():
         print("\n".join(flags))
         sys.exit(1)
 
+    profiles = build_profiles(published, all_event_scores, event_meta, flags)
+
     with open(OUTPUT_JSON, "w") as f:
         json.dump(output, f, indent=2)
+    with open(PROFILES_JSON, "w") as f:
+        json.dump({"generated_at": output["generated_at"], "profiles": profiles},
+                  f, indent=2)
     with open(FLAGS_LOG, "w") as f:
         f.write("\n".join(flags) + "\n")
 
