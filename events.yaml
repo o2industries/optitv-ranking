@@ -33,7 +33,11 @@
 # =============================================================================
 
 run_config:
-  window_anchor: "2025-10-20"   
+  window_anchor: "2025-10-20"
+  # active_since: the most recent Team Trials date. A sailor is LISTED only if
+  # they have at least one result on or after this date (kids typically leave
+  # Optis after Trials). Their older results still count. Update each spring.
+  active_since: "2026-04-23"
 
 events:
 

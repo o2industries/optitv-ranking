@@ -37,7 +37,7 @@ PUBLISH_TOP_N = 50        # full ranking is computed; only the top N are written
 # (upstream fetch failure, bad config) rather than a real collapse in the
 # data, so run.py refuses to overwrite a good ranking.json with it.
 # Current healthy run: 19 events, ~468 ranked.
-MIN_RANKED_FLOOR = 300
+MIN_RANKED_FLOOR = 150   # was 300; lowered 2026-10-20 when the activity rule cut the list to ~312. Still catches a broken run (0 or a handful).
 MIN_EVENTS_FLOOR = 15
 OUTPUT_JSON = "ranking.json"
 FLAGS_LOG = "flags.log"
@@ -229,6 +229,19 @@ def main():
         for k in sorted(optout_keys - matched):
             flags.append(f"OPTOUT NO MATCH: '{k}' matched zero sailors -- stale key? "
                          f"run whereis.py; sailor may STILL be public")
+    # ---- activity rule: listed only with a result since the last Team Trials ----
+    # Kids typically leave Optis after Trials, so a sailor with nothing since
+    # then is treated as no longer sailing. Their results still count in other
+    # sailors' fleet sizes and positions (scored upstream); they are only
+    # dropped from the PUBLISHED list. Missing/blank active_since -> no filter.
+    active_since = (cfg["run_config"].get("active_since") or "").strip()
+    if active_since:
+        def _last_date(s):
+            return max((event_meta.get(eid, {}).get("date", "") for eid, _ in s.scores), default="")
+        before = len(ranking)
+        ranking = [s for s in ranking if _last_date(s) >= active_since]
+        flags.append(f"ACTIVE removed {before - len(ranking)} sailor(s) with no result "
+                     f"since {active_since} (last Team Trials)")
     total_ranked = len(ranking)
     published = ranking[:PUBLISH_TOP_N]
 
