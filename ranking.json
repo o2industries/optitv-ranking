@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-24T14:14:06.266512+00:00",
+  "generated_at": "2026-10-25T14:47:15.082344+00:00",
   "window_anchor": "2025-10-20",
-  "window_end": "2026-10-24",
+  "window_end": "2026-10-25",
   "method": {
     "formula": "((fleet_size - finish_position)/fleet_size)^P * 100 * sqrt(strength_size/REF) * multiplier",
     "fleet_size": "the fleet actually raced (Gold only for qualifying/finals events)",
